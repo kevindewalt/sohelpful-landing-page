@@ -60,7 +60,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*----- Typography  
+/*----- Typography
 
 
 font-family: 'Roboto', sans-serif;
@@ -68,30 +68,30 @@ font-family: 'Roboto Slab', serif;
 -------*/
 
 #intro h1 {
-    font: 50px 'Roboto Slab', serif;  
+    font: 50px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
-   
+
 }
 
 #intro h2{
-    font: 18px 'Roboto Slab', serif;  
+    font: 24px 'Roboto Slab', serif;
     font-weight: 300;
     color: #ffffff;
-    margin: 10px 0 10px 0;
-   
+    margin: 30px 0 70px 0;
+
 }
 
 #sub-intro h3{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: regular;
     color: #362f2d;
     margin: 10px 0 10px 0;
 }
 
 .title h1{
-    font: 50px 'Roboto Slab', serif;  
+    font: 50px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
@@ -99,7 +99,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .title-s h1{
-    font: 36px 'Roboto Slab', serif;  
+    font: 36px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
@@ -107,7 +107,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .title-dark h1{
-    font: 50px 'Roboto Slab', serif;  
+    font: 50px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
     margin: 0;
@@ -115,7 +115,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .title-dark-s h1{
-    font: 36px 'Roboto Slab', serif;  
+    font: 36px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
     margin: 0;
@@ -123,7 +123,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 .title-dark-xs h1{
-    font: 30px 'Roboto Slab', serif;  
+    font: 30px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
     margin: 0;
@@ -131,69 +131,69 @@ font-family: 'Roboto Slab', serif;
 }
 
 #how-sh-works h3{
-    font: 20px 'Roboto Slab', serif;  
+    font: 20px 'Roboto Slab', serif;
     font-weight: 300;
     color: #ffffff;
     margin: 10px 0 10px 0;
-   
+
 }
 
 #benefits-of-sh h3{
-    font: 20px 'Roboto Slab', serif;  
+    font: 20px 'Roboto Slab', serif;
     font-weight: 300;
     color: #362f2d;
     margin: 10px 0 10px 0;
 }
 
 #sh-schedule,  h2{
-    font: 25px 'Roboto Slab', serif;  
+    font: 25px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0;  
+    margin: 10px 0 10px 0;
 
 }
 
 .sh-t-h2 h2{
-    font: 25px 'Roboto Slab', serif;  
+    font: 25px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0;  
+    margin: 10px 0 10px 0;
     text-align: center;
 }
 
 #sh-sched-desc-c h1{
-    font: 30px 'Roboto Slab', serif;  
+    font: 30px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 #sh-sched-desc-c h2{
-    font: 18px 'Roboto Slab', serif;  
+    font: 18px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 #sh-sched-desc-c h3{
-    font: 20px 'Roboto Slab', serif;  
+    font: 20px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 #sh-sched-desc-c h4{
-    font: 15px 'Roboto Slab', serif;  
+    font: 15px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 .td-title{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
     text-align: center;
 }
 
@@ -202,64 +202,64 @@ td{
 }
 
 td p{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 0;   
+    margin: 0;
 }
 
 .td-center-gray p{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 0;  
+    margin: 0;
 }
 
 .td-center-white p{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 0;  
+    margin: 0;
 }
 
 #sh-network h2{
-    font: 18px 'Roboto Slab', serif;  
+    font: 18px 'Roboto Slab', serif;
     font-weight: 400;
     color: #ffffff;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 #sh-w-writeup p{
-    font: 18px 'Roboto Slab', serif;  
+    font: 18px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 
 .testi-name{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: bold;
     color: #362f2d;
-    margin: 0;   
+    margin: 0;
     float: left;
 
 }
 
 .testi-loc{
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 0;   
-    
+    margin: 0;
+
 }
 
 .testi-text{
-    font: 14px 'Roboto Slab', serif;  
+    font: 14px 'Roboto Slab', serif;
     font-weight: 400;
     font-style: italic;
     color: #362f2d;
-    margin: 10px 0 10px 0;   
+    margin: 10px 0 10px 0;
 }
 
 
@@ -277,14 +277,14 @@ td p{
 header{
     background: #c0392b;
     width: 100%;
-    height: 40px;    
+    height: 40px;
     padding-top: 15px;
 }
 
 #header-container{
     width: 960px;
     margin: auto;
-    
+
 }
 
 #logo{
@@ -295,9 +295,9 @@ header{
 
 #head-login{
     width: 260px;
-    float: right;    
+    float: right;
     text-align: right;
-    
+
 }
 
 #head-login ul{
@@ -311,19 +311,19 @@ header{
     float: left;
     margin: 0 5px 0 5px;
     color: #ffffff;
-    
+
 }
 
 #head-login a{
     text-decoration: none;
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: regular;
     color: #ffffff;
 }
 
 #head-login a:hover{
     text-decoration: none;
-    font: 16px 'Roboto Slab', serif;  
+    font: 16px 'Roboto Slab', serif;
     font-weight: regular;
     color: #f1c40f;
 }
@@ -356,7 +356,7 @@ header{
 
 #si-left{
     width: 350px;
-    float: left;  
+    float: left;
     margin-top: 50px;
 
 }
@@ -367,12 +367,12 @@ header{
 }
 
 .line-separator{
-    background: url(../img/line-separator.jpg) repeat-x;    
+    background: url(../img/line-separator.jpg) repeat-x;
     height: 4px;
     width: 100%;
 }
 .line-separator-white{
-    background: #ffffff;    
+    background: #ffffff;
     height: 4px;
     width: 100%;
 }
@@ -434,7 +434,7 @@ header{
 
 #sh-sched-app{
     width: 960px;
-   
+
 }
 
 #sh-sched-desc-c{
@@ -478,7 +478,7 @@ header{
     margin: 30px;
     overflow: hidden;
     -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;   
+    border-radius: 3px 3px 3px 3px;
 }
 
 
@@ -502,11 +502,11 @@ header{
 
 #testimonial-ss{
     width: 800px;
-    background: #fff;    
+    background: #fff;
     margin: 25px auto;
     text-align: center;
     -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;   
+    border-radius: 3px 3px 3px 3px;
 }
 
 #sh-profile-screenshot{
@@ -516,7 +516,7 @@ header{
 }
 #sh-network{
     width: 100%;
-    background: #d35400; 
+    background: #d35400;
     text-align: center;
 }
 
@@ -559,7 +559,7 @@ header{
     margin: 30px auto 30px auto;
     padding: 10px 45px 10px 45px;
 
-    font: 28px 'Roboto Slab', serif;  
+    font: 28px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
@@ -572,16 +572,16 @@ header{
     height: 60px;
     margin: 30px auto 0 auto;
     padding: 10px 45px 10px 45px;
-    
 
-    font: 28px 'Roboto Slab', serif;  
+
+    font: 28px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    
+
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
-    
+
     -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
 
@@ -594,7 +594,7 @@ header{
     margin: 30px auto 0 auto;
     padding: 10px 45px 10px 45px;
 
-    font: 28px 'Roboto Slab', serif;  
+    font: 28px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
