@@ -281,15 +281,60 @@ header{
     padding-top: 15px;
 }
 
-#logo{
+#header-container{
     width: 960px;
     margin: auto;
+    
 }
+
+#logo{
+    width: 120px;
+    margin: auto;
+    float: left;
+}
+
+#head-login{
+    width: 260px;
+    float: right;    
+    text-align: right;
+    
+}
+
+#head-login ul{
+    list-style-type:none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#head-login li{
+    float: left;
+    margin: 0 5px 0 5px;
+    color: #ffffff;
+    
+}
+
+#head-login a{
+    text-decoration: none;
+    font: 16px 'Roboto Slab', serif;  
+    font-weight: regular;
+    color: #ffffff;
+}
+
+#head-login a:hover{
+    text-decoration: none;
+    font: 16px 'Roboto Slab', serif;  
+    font-weight: regular;
+    color: #f1c40f;
+}
+
+
 
 #intro{
     width: 100%;
     background: #d35400;
     padding: 30px 0 0 0;
+    text-align: center;
 }
 
 #intro-container{
@@ -313,6 +358,7 @@ header{
     width: 350px;
     float: left;  
     margin-top: 50px;
+
 }
 
 #si-right{
@@ -335,6 +381,7 @@ header{
     background: #2980b9;
     width: 100%;
     padding: 20px 0 20px 0;
+    text-align: center;
 }
 
 
@@ -482,10 +529,11 @@ header{
 }
 
 #sh-w-writeup{
-    width: 600px;
-    float: right;
-    margin: 50px 50px 0 0 ;
+    width: 700px;
+    margin: 50px 50px 0 0;
+    padding: 0px 10px 10px 100px;
 }
+
 
 .testimonial-container{
     padding: 40px 40px 20px 40px;
@@ -506,18 +554,30 @@ header{
 
 
 .trial-btn{
-    width: 455px;
+    width: 460px;
     height: 60px;
     margin: 30px auto 30px auto;
+    padding: 10px 45px 10px 45px;
+
+    font: 28px 'Roboto Slab', serif;  
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 
 }
 
 .trial-btn a {
     background: #27ae60;
-    width: 380px;
+    width: 460px;
     height: 60px;
-    padding: 20px;
     margin: 30px auto 0 auto;
+    padding: 10px 45px 10px 45px;
+    
+
+    font: 28px 'Roboto Slab', serif;  
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
     
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
@@ -529,10 +589,16 @@ header{
 
 .trial-btn a:hover {
     background: #30c26e;
-    width: 430px;
-    height: 80px;
+    width: 460px;
+    height: 60px;
     margin: 30px auto 0 auto;
-    
+    padding: 10px 45px 10px 45px;
+
+    font: 28px 'Roboto Slab', serif;  
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
 
