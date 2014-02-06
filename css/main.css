@@ -519,13 +519,13 @@ header{
 
 
 #sh-w-pic{
-    width: 200px;
+/*    width: 200px;*/
     float: left;
     margin: 20px 0 0 100px;
 }
 
 #sh-w-writeup{
-    width: 700px;
+/*    width: 700px;*/
     margin: 50px 50px 0 0;
     padding: 0px 10px 10px 100px;
 }
