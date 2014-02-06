@@ -471,8 +471,8 @@ header{
 
 #sh-t-table{
     background: #ffffff;
-    width: 900px;
-    margin: 30px;
+    width: 90%;
+    margin: 30px 5% 50px 5%;
     overflow: hidden;
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
@@ -498,7 +498,7 @@ header{
 }
 
 #testimonial-ss{
-    width: 800px;
+    width: 80%;
     background: #fff;
     margin: 25px auto;
     text-align: center;
@@ -538,11 +538,12 @@ header{
 
 .testi-pic{
     float: left;
-    width: 80px;
+    width: 10%;
 }
 
 .testi-box{
-    width: 600px;
+    width: 85%;
+    margin-left: 5%;
     float: right;
     text-align: left;
     margin-bottom: 20px;
