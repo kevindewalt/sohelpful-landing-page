@@ -341,12 +341,12 @@ header{
     text-align: center;
 }
 
-#intro-container{
+/*#intro-container{
     width: 960px;
     margin: auto;
     text-align: center;
 }
-
+*/
 .content-container{
 /*    width: 960px;
     margin: auto;
@@ -368,7 +368,7 @@ header{
 }
 
 .line-separator{
-    background: url(../img/line-separator.jpg) repeat-x;
+/*    background: url(../img/line-separator.jpg) repeat-x;*/
     height: 4px;
     width: 100%;
 }
