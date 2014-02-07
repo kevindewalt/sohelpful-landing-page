@@ -6,69 +6,82 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Welcome to SoHelpful</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <!--meta name="viewport" content="width=device-width"-->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
+        <link rel="stylesheet" href="css/gridism.css">
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main_responsive.scss">
+        <link href='css/roberto_from_google.css' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/headroom.js"></script>
+        <!--script src="js/headroom.js"></script-->
 
         <script src="//cdn.optimizely.com/js/254045543.js"></script>
 
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body class="wrap">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div id="page-wrapper">
             <header>
-                <div id="header-container">
-                    <div id="logo"><img src="img/sohelpful-logo.png"></div>
-                    <div id="head-login">
-                        <ul>
-                            <li><a href="https://www.sohelpful.me/users/sign_in">Current Users Sign in</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div><!-- end of content-container -->
+              <div class="grid">
+                <div class="unit whole" id="header-container">
+                  <div id="logo"><img src="img/sohelpful-logo.png"></div>
+                  <div id="head-login">
+                    <ul>
+                      <li><a href="https://www.sohelpful.me/users/sign_in">Current Users Sign in</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </header>
+
             <div id="intro">
-                <div class="content-container">
+                <div class="grid content-container">
+                  <div class="unit whole">
                     <h1>Turn a total stranger into a passionate customer in 30 minutes - you don't even need to wear nice pants</h1>
                     <h2>SoHelpful is the easiest, fastest way for startups & small businesses to build lifelong fans - and customers - by helping them over Skype or Hangout</h2>
-
                     <div class="trial-btn"><a href="https://www.sohelpful.me/users/sign_up?plan=sohelpful9">Start Your Free Trial Today</a></div>
+                  </div>
                 </div>
             </div><!-- end of intro -->
 
             <div id="sub-intro">
+              <div class="grid">
                 <div class="content-container">
+                  <div class="unit two-fifths">
                     <div id="si-left">
                         <h3>Getting customer mindshare is harder every day. You need to stand out - and helping people 1-1 is still the best way to sell you & your products. If only calls and coffee meetings didn't take so much time...</h3>
 
                         <h3>Not Anymore. With SoHelpful you can get the impact of 1-1 without slowing down your business.</h3>
 
                         <h3>SoHelpful eliminates the hassles so you can build an army of passionate customers by helping them over Skype or Hangout.</h3>
-                        </div>
-                    <div id="si-right"><img src="img/monitor.png"></div>
-                    <div class="clear"></div>
+                    </div>
+                  </div>
+                  <div class="unit three-fifths">
+                    <div id="si-right"><img class="responsive-image" src="img/monitor.png"></div>
+                  </div>
                 </div>
+              </div>
             </div><!-- end of sub intro -->
 
             <div class="line-separator"></div>
 
             <div id="how-sh-works">
-                <div class="content-container">
-                    <div class="title"><h1>How SoHelpful Works</h1></div>
-                    <div class="h-sh-w-image"><img src="img/h-sh-w-flowtop.png"></div>
-                    <h3>Just decide when you want to help others via Skype, Hangout, or phone calls.  We advertise your availability and make it simple for fans of your work - those who email you for help, read your blog, or are referred to you by others - to book time with you.</h3>
-                    <div class="h-sh-w-image"><img src="img/h-sh-w-flow-bottom.png"></div>
-                    <h3>After you help someone - and create a passionate fan or new customer - we ask them to give you a world-class testimonial and tell their friends about you.</h3>
+                <div class="grid">
+                  <div class="content-container">
+                    <div class="unit whole">
+                      <div class="title"><h1>How SoHelpful Works</h1></div>
+                      <div class="h-sh-w-image"><img class="responsive-image" src="img/h-sh-w-flowtop.png"></div>
+                      <h3>Just decide when you want to help others via Skype, Hangout, or phone calls.  We advertise your availability and make it simple for fans of your work - those who email you for help, read your blog, or are referred to you by others - to book time with you.</h3>
+                      <div class="h-sh-w-image"><img class="responsive-image" src="img/h-sh-w-flow-bottom.png"></div>
+                      <h3>After you help someone - and create a passionate fan or new customer - we ask them to give you a world-class testimonial and tell their friends about you.</h3>
+                    </div>
+                  </div>
                 </div>
 
             </div><!-- end of how sohelpful works-->
@@ -76,65 +89,79 @@
             <div class="line-separator-white"></div>
 
             <div id="benefits-of-sh">
+              <div class="grid">
                 <div class="content-container">
+                  <div class="unit whole">
                     <div class="title"><h1>Benefits of SoHelpful</h1></div>
+                  </div>
+                  <div class="unit whole">
                     <div id="benefits-box">
                         <div class="benefits-b-e-c">
-                            <div class="benefits-icon"><img src="img/bo-sh-email.png"></div>
+                            <div class="benefits-icon"><img class="responsive-image" src="img/bo-sh-email.png"></div>
                             <div class="benefits-desc"><h3>No more email scheduling hassles</h3></div>
                             <div class="clear"></div>
                         </div>
 
                         <div class="benefits-b-e-c">
-                            <div class="benefits-icon"><img src="img/bo-sh-testimonials.png"></div>
+                            <div class="benefits-icon"><img class="responsive-image" src="img/bo-sh-testimonials.png"></div>
                             <div class="benefits-desc"><h3>Get dozens of testimonials that sell you and your products</h3></div>
                             <div class="clear"></div>
                         </div>
 
                         <div class="benefits-b-e-c">
-                        <div class="benefits-icon"><img src="img/bo-sh-profile.png"></div>
+                        <div class="benefits-icon"><img class="responsive-image" src="img/bo-sh-profile.png"></div>
                         <div class="benefits-desc"><h3>Professional profile to build your reputation and advertise your availability - no programming required</h3></div>
                         <div class="clear"></div>
                         </div>
 
                         <div class="benefits-b-e-c">
-                            <div class="benefits-icon"><img src="img/bo-sh-referrals.png"></div>
+                            <div class="benefits-icon"><img class="responsive-image" src="img/bo-sh-referrals.png"></div>
                             <div class="benefits-desc"><h3>Receive & give referrals of potential customers from other professionals on SoHelpful</h3></div>
                             <div class="clear"></div>
                         </div>
                     </div><!-- end of benefits box -->
+                  </div><!--unit whole-->
                 </div><!-- end of benefits container -->
+              </div><!--grid -->
             </div><!-- end of benefits-of-sh -->
 
             <div id="sh-schedule">
+              <div class="grid">
                 <div class="content-container">
+                  <div class="unit whole">
                     <div class="title-dark-s"><h1>Dead simple to tell others when you're available - and for them to schedule a call with you for help</h1></div>
+                  </div>
+
+                  <div class="unit half">
                     <div id="sh-schedule-left">
                         <h2>Just create an event called "SoHelpful" on your Google Calendar when you want to be available for calls. </h2>
                         <h2>Make it recurring and you're done forever.</h2>
                     </div>
-                    <div id="sh-schedule-right"><img src="img/sched-circle-screenshot.png"></div>
+                  </div>
+                  <div class="unit half">
+                    <div id="sh-schedule-right"><img class="responsive-image" src="img/sched-circle-screenshot.png"></div>
+                  </div>
 
-                    <div class="clear"></div>
-
-                    <div id="sh-sched-app"><img src="img/sched-app-days.png"></div>
+                  <div class="unit whole">
+                    <img class="responsive-image" src="img/sched-app-days.png"></div>
+                  </div>
 
                     <div id="sh-sched-desc-c">
-                        <div id="sh-sched-desc-left">
+                        <div class="unit half" id="sh-sched-desc-left">
                             <h1>No more scheduling hassles</h1>
                             <h2>SoHelpful takes care of every detail to schedule calls between you & potential customers</h2>
                             <h2>Never miss an opportunity to turn someone into a lifelong fan of you and your work.</h2>
                         </div><!-- end of sh-sched-desc-left -->
 
-                        <div id="sh-sched-desc-right">
+                        <div class="unit half" id="sh-sched-desc-right">
                             <div class="sh-sched-desc-e">
-                                <div class="sh-sched-desc-icon"><img src="img/sh-s-calendar.png"></div>
+                                <div class="sh-sched-desc-icon"><img class="responsive-image" src="img/sh-s-calendar.png"></div>
                                 <div class="sh-sched-desc-text"><h3>Sends calendar invitations</h3></div>
                                 <div class="clear"></div>
                             </div>
 
                             <div class="sh-sched-desc-e">
-                                <div class="sh-sched-desc-icon"><img src="img/sh-s-exchange.png"></div>
+                                <div class="sh-sched-desc-icon"><img class="responsive-image" src="img/sh-s-exchange.png"></div>
                                 <div class="sh-sched-desc-text">
                                     <h3>Exchange contact information:</h3>
                                     <h4>Skype/Hangout Addresses, phone numbers, email addresses</h4>
@@ -143,19 +170,19 @@
                             </div>
 
                             <div class="sh-sched-desc-e">
-                                <div class="sh-sched-desc-icon"><img src="img/sh-s-confirmation.png"></div>
+                                <div class="sh-sched-desc-icon"><img class="responsive-image" src="img/sh-s-confirmation.png"></div>
                                 <div class="sh-sched-desc-text"><h3>Sends confirmation & reminders</h3></div>
                                 <div class="clear"></div>
                             </div>
 
                             <div class="sh-sched-desc-e">
-                                <div class="sh-sched-desc-icon"><img src="img/sh-s.png"></div>
+                                <div class="sh-sched-desc-icon"><img class="responsive-image" src="img/sh-s.png"></div>
                                 <div class="sh-sched-desc-text"><h3>Supports cancellations & rescheduling</h3></div>
                                 <div class="clear"></div>
                             </div>
 
                             <div class="sh-sched-desc-e">
-                                <div class="sh-sched-desc-icon"><img src="img/sh-s-timezone.png"></div>
+                                <div class="sh-sched-desc-icon"><img class="responsive-image" src="img/sh-s-timezone.png"></div>
                                 <div class="sh-sched-desc-text"><h3>Timezone Support</h3></div>
                                 <div class="clear"></div>
                             </div>
@@ -164,17 +191,21 @@
                     </div><!-- end of sh-sched-desc-c -->
                 </div><!-- end of content container -->
                 <div class="trial-btn"><a href="https://www.sohelpful.me/users/sign_up?plan=sohelpful9">Start Your Free Trial Today</a></div>
+              </div>
             </div><!-- end of sh-schedule -->
 
+
             <div id="sh-testimonials">
-                <div class="content-container">
+                <div class="grid content-container">
 
+                  <div class="unit whole">
                     <div class="title-dark-s"><h1>Get dozens of testimonials from those you help - testimonials that help you sell</h1></div>
-
                     <h2 class="sh-t-h2">Linkedin recommendations are for HR departments - not selling you & your work.</h2>
                     <h2 class="sh-t-h2">We help you get compelling, high-quality testimonials from people you help.</h2>
+                  </div>
+
                     <div id="sh-t-table">
-                        <table width="900" border="0">
+                        <table width="100%" border="0">
                           <tr  class="table-head">
                             <td>&nbsp;</td>
                             <td class="td-title">SoHelpful Recommendations</td>
@@ -215,9 +246,10 @@
 
                     <div class="title-dark-s"><h1>Don't you want dozens of testimonials like this?</h1></div>
                     <div id="testimonial-ss">
-                        <div class="testimonial-container">
+                        <div class="grid testimonial-container">
+                          <div class="unit whole">
 
-                            <div class="testi-pic"><img src="img/diane.jpg"></div>
+                            <div class="testi-pic"><img class="responsive-image" src="img/diane.jpg"></div>
                             <div class="testi-box">
                                 <h1 class="testi-name">Diana Cobbe, </h1>
                                 <h2 class="testi-loc">Outer Barcoo</h2>
@@ -226,7 +258,7 @@
                             </div><!-- end of testi-box -->
                             <div class="clear"></div>
 
-                            <div class="testi-pic"><img src="img/armand.jpg"></div>
+                            <div class="testi-pic"><img class="responsive-image" src="img/armand.jpg"></div>
                             <div class="testi-box">
                                 <h1 class="testi-name">Armand Patella, </h1>
                                 <h2 class="testi-loc">Hit Play Labs, LLC</h2>
@@ -235,7 +267,7 @@
                             </div><!-- end of testi-box -->
                             <div class="clear"></div>
 
-                            <div class="testi-pic"><img src="img/gabe.jpg"></div>
+                            <div class="testi-pic"><img class="responsive-image" src="img/gabe.jpg"></div>
                             <div class="testi-box">
                                 <h1 class="testi-name">Gabriel Stein, </h1>
                                 <h2 class="testi-loc">Sacramento, California</h2>
@@ -244,11 +276,8 @@
                             </div><!-- end of testi-box -->
                             <div class="clear"></div>
 
-
-
+                          </div><!--unit whole-->
                         </div><!-- end of testimonial-container-->
-
-
 
                     </div>
                     <div class="trial-btn"><a href="https://www.sohelpful.me/users/sign_up?plan=sohelpful9">Start Your Free Trial Today</a></div>
@@ -256,28 +285,36 @@
 
             </div><!-- end of testimonials -->
 
+
             <div id="sh-profile">
-                <div class="content-container">
+                <div class="grid content-container">
+                  <div class="unit whole">
                     <div class="title-dark-xs"><h1>A professionally - designed profile with your testimonials tells customers you're serious about helping them</h1></div>
-                    <div id="sh-profile-screenshot"><img src="img/sohelpful-profile-screenshot.png"></div>
+                    <div id="sh-profile-screenshot"><img class="responsive-image" src="img/sohelpful-profile-screenshot.png"></div>
+                  </div>
                 </div> <!-- end of content container -->
             </div><!-- end of sh-profile -->
 
+
             <div id="sh-network">
-                <div class="content-container">
+                <div class="grid content-container">
+                  <div class="unit whole">
                     <div class="title-s"><h1>Join a network of other professionals on SoHelpful - give and get referrals worldwide without email hassles</h1></div>
                     <h2>Do you believe helping others is the best way to build your reputation and get new business? We do too, so we made it easy to give and get referrals from people who need help.</h2>
                     <h2>SoHelpful does it for you - no need for tedious email intros</h2>
-                    <div id="sh-network-chat"><img src="img/chatbox.png"></div>
-                    <div id="sh-network-flow"><img src="img/testimonials-flow.png"></div>
+                    <div id="sh-network-chat"><img class="responsive-image"  src="img/chatbox.png"></div>
+                    <div id="sh-network-flow"><img class="responsive-image"  src="img/testimonials-flow.png"></div>
+                  </div>
                 </div> <!-- end of content container -->
             </div><!-- end of sh-network -->
 
+
             <div id="sh-writeup">
-                <div class="content-container">
+                <div class="grid content-container">
+                  <div class="unit whole">
                     <div class="title-dark-s"><h1>Still not sure if SoHelpful is for you?</h1></div>
-                    <div id="sh-w-pic"><img src="img/kevin-profile-image.png"></div>
-                    <div id="sh-w-writeup">
+                    <div id="sh-w-pic"><img class="responsive-image"  src="img/kevin-profile-image.png"></div>
+                    <div class="sh-w-writeup">
                         <p>Hi, I'm Kevin Dewalt, founder of SoHelpful &amp; creator of the Helpfuing Marketing&trade; strategy.</p>
                         <p>If you have any questions, just email me at <a href="mailto:kevindewalt@kevindewalt.com?subject=Question about SoHelpful">kevindewalt@kevindewalt.com</a> or <a href="https://twitter.com/kevindewalt" target="_blank">@kevindewalt</a>.</p>  <p>And please schedule some time with me at <a href="http://sohelpful.me/kevindewalt">sohelpful.me/kevindewalt</a> if I can help you with anything.</p>
                         <p>&nbsp;</p>
@@ -354,10 +391,13 @@
                          <p>I bet you would like to know what your audience wants to read - before you write anything.  <strong>SoHelpful will help you connect with your audience</strong>.  Answers to the questions they ask will tell you what your audience wants to hear.  It turns out that thousands of others will have the same questions - questions your can answer in your content.</p>
 
                          <p>&nbsp;</p>
+                       </div><!--sh-w-writeup-->
 
                         <div class="trial-btn"><a href="https://www.sohelpful.me/users/sign_up?plan=sohelpful9">Start Your Free Trial Today</a></div>
 
                         <p>&nbsp;</p>
+
+                      <div class="sh-w-writeup">
 
                         <h1>Want to learn more about Helpful Marketing&trade; - the strategy behind getting customers by being helpful?</h1>
 
@@ -383,6 +423,7 @@
 
                     </div><!-- end of sh-w-writeup -->
                     <div class="clear"></div>
+                  </div>
                 </div><!-- end of content container -->
 
 
@@ -391,21 +432,21 @@
             <div class="line-separator"></div>
 
 
-
-        </div><!-- end of wrapper -->
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/vendor/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-40318158-2', 'sohelpful.me');
+          ga('send', 'pageview');
+
         </script>
-    </body>
+      </body>
 </html>

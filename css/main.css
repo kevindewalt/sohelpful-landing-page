@@ -57,8 +57,43 @@ textarea {
 
 
 /* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+// For tabelts and mid-sized mobile devices. Typically 54em; but set here at 767px for Bootstrap compatibility.
+
+@mixin mq-tablet {
+  @media (max-width: 54em) {
+    @content;
+  }
+}
+
+// For smartphones and personal (small) mobile devices. Typically 30em.
+@mixin mq-personal {
+  @media  (max-width: 30em) {
+    @content;
+  }
+}
+
+
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 
 /*----- Typography
 
@@ -72,6 +107,10 @@ font-family: 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
+
+    @include mq-personal {
+      font: 30px 'Roboto Slab', serif;
+    }
 
 }
 
@@ -339,6 +378,7 @@ header{
     background: #d35400;
     padding: 30px 0 0 0;
     text-align: center;
+
 }
 
 /*#intro-container{
@@ -368,7 +408,7 @@ header{
 }
 
 .line-separator{
-/*    background: url(../img/line-separator.jpg) repeat-x;*/
+    background: url(../img/line-separator.jpg) repeat-x;
     height: 4px;
     width: 100%;
 }
@@ -551,6 +591,7 @@ header{
 
 
 .trial-btn{
+    width: 100%;
     max-width: 100%;
     height: 60px;
     margin: 30px auto 30px auto;
@@ -604,20 +645,6 @@ header{
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
 }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
 
 /* ==========================================================================
    Helper classes
