@@ -1,0 +1,755 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*----- Typography
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+-------*/
+
+#intro h1 {
+    font: 50px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+#intro h2{
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 30px 0 70px 0;
+
+}
+
+#sub-intro h3{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: regular;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+.title h1{
+    font: 50px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.title-s h1{
+    font: 36px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.title-dark h1{
+    font: 50px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+    text-align: center;
+}
+
+.title-dark-s h1{
+    font: 36px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+    text-align: center;
+}
+
+.title-dark-xs h1{
+    font: 30px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+    text-align: center;
+}
+
+#how-sh-works h3{
+    font: 20px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+
+}
+
+#benefits-of-sh h3{
+    font: 20px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+#sh-schedule,  h2{
+    font: 25px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+
+}
+
+.sh-t-h2 h2{
+    font: 25px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+#sh-sched-desc-c h1{
+    font: 30px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+#sh-sched-desc-c h2{
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+#sh-sched-desc-c h3{
+    font: 20px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+#sh-sched-desc-c h4{
+    font: 15px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+.td-title{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+td{
+    padding: 8px;
+}
+
+td p{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 0;
+}
+
+.td-center-gray p{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 0;
+}
+
+.td-center-white p{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 0;
+}
+
+#sh-network h2{
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+
+#sh-w-writeup p{
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+
+.testi-name{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+    float: left;
+
+}
+
+.testi-loc{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 0;
+
+}
+
+.testi-text{
+    font: 14px 'Roboto Slab', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+}
+
+
+/*----- end of  Typography  -------*/
+
+
+.clear{
+    clear: both;
+}
+
+#page-wrapper{
+    width: 100%;
+}
+
+header{
+    background: #c0392b;
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+}
+
+#header-container{
+    width: 960px;
+    margin: auto;
+
+}
+
+#logo{
+    width: 120px;
+    margin: auto;
+    float: left;
+}
+
+#head-login{
+    width: 260px;
+    float: right;
+    text-align: right;
+
+}
+
+#head-login ul{
+    list-style-type:none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#head-login li{
+    float: left;
+    margin: 0 5px 0 5px;
+    color: #ffffff;
+
+}
+
+#head-login a{
+    text-decoration: none;
+    font: 16px 'Roboto Slab', serif;
+    font-weight: regular;
+    color: #ffffff;
+}
+
+#head-login a:hover{
+    text-decoration: none;
+    font: 16px 'Roboto Slab', serif;
+    font-weight: regular;
+    color: #f1c40f;
+}
+
+
+
+#intro{
+    width: 100%;
+    background: #d35400;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+#intro-container{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+}
+
+.content-container{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+#sub-intro{
+    width: 100%;
+}
+
+
+#si-left{
+    width: 350px;
+    float: left;
+    margin-top: 50px;
+
+}
+
+#si-right{
+    width: 520px;
+    float: right;
+}
+
+.line-separator{
+    background: url(../img/line-separator.jpg) repeat-x;
+    height: 4px;
+    width: 100%;
+}
+.line-separator-white{
+    background: #ffffff;
+    height: 4px;
+    width: 100%;
+}
+
+#how-sh-works{
+    background: #2980b9;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+
+.h-sh-w-image{
+    width: 960px;
+    margin: 15px auto 15px auto;
+    text-align: center;
+}
+
+#benefits-of-sh{
+    width: 100%;
+    background: #c0392b;
+}
+
+#benefits-box{
+    background: #ffffff;
+    width: 750px;
+    margin: 20px auto 20px auto;
+    padding: 30px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.benefits-icon{
+    width: 125px;
+    float: left;
+}
+
+.benefits-desc{
+    width: 615px;
+    float: right;
+}
+
+.benefits-b-e-c{
+    margin: 20px 0 20px 0;
+}
+
+#sh-schedule-left{
+    width: 350px;
+    float: left;
+    margin: 100px 0 0 60px;
+    text-align: center;
+}
+
+#sh-schedule-right{
+    width: 450px;
+    float: right;
+    margin: 30px;
+}
+
+#sh-sched-app{
+    width: 960px;
+
+}
+
+#sh-sched-desc-c{
+    width: 960px;
+    margin: 60px auto 0 auto;
+}
+
+#sh-sched-desc-left{
+    width: 420px;
+    float: left;
+}
+
+#sh-sched-desc-right{
+    width: 480px;
+    float: right;
+}
+
+.sh-sched-desc-e{
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+.sh-sched-desc-icon{
+    float: left;
+    width: 45px;
+    padding: 8px 0 8px 0;
+}
+
+.sh-sched-desc-text{
+    float: right;
+    width: 400px;
+}
+
+#sh-testimonials{
+    background: #f1c40f;
+
+}
+
+#sh-t-table{
+    background: #ffffff;
+    width: 900px;
+    margin: 30px;
+    overflow: hidden;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+
+.table-head{
+    background: #3498db;
+}
+
+.td-gray{
+    background: #e5e5e5;
+}
+
+.td-center-gray{
+    text-align: center;
+    background: #e5e5e5;
+}
+
+.td-center-white{
+    text-align: center;
+    background: #ffffff;
+}
+
+#testimonial-ss{
+    width: 800px;
+    background: #fff;
+    margin: 25px auto;
+    text-align: center;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#sh-profile-screenshot{
+    width: 960px;
+    margin: 30px auto;
+    text-align: center;
+}
+#sh-network{
+    width: 100%;
+    background: #d35400;
+    text-align: center;
+}
+
+
+
+#sh-w-pic{
+    width: 200px;
+    float: left;
+    margin: 20px 0 0 100px;
+}
+
+#sh-w-writeup{
+    width: 700px;
+    margin: 50px 50px 0 0;
+    padding: 0px 10px 10px 100px;
+}
+
+
+.testimonial-container{
+    padding: 40px 40px 20px 40px;
+}
+
+.testi-pic{
+    float: left;
+    width: 80px;
+}
+
+.testi-box{
+    width: 600px;
+    float: right;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+.trial-btn{
+    width: 460px;
+    height: 60px;
+    margin: 30px auto 30px auto;
+    padding: 10px 45px 10px 45px;
+
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.trial-btn a {
+    background: #27ae60;
+    width: 460px;
+    height: 60px;
+    margin: 30px auto 0 auto;
+    padding: 10px 45px 10px 45px;
+
+
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+}
+
+.trial-btn a:hover {
+    background: #30c26e;
+    width: 460px;
+    height: 60px;
+    margin: 30px auto 0 auto;
+    padding: 10px 45px 10px 45px;
+
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
