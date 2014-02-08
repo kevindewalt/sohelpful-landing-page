@@ -38,6 +38,10 @@ img {
     vertical-align: middle;
 }
 
+img.responsive-image{
+  max-width: 100%;
+}
+
 fieldset {
     border: 0;
     margin: 0;
@@ -46,6 +50,10 @@ fieldset {
 
 textarea {
     resize: vertical;
+}
+
+.clear{
+    clear: both;
 }
 
 .chromeframe {
@@ -70,7 +78,7 @@ textarea {
 
 // For smartphones and personal (small) mobile devices. Typically 30em.
 @mixin mq-personal {
-  @media  (max-width: 30em) {
+  @media  (max-width: 35em) {
     @content;
   }
 }
@@ -102,32 +110,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 -------*/
 
-#intro h1 {
-    font: 50px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-
-    @include mq-personal {
-      font: 30px 'Roboto Slab', serif;
-    }
-
-}
-
-#intro h2{
-    font: 24px 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 30px 0 70px 0;
-
-}
-
-#sub-intro h3{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: regular;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-}
 
 .title h1{
     font: 50px 'Roboto Slab', serif;
@@ -135,6 +117,9 @@ font-family: 'Roboto Slab', serif;
     color: #ffffff;
     margin: 0;
     text-align: center;
+    @include mq-personal {
+      font: 30px 'Roboto Slab', serif;
+    }
 }
 
 .title-s h1{
@@ -305,6 +290,56 @@ td p{
 /*----- end of  Typography  -------*/
 
 
+/*------Common to all -------------*/
+
+
+.content-container{
+ padding: 20px 0 20px 0;
+}
+
+.line-separator{
+    background: url(../img/line-separator.jpg) repeat-x;
+    height: 4px;
+    width: 100%;
+}
+
+.trial-btn{
+  margin: 0 0 60px 0;
+
+    a {
+        background: #27ae60;
+        width: 100%;
+        height: 60px;
+        margin: 30px auto 0 auto;
+        padding: 10px 45px 10px 45px;
+
+        font: 28px 'Roboto Slab', serif;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+
+        @include mq-personal {
+        font: 14px 'Roboto Slab', serif;
+        }
+
+        -webkit-border-radius: 3px 3px 3px 3px;
+        border-radius: 3px 3px 3px 3px;
+
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+        &:hover {
+            background: #30c26e;
+       }
+
+    }
+
+}
+
+
+/*-------End Common to all--------*/
+
+
 
 /*----- Header -------------------*/
 
@@ -358,25 +393,18 @@ header{
     font: 16px 'Roboto Slab', serif;
     font-weight: regular;
     color: #f1c40f;
+
+    @include mq-personal {
+    font: 12px 'Roboto Slab', serif;
+    }
 }
 
 
 /*--------End of Header --------*/
 
 
-.clear{
-    clear: both;
-}
 
-img.responsive-image{
-  max-width: 100%;
-}
-
-#page-wrapper{
-    width: 100%;
-}
-
-
+/*--------Intro ----------------*/
 
 
 #intro{
@@ -385,19 +413,44 @@ img.responsive-image{
     padding: 30px 0 0 0;
     text-align: center;
 
+    h1 {
+        font: 50px 'Roboto Slab', serif;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0;
+
+        @include mq-personal {
+          font: 24px 'Roboto Slab', serif;
+        }
+      }
+
+    h2 {
+        font: 24px 'Roboto Slab', serif;
+        font-weight: 300;
+        color: #ffffff;
+        margin: 30px 0 70px 0;
+
+        @include mq-personal {
+          font: 18px 'Roboto Slab', serif;
+        }
+      }
 }
 
-/*#intro-container{
-    width: 960px;
-    margin: auto;
-    text-align: center;
+
+
+/*-------End of Intro--------------*/
+
+
+/*-------Sub-Intro----------------*/
+
+
+#sub-intro h3{
+    font: 16px 'Roboto Slab', serif;
+    font-weight: regular;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
 }
-*/
-.content-container{
-/*    width: 960px;
-    margin: auto;
- */   padding: 20px 0 20px 0;
-}
+
 
 #sub-intro{
     width: 100%;
@@ -413,11 +466,6 @@ img.responsive-image{
 #si-right{
 }
 
-.line-separator{
-    background: url(../img/line-separator.jpg) repeat-x;
-    height: 4px;
-    width: 100%;
-}
 .line-separator-white{
     background: #ffffff;
     height: 4px;
@@ -595,61 +643,6 @@ img.responsive-image{
 }
 
 
-
-.trial-btn{
-    width: 100%;
-    max-width: 100%;
-    height: 60px;
-    margin: 30px auto 30px auto;
-    padding: 10px 45px 10px 45px;
-    text-align: center;
-
-    font: 28px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-
-}
-
-.trial-btn a {
-    background: #27ae60;
-    width: 100%;
-    height: 60px;
-    margin: 30px auto 0 auto;
-    padding: 10px 45px 10px 45px;
-
-
-    font: 28px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
-
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-
-}
-
-.trial-btn a:hover {
-    background: #30c26e;
-    width: 100%;
-    height: 60px;
-    margin: 30px auto 0 auto;
-    padding: 10px 45px 10px 45px;
-
-    font: 28px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
-
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-}
 
 
 /* ==========================================================================
