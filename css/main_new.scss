@@ -168,6 +168,10 @@ font-family: 'Roboto Slab', serif;
     color: #362f2d;
     margin: 0;
     text-align: center;
+
+    @include mq-personal {
+      font: 24px 'Roboto Slab', serif;
+    }
 }
 
 

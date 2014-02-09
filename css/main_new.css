@@ -106,6 +106,9 @@ font-family: 'Roboto Slab', serif;
   color: #362f2d;
   margin: 0;
   text-align: center; }
+  @media (max-width: 35em) {
+    .title-dark-xs h1 {
+      font: 24px 'Roboto Slab', serif; } }
 
 .td-title {
   font: 16px 'Roboto Slab', serif;
