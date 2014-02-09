@@ -222,7 +222,7 @@ td p {
       background: #30c26e; }
 
 @media (max-width: 35em) {
-  .not-mobile {
+  .not-phone {
     display: none; } }
 
 /*-------End Common to all--------*/
@@ -438,18 +438,18 @@ header {
 /*--------Testimonials----------*/
 #sh-testimonials {
   background: #f1c40f; }
-  #sh-testimonials h2 {
+
+#sh-testimonials-subheading {
+  margin: 30px 0 50px 0; }
+  #sh-testimonials-subheading h2 {
     font: 24px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
     margin: 10px 0 10px 0; }
     @media (max-width: 35em) {
-      #sh-testimonials h2 {
+      #sh-testimonials-subheading h2 {
         font: 16px 'Roboto Slab', serif;
         font-weight: 300; } }
-
-#sh-testimonials-subheading {
-  margin: 30px 0 50px 0; }
 
 #sh-t-table {
   background: #ffffff;
@@ -481,6 +481,20 @@ header {
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px; }
 
+.testimonial-container {
+  padding: 40px 40px 20px 40px; }
+
+.testi-pic {
+  float: left;
+  width: 10%; }
+
+.testi-box {
+  width: 85%;
+  margin-left: 5%;
+  float: right;
+  text-align: left;
+  margin-bottom: 20px; }
+
 /*--------End Testimonials----------*/
 #sh-profile-screenshot {
   margin: 30px auto;
@@ -500,20 +514,6 @@ header {
   width: 70%;
   margin: 50px 50px 0 0;
   padding: 0px 10px 10px 100px; }
-
-.testimonial-container {
-  padding: 40px 40px 20px 40px; }
-
-.testi-pic {
-  float: left;
-  width: 10%; }
-
-.testi-box {
-  width: 85%;
-  margin-left: 5%;
-  float: right;
-  text-align: left;
-  margin-bottom: 20px; }
 
 /* ==========================================================================
    Helper classes

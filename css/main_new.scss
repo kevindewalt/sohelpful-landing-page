@@ -316,7 +316,7 @@ td p{
   }
 }
 
-.not-mobile {
+.not-phone {
   @include mq-personal {
     display: none;
   }
@@ -634,6 +634,10 @@ header{
 
 #sh-testimonials{
   background: #f1c40f;
+}
+
+#sh-testimonials-subheading{
+  margin: 30px 0 50px 0;
 
   h2{
     font: 24px 'Roboto Slab', serif;
@@ -645,10 +649,6 @@ header{
       @include mobile-readable-font;
     }
   }
-}
-
-#sh-testimonials-subheading{
-  margin: 30px 0 50px 0;
 }
 
 #sh-t-table{
@@ -688,6 +688,25 @@ header{
     border-radius: 3px 3px 3px 3px;
 }
 
+.testimonial-container{
+    padding: 40px 40px 20px 40px;
+}
+
+.testi-pic{
+    float: left;
+    width: 10%;
+}
+
+.testi-box{
+    width: 85%;
+    margin-left: 5%;
+    float: right;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
 
 /*--------End Testimonials----------*/
 
@@ -715,23 +734,6 @@ header{
     padding: 0px 10px 10px 100px;
 }
 
-
-.testimonial-container{
-    padding: 40px 40px 20px 40px;
-}
-
-.testi-pic{
-    float: left;
-    width: 10%;
-}
-
-.testi-box{
-    width: 85%;
-    margin-left: 5%;
-    float: right;
-    text-align: left;
-    margin-bottom: 20px;
-}
 
 
 
