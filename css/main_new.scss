@@ -83,12 +83,16 @@ textarea {
   }
 }
 
-$mobile-readable-font: 16px 'Roboto Slab', serif;
-
 @mixin mobile-readable-font {
   font: 16px 'Roboto Slab', serif;
   font-weight: 300;
 }
+
+@mixin mobile-table-font {
+  font: 12px 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
 
 @media only screen and (min-width: 35em) {
 
@@ -167,22 +171,16 @@ font-family: 'Roboto Slab', serif;
 }
 
 
-
-.sh-t-h2 h2{
-    font: 25px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-    text-align: center;
-}
-
-
 .td-title{
     font: 16px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 10px 0 10px 0;
     text-align: center;
+
+    @include mq-personal {
+      @include mobile-table-font
+    }
 }
 
 td{
@@ -194,6 +192,10 @@ td p{
     font-weight: 400;
     color: #362f2d;
     margin: 0;
+
+    @include mq-personal {
+      @include mobile-table-font
+    }
 }
 
 .td-center-gray p{
@@ -201,6 +203,10 @@ td p{
     font-weight: 400;
     color: #362f2d;
     margin: 0;
+
+    @include mq-personal {
+      @include mobile-table-font
+    }
 }
 
 .td-center-white p{
@@ -208,6 +214,10 @@ td p{
     font-weight: 400;
     color: #362f2d;
     margin: 0;
+
+    @include mq-personal {
+      @include mobile-table-font
+    }
 }
 
 #sh-network h2{
@@ -276,6 +286,7 @@ td p{
 
 .trial-btn{
   margin: 0 0 60px 0;
+  text-align: center;
 
   a {
     background: #27ae60;
@@ -303,6 +314,13 @@ td p{
         background: #30c26e;
    }
   }
+}
+
+.not-mobile {
+  @include mq-personal {
+    display: none;
+  }
+
 }
 
 
@@ -603,19 +621,34 @@ header{
     padding: 8px 0 8px 0;
 }
 
-#sh-sched-trial-btn{
-  text-align: center;
-}
-
 .sh-sched-desc-text{
     float: right;
     margin-left: 5%;
     width: 85%;
 }
 
-#sh-testimonials{
-    background: #f1c40f;
+/*-------End SH-Scheudle--------*/
 
+
+/*--------Testimonials----------*/
+
+#sh-testimonials{
+  background: #f1c40f;
+
+  h2{
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+
+    @include mq-personal {
+      @include mobile-readable-font;
+    }
+  }
+}
+
+#sh-testimonials-subheading{
+  margin: 30px 0 50px 0;
 }
 
 #sh-t-table{
@@ -626,9 +659,6 @@ header{
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
 }
-
-
-/*-------End SH-Scheudle--------*/
 
 
 .table-head{
@@ -657,6 +687,9 @@ header{
     -webkit-border-radius: 3px 3px 3px 3px;
     border-radius: 3px 3px 3px 3px;
 }
+
+
+/*--------End Testimonials----------*/
 
 #sh-profile-screenshot{
     margin: 30px auto;

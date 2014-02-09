@@ -107,19 +107,16 @@ font-family: 'Roboto Slab', serif;
   margin: 0;
   text-align: center; }
 
-.sh-t-h2 h2 {
-  font: 25px 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #362f2d;
-  margin: 10px 0 10px 0;
-  text-align: center; }
-
 .td-title {
   font: 16px 'Roboto Slab', serif;
   font-weight: bold;
   color: #ffffff;
   margin: 10px 0 10px 0;
   text-align: center; }
+  @media (max-width: 35em) {
+    .td-title {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
 
 td {
   padding: 8px; }
@@ -129,18 +126,30 @@ td p {
   font-weight: 400;
   color: #362f2d;
   margin: 0; }
+  @media (max-width: 35em) {
+    td p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
 
 .td-center-gray p {
   font: 16px 'Roboto Slab', serif;
   font-weight: 400;
   color: #362f2d;
   margin: 0; }
+  @media (max-width: 35em) {
+    .td-center-gray p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
 
 .td-center-white p {
   font: 16px 'Roboto Slab', serif;
   font-weight: 400;
   color: #362f2d;
   margin: 0; }
+  @media (max-width: 35em) {
+    .td-center-white p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
 
 #sh-network h2 {
   font: 18px 'Roboto Slab', serif;
@@ -190,7 +199,8 @@ td p {
   width: 100%; }
 
 .trial-btn {
-  margin: 0 0 60px 0; }
+  margin: 0 0 60px 0;
+  text-align: center; }
   .trial-btn a {
     background: #27ae60;
     width: 100%;
@@ -210,6 +220,10 @@ td p {
         font: 14px 'Roboto Slab', serif; } }
     .trial-btn a:hover {
       background: #30c26e; }
+
+@media (max-width: 35em) {
+  .not-mobile {
+    display: none; } }
 
 /*-------End Common to all--------*/
 /*----- Header -------------------*/
@@ -415,16 +429,27 @@ header {
   width: 10%;
   padding: 8px 0 8px 0; }
 
-#sh-sched-trial-btn {
-  text-align: center; }
-
 .sh-sched-desc-text {
   float: right;
   margin-left: 5%;
   width: 85%; }
 
+/*-------End SH-Scheudle--------*/
+/*--------Testimonials----------*/
 #sh-testimonials {
   background: #f1c40f; }
+  #sh-testimonials h2 {
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
+    @media (max-width: 35em) {
+      #sh-testimonials h2 {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 300; } }
+
+#sh-testimonials-subheading {
+  margin: 30px 0 50px 0; }
 
 #sh-t-table {
   background: #ffffff;
@@ -434,7 +459,6 @@ header {
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px; }
 
-/*-------End SH-Scheudle--------*/
 .table-head {
   background: #3498db; }
 
@@ -457,6 +481,7 @@ header {
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px; }
 
+/*--------End Testimonials----------*/
 #sh-profile-screenshot {
   margin: 30px auto;
   text-align: center; }
