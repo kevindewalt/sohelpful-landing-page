@@ -1,3 +1,19 @@
+/*-------FILE ORGANIZATION--------------*/
+/*  HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
+/*  Media Queries  */
+/*  Common to all sections  */
+/*  Individual sections  */
+/*----Header -------------------*/
+/*----Intro ----------------*/
+/*----Sub-Intro----------------*/
+/*----How SH Works------------*/
+/*----Benefits --------------*/
+/*----SH-Schedule----------*/
+/*----Testimonials----------*/
+/*----Profile--------------------*/
+/*----Network--------------------*/
+/*----Writeup------------------*/
+/*  Print styles  */
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -15,18 +31,6 @@ body {
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
 
 img {
   vertical-align: middle; }
@@ -55,14 +59,8 @@ textarea {
    Media Queries
    ========================================================================== */
 /* ==========================================================================
-   Author's custom styles
+    Common to all sections
    ========================================================================== */
-/*----- Typography
-
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
--------*/
 .title h1 {
   font: 50px 'Roboto Slab', serif;
   font-weight: bold;
@@ -157,28 +155,6 @@ td p {
       font: 12px 'Roboto Slab', serif;
       font-weight: 300; } }
 
-.testi-name {
-  font: 16px 'Roboto Slab', serif;
-  font-weight: bold;
-  color: #362f2d;
-  margin: 0;
-  float: left; }
-
-.testi-loc {
-  font: 16px 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #362f2d;
-  margin: 0; }
-
-.testi-text {
-  font: 14px 'Roboto Slab', serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #362f2d;
-  margin: 10px 0 10px 0; }
-
-/*----- end of  Typography  -------*/
-/*------Common to all -------------*/
 .content-container {
   padding: 20px 0 20px 0; }
 
@@ -219,7 +195,9 @@ td p {
   .not-phone {
     display: none; } }
 
-/*-------End Common to all--------*/
+/* ==========================================================================
+   Individual sections
+   ========================================================================== */
 /*----- Header -------------------*/
 header {
   background: #c0392b;
@@ -489,6 +467,26 @@ header {
   text-align: left;
   margin-bottom: 20px; }
 
+.testi-name {
+  font: 16px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  float: left; }
+
+.testi-loc {
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0; }
+
+.testi-text {
+  font: 14px 'Roboto Slab', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #362f2d;
+  margin: 10px 0 10px 0; }
+
 /*--------End Testimonials----------*/
 /*--------Profile--------------------*/
 #sh-profile-screenshot {
@@ -542,60 +540,9 @@ header {
 
 /*--------End Writeup--------------*/
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px; }
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
-
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-.invisible {
-  visibility: hidden; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  *zoom: 1; }
-
-/* ==========================================================================
    Print styles
    ========================================================================== */
+/*---I'm not sure what the stuff below does...if anything at all. --Kevin 2/10/2014*/
 @media print {
   * {
     background: transparent !important;

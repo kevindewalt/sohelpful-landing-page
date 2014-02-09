@@ -1,3 +1,25 @@
+/*-------FILE ORGANIZATION--------------*/
+
+/*  HTML5 Boilerplate styles - h5bp.com (generated via initializr.com) */
+/*  Media Queries  */
+/*  Common to all sections  */
+/*  Individual sections  */
+/*----Header -------------------*/
+/*----Intro ----------------*/
+/*----Sub-Intro----------------*/
+/*----How SH Works------------*/
+/*----Benefits --------------*/
+/*----SH-Schedule----------*/
+/*----Testimonials----------*/
+/*----Profile--------------------*/
+/*----Network--------------------*/
+/*----Writeup------------------*/
+/*  Print styles  */
+
+
+
+
+
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -20,19 +42,6 @@ body {
     text-shadow: none;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 img {
     vertical-align: middle;
@@ -94,172 +103,118 @@ textarea {
 }
 
 
-@media only screen and (min-width: 35em) {
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
-
-
-
 /* ==========================================================================
-   Author's custom styles
+    Common to all sections
    ========================================================================== */
 
-
-/*----- Typography
-
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
--------*/
-
-
 .title h1{
-    font: 50px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
-    @include mq-personal {
-      font: 30px 'Roboto Slab', serif;
-    }
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+
+  @include mq-personal {
+    font: 30px 'Roboto Slab', serif;
+  }
 }
 
 .title-s h1{
-    font: 36px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
 
-    @include mq-personal {
-      font: 24px 'Roboto Slab', serif;
-    }
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
 }
 
 .title-dark h1{
-    font: 50px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 0;
-    text-align: center;
-    @include mq-personal {
-      font: 30px 'Roboto Slab', serif;
-    }
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
 
+  @include mq-personal {
+    font: 30px 'Roboto Slab', serif;
+  }
 }
 
 .title-dark-s h1{
-    font: 36px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 0;
-    text-align: center;
-    @include mq-personal {
-      font: 24px 'Roboto Slab', serif;
-    }
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
 }
 
 .title-dark-xs h1{
-    font: 30px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 0;
-    text-align: center;
+  font: 30px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
 
-    @include mq-personal {
-      font: 24px 'Roboto Slab', serif;
-    }
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
 }
 
 
 .td-title{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 10px 0 10px 0;
-    text-align: center;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0 10px 0;
+  text-align: center;
 
-    @include mq-personal {
-      @include mobile-table-font
-    }
+  @include mq-personal {
+    @include mobile-table-font
+  }
 }
 
 td{
-    padding: 8px;
+  padding: 8px;
 }
 
 td p{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 0;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
 
-    @include mq-personal {
-      @include mobile-table-font
-    }
+  @include mq-personal {
+    @include mobile-table-font
+  }
 }
 
 .td-center-gray p{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 0;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
 
-    @include mq-personal {
-      @include mobile-table-font
-    }
+  @include mq-personal {
+    @include mobile-table-font
+  }
 }
 
 .td-center-white p{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 0;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
 
-    @include mq-personal {
-      @include mobile-table-font
-    }
+  @include mq-personal {
+    @include mobile-table-font
+  }
 }
-
-
-.testi-name{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 0;
-    float: left;
-
-}
-
-.testi-loc{
-    font: 16px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 0;
-
-}
-
-.testi-text{
-    font: 14px 'Roboto Slab', serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-}
-
-
-/*----- end of  Typography  -------*/
-
-
-/*------Common to all -------------*/
-
 
 .content-container{
   padding: 20px 0 20px 0;
@@ -318,16 +273,17 @@ td p{
 }
 
 
-/*-------End Common to all--------*/
-
+/* ==========================================================================
+   Individual sections
+   ========================================================================== */
 
 
 /*----- Header -------------------*/
 
 header{
-    background: #c0392b;
-    height: 48px;
-    padding-top: 7px;
+  background: #c0392b;
+  height: 48px;
+  padding-top: 7px;
 }
 
 #logo{
@@ -335,49 +291,46 @@ header{
   @include mq-personal {
     max-width: 30%;
   }
-
 }
 
 #head-login{
-    float: right;
-    text-align: right;
-
+  float: right;
+  text-align: right;
 }
 
 #head-login ul{
-    list-style-type:none;
-    display: inline;
-    padding: 0;
-    margin: 0;
+  list-style-type:none;
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
 #head-login li{
-    float: left;
-    margin: 0 5px 0 5px;
-    color: #ffffff;
-
+  float: left;
+  margin: 0 5px 0 5px;
+  color: #ffffff;
 }
 
 #head-login a{
-    text-decoration: none;
-    font: 16px 'Roboto Slab', serif;
-    font-weight: regular;
-    color: #ffffff;
+  text-decoration: none;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: regular;
+  color: #ffffff;
 
-    @include mq-personal {
-    font: 12px 'Roboto Slab', serif;
-    }
+  @include mq-personal {
+  font: 12px 'Roboto Slab', serif;
+  }
 }
 
 #head-login a:hover{
-    text-decoration: none;
-    font: 16px 'Roboto Slab', serif;
-    font-weight: regular;
-    color: #f1c40f;
+  text-decoration: none;
+  font: 16px 'Roboto Slab', serif;
+  font-weight: regular;
+  color: #f1c40f;
 
-    @include mq-personal {
-    font: 12px 'Roboto Slab', serif;
-    }
+  @include mq-personal {
+  font: 12px 'Roboto Slab', serif;
+  }
 }
 
 
@@ -395,27 +348,27 @@ header{
   text-align: center;
 
   h1 {
-      font: 50px 'Roboto Slab', serif;
-      font-weight: bold;
-      color: #ffffff;
-      margin: 0;
+    font: 50px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
 
-      @include mq-personal {
-        font: 24px 'Roboto Slab', serif;
-      }
+    @include mq-personal {
+      font: 24px 'Roboto Slab', serif;
     }
+  }
 
   h2 {
-      font: 24px 'Roboto Slab', serif;
-      font-weight: 300;
-      color: #ffffff;
-      margin: 30px 0 70px 0;
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 30px 0 70px 0;
 
-      @include mq-personal {
-        font: 18px 'Roboto Slab', serif;
-        font-weight: 300;
-      }
+    @include mq-personal {
+      font: 18px 'Roboto Slab', serif;
+      font-weight: 300;
     }
+  }
 }
 
 
@@ -439,7 +392,6 @@ header{
 #si-left{
   padding-right: 20px;
   margin-top: 50px;
-
 }
 
 #si-right{
@@ -510,13 +462,13 @@ header{
 }
 
 .benefits-icon{
-    width: 10%;
-    float: left;
+  width: 10%;
+  float: left;
 }
 
 
 .benefits-b-e-c{
-    margin: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 
@@ -532,11 +484,11 @@ header{
     font-weight: 400;
     color: #362f2d;
     margin: 10px 0 10px 0;
+
     @include mq-personal {
       @include mobile-readable-font;
     }
   }
-
 }
 
 #sh-sched-desc-c{
@@ -598,27 +550,28 @@ header{
 
 #sh-sched-desc-left{
   padding-right: 20px;
-    float: left;
+  float: left;
 }
 
 #sh-sched-desc-right{
-    float: right;
+  float: right;
 }
 
 .sh-sched-desc-e{
-    margin: 5px 0 5px 0;
-    padding: 5px;
+  margin: 5px 0 5px 0;
+  padding: 5px;
 }
+
 .sh-sched-desc-icon{
-    float: left;
-    width: 10%;
-    padding: 8px 0 8px 0;
+  float: left;
+  width: 10%;
+  padding: 8px 0 8px 0;
 }
 
 .sh-sched-desc-text{
-    float: right;
-    margin-left: 5%;
-    width: 85%;
+  float: right;
+  margin-left: 5%;
+  width: 85%;
 }
 
 /*-------End SH-Scheudle--------*/
@@ -646,58 +599,82 @@ header{
 }
 
 #sh-t-table{
-    background: #ffffff;
-    width: 90%;
-    margin: 30px 5% 50px 5%;
-    overflow: hidden;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
+  background: #ffffff;
+  width: 90%;
+  margin: 30px 5% 50px 5%;
+  overflow: hidden;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 
 .table-head{
-    background: #3498db;
+  background: #3498db;
 }
 
 .td-gray{
-    background: #e5e5e5;
+  background: #e5e5e5;
 }
 
 .td-center-gray{
-    text-align: center;
-    background: #e5e5e5;
+  text-align: center;
+  background: #e5e5e5;
 }
 
 .td-center-white{
-    text-align: center;
-    background: #ffffff;
+  text-align: center;
+  background: #ffffff;
 }
 
 #testimonial-ss{
-    width: 80%;
-    background: #fff;
-    margin: 25px auto;
-    text-align: center;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
+  width: 80%;
+  background: #fff;
+  margin: 25px auto;
+  text-align: center;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .testimonial-container{
-    padding: 40px 40px 20px 40px;
+  padding: 40px 40px 20px 40px;
 }
 
 .testi-pic{
-    float: left;
-    width: 10%;
+  float: left;
+  width: 10%;
 }
 
 .testi-box{
-    width: 85%;
-    margin-left: 5%;
-    float: right;
-    text-align: left;
-    margin-bottom: 20px;
+  width: 85%;
+  margin-left: 5%;
+  float: right;
+  text-align: left;
+  margin-bottom: 20px;
 }
+
+.testi-name{
+  font: 16px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  float: left;
+}
+
+.testi-loc{
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
+}
+
+.testi-text{
+  font: 14px 'Roboto Slab', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #362f2d;
+  margin: 10px 0 10px 0;
+}
+
 
 /*--------End Testimonials----------*/
 
@@ -705,8 +682,8 @@ header{
 /*--------Profile--------------------*/
 
 #sh-profile-screenshot{
-    margin: 30px auto;
-    text-align: center;
+  margin: 30px auto;
+  text-align: center;
 }
 
 
@@ -770,79 +747,31 @@ header{
       color: #362f2d;
       margin: 10px 0 10px 0;
     }
-//    @include mobile-readable-font;
-//    text-align: left;
   }
 }
 
 /*--------End Writeup--------------*/
 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
 
 /* ==========================================================================
    Print styles
    ========================================================================== */
+
+/*---I'm not sure what the stuff below does...if anything at all. --Kevin 2/10/2014*/
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+
 
 @media print {
     * {
