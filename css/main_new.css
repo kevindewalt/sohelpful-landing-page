@@ -157,18 +157,6 @@ td p {
       font: 12px 'Roboto Slab', serif;
       font-weight: 300; } }
 
-#sh-network h2 {
-  font: 18px 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #ffffff;
-  margin: 10px 0 10px 0; }
-
-#sh-w-writeup p {
-  font: 18px 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #362f2d;
-  margin: 10px 0 10px 0; }
-
 .testi-name {
   font: 16px 'Roboto Slab', serif;
   font-weight: bold;
@@ -528,16 +516,31 @@ header {
   margin: 70px 0; }
 
 /*--------End Network--------------------*/
+/*--------Writeup------------------*/
 #sh-w-pic {
   float: left;
-  margin: 20px 0 0 100px; }
+  margin: 20px 20px 0 100px; }
 
 .sh-w-writeup {
   width: 70%;
   margin: 50px 50px 0 0;
   padding: 0px 10px 10px 100px; }
+  .sh-w-writeup p {
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
+  @media (max-width: 35em) {
+    .sh-w-writeup {
+      width: 100%;
+      padding: 0px 0px 0px 0px; }
+      .sh-w-writeup p {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 400;
+        color: #362f2d;
+        margin: 10px 0 10px 0; } }
 
-/*------End Network----------------*/
+/*--------End Writeup--------------*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

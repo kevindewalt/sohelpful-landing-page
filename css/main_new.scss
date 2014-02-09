@@ -228,20 +228,6 @@ td p{
     }
 }
 
-#sh-network h2{
-    font: 18px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #ffffff;
-    margin: 10px 0 10px 0;
-}
-
-#sh-w-writeup p{
-    font: 18px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-}
-
 
 .testi-name{
     font: 16px 'Roboto Slab', serif;
@@ -754,19 +740,42 @@ header{
 /*--------End Network--------------------*/
 
 
-#sh-w-pic{
+/*--------Writeup------------------*/
+
+
+#sh-w-pic {
   float: left;
-  margin: 20px 0 0 100px;
+  margin: 20px 20px 0 100px;
 }
 
-.sh-w-writeup{
+.sh-w-writeup {
   width: 70%;
   margin: 50px 50px 0 0;
   padding: 0px 10px 10px 100px;
+
+  p {
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+  }
+
+  @include mq-personal {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+
+    p {
+      font: 16px 'Roboto Slab', serif;
+      font-weight: 400;
+      color: #362f2d;
+      margin: 10px 0 10px 0;
+    }
+//    @include mobile-readable-font;
+//    text-align: left;
+  }
 }
 
-
-/*------End Network----------------*/
+/*--------End Writeup--------------*/
 
 
 /* ==========================================================================
