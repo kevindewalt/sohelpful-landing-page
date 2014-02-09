@@ -79,6 +79,9 @@ font-family: 'Roboto Slab', serif;
   color: #ffffff;
   margin: 0;
   text-align: center; }
+  @media (max-width: 35em) {
+    .title-s h1 {
+      font: 24px 'Roboto Slab', serif; } }
 
 .title-dark h1 {
   font: 50px 'Roboto Slab', serif;
@@ -499,17 +502,33 @@ header {
   margin-bottom: 20px; }
 
 /*--------End Testimonials----------*/
+/*--------Profile--------------------*/
 #sh-profile-screenshot {
   margin: 30px auto;
   text-align: center; }
 
+/*------End Profile-----------------*/
+/*--------Network--------------------*/
 #sh-network {
   width: 100%;
   background: #d35400;
   text-align: center; }
+  #sh-network h2 {
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 30px 0 30px 0; }
+    @media (max-width: 35em) {
+      #sh-network h2 {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 300;
+        text-align: left; } }
 
+#sh-network-chat {
+  margin: 70px 0; }
+
+/*--------End Network--------------------*/
 #sh-w-pic {
-  /*    width: 200px;*/
   float: left;
   margin: 20px 0 0 100px; }
 
@@ -518,6 +537,7 @@ header {
   margin: 50px 50px 0 0;
   padding: 0px 10px 10px 100px; }
 
+/*------End Network----------------*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
