@@ -83,7 +83,12 @@ textarea {
   }
 }
 
+$mobile-readable-font: 16px 'Roboto Slab', serif;
 
+@mixin mobile-readable-font {
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 300;
+}
 
 @media only screen and (min-width: 35em) {
 
@@ -136,6 +141,10 @@ font-family: 'Roboto Slab', serif;
     color: #362f2d;
     margin: 0;
     text-align: center;
+    @include mq-personal {
+      font: 30px 'Roboto Slab', serif;
+    }
+
 }
 
 .title-dark-s h1{
@@ -144,6 +153,9 @@ font-family: 'Roboto Slab', serif;
     color: #362f2d;
     margin: 0;
     text-align: center;
+    @include mq-personal {
+      font: 24px 'Roboto Slab', serif;
+    }
 }
 
 .title-dark-xs h1{
@@ -154,20 +166,6 @@ font-family: 'Roboto Slab', serif;
     text-align: center;
 }
 
-#how-sh-works h3{
-    font: 20px 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 10px 0 10px 0;
-
-}
-
-#benefits-of-sh h3{
-    font: 20px 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-}
 
 #sh-schedule,  h2{
     font: 25px 'Roboto Slab', serif;
@@ -294,46 +292,51 @@ td p{
 
 
 .content-container{
- padding: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 
 .line-separator{
-    background: url(../img/line-separator.jpg) repeat-x;
-    height: 4px;
-    width: 100%;
+  background: url(../img/line-separator.jpg) repeat-x;
+  height: 4px;
+  width: 100%;
 }
+
+.line-separator-white{
+  background: #ffffff;
+  height: 4px;
+  width: 100%;
+}
+
 
 .trial-btn{
   margin: 0 0 60px 0;
 
-    a {
-        background: #27ae60;
-        width: 100%;
-        height: 60px;
-        margin: 30px auto 0 auto;
-        padding: 10px 45px 10px 45px;
+  a {
+    background: #27ae60;
+    width: 100%;
+    height: 60px;
+    margin: 30px auto 0 auto;
+    padding: 10px 45px 10px 45px;
 
-        font: 28px 'Roboto Slab', serif;
-        font-weight: bold;
-        color: #ffffff;
-        text-decoration: none;
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
 
-        @include mq-personal {
-        font: 14px 'Roboto Slab', serif;
-        }
-
-        -webkit-border-radius: 3px 3px 3px 3px;
-        border-radius: 3px 3px 3px 3px;
-
-        -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-        box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
-
-        &:hover {
-            background: #30c26e;
-       }
-
+    @include mq-personal {
+    font: 14px 'Roboto Slab', serif;
     }
 
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+    &:hover {
+        background: #30c26e;
+   }
+  }
 }
 
 
@@ -408,32 +411,33 @@ header{
 
 
 #intro{
-    width: 100%;
-    background: #d35400;
-    padding: 30px 0 0 0;
-    text-align: center;
+  width: 100%;
+  background: #d35400;
+  padding: 30px 0 0 0;
+  text-align: center;
 
-    h1 {
-        font: 50px 'Roboto Slab', serif;
-        font-weight: bold;
-        color: #ffffff;
-        margin: 0;
+  h1 {
+      font: 50px 'Roboto Slab', serif;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
 
-        @include mq-personal {
-          font: 24px 'Roboto Slab', serif;
-        }
-      }
-
-    h2 {
+      @include mq-personal {
         font: 24px 'Roboto Slab', serif;
-        font-weight: 300;
-        color: #ffffff;
-        margin: 30px 0 70px 0;
-
-        @include mq-personal {
-          font: 18px 'Roboto Slab', serif;
-        }
       }
+    }
+
+  h2 {
+      font: 24px 'Roboto Slab', serif;
+      font-weight: 300;
+      color: #ffffff;
+      margin: 30px 0 70px 0;
+
+      @include mq-personal {
+        font: 18px 'Roboto Slab', serif;
+        font-weight: 300;
+      }
+    }
 }
 
 
@@ -444,60 +448,87 @@ header{
 /*-------Sub-Intro----------------*/
 
 
-#sub-intro h3{
+#sub-intro{
+
+  h3{
     font: 16px 'Roboto Slab', serif;
-    font-weight: regular;
     color: #362f2d;
     margin: 10px 0 10px 0;
-}
-
-
-#sub-intro{
-    width: 100%;
+  }
 }
 
 
 #si-left{
   padding-right: 20px;
-    margin-top: 50px;
+  margin-top: 50px;
 
 }
 
 #si-right{
 }
 
-.line-separator-white{
-    background: #ffffff;
-    height: 4px;
-    width: 100%;
-}
+
+/*--------End Sub-Intro----------*/
+
+
+/*-------How SH Works------------*/
+
 
 #how-sh-works{
-    background: #2980b9;
-/*    width: 100%;*/
-    padding: 20px 0 20px 0;
-    text-align: center;
-}
+  background: #2980b9;
+  padding: 20px 0 20px 0;
+  text-align: center;
 
+  h3{
+    font: 20px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+
+    @include mq-personal {
+      @include mobile-readable-font;
+    }
+  }
+}
 
 .h-sh-w-image{
-/*    width: 960px;*/
-    margin: 15px auto 15px auto;
-    text-align: center;
+  margin: 15px auto 15px auto;
+  text-align: center;
 }
 
+
+/*-------End How SH Works--------*/
+
+
+/*--------Benefits --------------*/
+
 #benefits-of-sh{
-/*    width: 100%;*/
-    background: #c0392b;
+  background: #c0392b;
+
+  .benefits-desc{
+    margin-left: 5%;
+    width: 85%;
+    float: right;
+
+    h3{
+      font: 20px 'Roboto Slab', serif;
+      font-weight: 300;
+      color: #362f2d;
+      margin: 0px 0 20px 0;
+
+      @include mq-personal {
+        @include mobile-readable-font;
+      }
+    }
+  }
 }
 
 #benefits-box{
-    background: #ffffff;
-/*    width: 80%;*/
-    margin: 20px auto 20px auto;
-    padding: 30px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
+  background: #ffffff;
+  margin: 20px auto 20px auto;
+  padding: 30px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .benefits-icon{
@@ -505,15 +536,15 @@ header{
     float: left;
 }
 
-.benefits-desc{
-  margin-left: 5%;
-    width: 85%;
-   float: right;
-}
 
 .benefits-b-e-c{
     margin: 20px 0 20px 0;
 }
+
+
+/*--------End Benefits---------*/
+
+
 
 #sh-schedule-left{
 /*    float: left;*/
