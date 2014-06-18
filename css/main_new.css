@@ -12,6 +12,7 @@
 /*----Testimonials----------*/
 /*----Profile--------------------*/
 /*----Network--------------------*/
+/*----Case Studies---------------*/
 /*----Writeup------------------*/
 /*  Print styles  */
 /* ==========================================================================
@@ -499,6 +500,11 @@ header {
   width: 100%;
   background: #d35400;
   text-align: center; }
+  #sh-network .widget-box {
+    background-color: #ffffff;
+    padding: 20px 20px 20px 20px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; }
   #sh-network h2 {
     font: 24px 'Roboto Slab', serif;
     font-weight: 300;
@@ -514,6 +520,42 @@ header {
   margin: 70px 0; }
 
 /*--------End Network--------------------*/
+/*--------Case Studies--------------------*/
+#sh-w-case {
+  width: 100%;
+  font-family: 'Roboto Slab', serif; }
+  #sh-w-case p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
+  #sh-w-case .case-header {
+    text-align: center; }
+  #sh-w-case .case-pic {
+    float: left;
+    width: 40%;
+    margin: 0 15px 5px 0; }
+  #sh-w-case .case-quote {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    color: #362f2d;
+    margin: 20px 0 10px 0; }
+  #sh-w-case .case-read-more {
+    text-align: right;
+    font-size: 14px;
+    margin-right: 10px; }
+  @media (max-width: 35em) {
+    #sh-w-case {
+      width: 100%;
+      padding: 0px 0px 0px 0px; }
+      #sh-w-case p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #362f2d;
+        margin: 10px 0 10px 0; } }
+
+/*--------End Case Studies--------------------*/
 /*--------Writeup------------------*/
 #sh-w-pic {
   float: left;
