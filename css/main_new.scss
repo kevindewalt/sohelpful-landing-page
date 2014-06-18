@@ -695,6 +695,13 @@ header{
   background: #d35400;
   text-align: center;
 
+  .widget-box {
+    background-color: #ffffff;
+    padding: 20px 20px 20px 20px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
   h2 {
     font: 24px 'Roboto Slab', serif;
     font-weight: 300;
