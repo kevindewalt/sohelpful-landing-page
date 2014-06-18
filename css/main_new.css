@@ -12,6 +12,7 @@
 /*----Testimonials----------*/
 /*----Profile--------------------*/
 /*----Network--------------------*/
+/*----Case Studies---------------*/
 /*----Writeup------------------*/
 /*  Print styles  */
 /* ==========================================================================
@@ -514,6 +515,33 @@ header {
   margin: 70px 0; }
 
 /*--------End Network--------------------*/
+/*--------Case Studies--------------------*/
+#sh-w-case {
+  width: 100%; }
+  #sh-w-case p {
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
+  @media (max-width: 35em) {
+    #sh-w-case {
+      width: 100%;
+      padding: 0px 0px 0px 0px; }
+      #sh-w-case p {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 400;
+        color: #362f2d;
+        margin: 10px 0 10px 0; } }
+
+.case-header {
+  text-align: center; }
+
+.case-pic {
+  float: left;
+  width: 40%;
+  margin: 0 15px 5px 0; }
+
+/*--------End Case Studies--------------------*/
 /*--------Writeup------------------*/
 #sh-w-pic {
   float: left;
@@ -587,7 +615,6 @@ header {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {

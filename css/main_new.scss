@@ -13,6 +13,7 @@
 /*----Testimonials----------*/
 /*----Profile--------------------*/
 /*----Network--------------------*/
+/*----Case Studies---------------*/
 /*----Writeup------------------*/
 /*  Print styles  */
 
@@ -712,6 +713,51 @@ header{
 }
 
 /*--------End Network--------------------*/
+
+
+/*--------Case Studies--------------------*/
+
+#sh-w-case {
+  width: 100%;
+//  margin: 50px 50px 0 0;
+//  padding: 0px 10px 10px 100px;
+
+  p {
+    font: 18px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+  }
+
+  @include mq-personal {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+
+    p {
+      font: 16px 'Roboto Slab', serif;
+      font-weight: 400;
+      color: #362f2d;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+.case-header {
+  text-align: center;
+}
+
+.case-pic {
+  float: left;
+  width: 40%;
+  margin: 0 15px 5px 0;
+}
+
+.case-text {
+
+}
+
+
+/*--------End Case Studies--------------------*/
 
 
 /*--------Writeup------------------*/
