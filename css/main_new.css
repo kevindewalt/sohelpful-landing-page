@@ -188,7 +188,8 @@ td p {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
     @media (max-width: 35em) {
       .trial-btn a {
-        font: 14px 'Roboto Slab', serif; } }
+        font: 14px 'Roboto Slab', serif;
+        padding: 10px 10px 10px 10px; } }
     .trial-btn a:hover {
       background: #30c26e; }
 
@@ -204,12 +205,15 @@ header {
   background: #c0392b;
   height: 48px;
   padding-top: 7px; }
+  @media (max-width: 35em) {
+    header {
+      height: 96px; } }
 
 #logo {
   float: left; }
   @media (max-width: 35em) {
     #logo {
-      max-width: 30%; } }
+      max-width: 20%; } }
 
 #head-login {
   float: right;
@@ -268,6 +272,15 @@ header {
       #intro h2 {
         font: 18px 'Roboto Slab', serif;
         font-weight: 300; } }
+  #intro h3 {
+    font: 20px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 30px 0 70px 0; }
+    @media (max-width: 35em) {
+      #intro h3 {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 300; } }
 
 /*-------End of Intro--------------*/
 /*-------Sub-Intro----------------*/
@@ -297,8 +310,12 @@ header {
         font-weight: 300; } }
 
 .h-sh-w-image {
+  width: 50%;
   margin: 15px auto 15px auto;
   text-align: center; }
+  @media (max-width: 35em) {
+    .h-sh-w-image {
+      width: 100%; } }
 
 /*-------End How SH Works--------*/
 /*--------Benefits --------------*/
@@ -415,7 +432,7 @@ header {
 #sh-testimonials-subheading {
   margin: 30px 0 50px 0; }
   #sh-testimonials-subheading h2 {
-    font: 24px 'Roboto Slab', serif;
+    font: 20px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
     margin: 10px 0 10px 0; }
@@ -449,13 +466,13 @@ header {
 #testimonial-ss {
   width: 80%;
   background: #fff;
-  margin: 25px auto;
+  margin: 25px auto 65px auto;
   text-align: center;
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px; }
 
 .testimonial-container {
-  padding: 40px 40px 20px 40px; }
+  padding: 20px 40px 0px 40px; }
 
 .testi-pic {
   float: left;
@@ -490,23 +507,39 @@ header {
 
 /*--------End Testimonials----------*/
 /*--------Profile--------------------*/
-#sh-profile-screenshot {
-  margin: 30px auto;
+#sh-profile .profile-subtitle {
+  margin: 10px auto; }
+  #sh-profile .profile-subtitle h3 {
+    font-weight: 400; }
+#sh-profile #sh-profile-screenshot {
+  margin: 10px auto 25px auto;
+  padding-right: 5%;
   text-align: center; }
+@media (max-width: 35em) {
+  #sh-profile {
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 300;
+    text-align: left;
+    font: 14px 'Roboto Slab', serif; } }
 
 /*------End Profile-----------------*/
-/*--------Network--------------------*/
+/*--------Widget--------------------*/
 #sh-network {
   width: 100%;
   background: #d35400;
   text-align: center; }
+  #sh-network .widget-block {
+    margin-left: 15%;
+    width: 70%;
+    text-align: center; }
   #sh-network .widget-box {
+    width: 60%;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px; }
   #sh-network h2 {
-    font: 24px 'Roboto Slab', serif;
+    font: 20px 'Roboto Slab', serif;
     font-weight: 300;
     color: #ffffff;
     margin: 30px 0 30px 0; }
@@ -514,16 +547,23 @@ header {
       #sh-network h2 {
         font: 16px 'Roboto Slab', serif;
         font-weight: 300;
-        text-align: left; } }
+        text-align: left;
+        font: 16px 'Roboto Slab', serif;
+        margin: 10px 0 10px 0; } }
 
 #sh-network-chat {
   margin: 70px 0; }
 
-/*--------End Network--------------------*/
+/*--------End Widget--------------------*/
 /*--------Case Studies--------------------*/
 #sh-w-case {
   width: 100%;
   font-family: 'Roboto Slab', serif; }
+  #sh-w-case #sh-case-subtitle h2 {
+    font-weight: 300; }
+    @media (max-width: 35em) {
+      #sh-w-case #sh-case-subtitle h2 {
+        font-size: 16px; } }
   #sh-w-case p {
     font-size: 18px;
     font-weight: 400;
@@ -531,22 +571,36 @@ header {
     margin: 10px 0 10px 0; }
   #sh-w-case .case-header {
     text-align: center; }
-  #sh-w-case .case-pic {
+    @media (max-width: 35em) {
+      #sh-w-case .case-header {
+        font-size: 20px; } }
+  #sh-w-case .case-pic img {
     float: left;
     width: 40%;
-    margin: 0 15px 5px 0; }
+    margin: 0 15px 5px 0;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; }
+  #sh-w-case .case-text p {
+    font-size: 16px; }
   #sh-w-case .case-quote {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
     color: #362f2d;
     margin: 20px 0 10px 0; }
+    @media (max-width: 35em) {
+      #sh-w-case .case-quote {
+        font-size: 18px; } }
   #sh-w-case .case-read-more {
     text-align: right;
     font-size: 14px;
     margin-right: 10px; }
+  #sh-w-case .case-study-trial-block {
+    margin: 50px 0 -5px 0; }
   @media (max-width: 35em) {
     #sh-w-case {
+      font: 16px 'Roboto Slab', serif;
+      font-weight: 300;
       width: 100%;
       padding: 0px 0px 0px 0px; }
       #sh-w-case p {
@@ -556,25 +610,58 @@ header {
         margin: 10px 0 10px 0; } }
 
 /*--------End Case Studies--------------------*/
-/*--------Writeup------------------*/
-#sh-w-pic {
-  float: left;
-  margin: 20px 20px 0 100px; }
-
-.sh-w-writeup {
-  width: 70%;
+/*--------Writeup Email course------------------*/
+#sh-writeup-email-course .writeup-sub h3 {
+  font-weight: 400; }
+#sh-writeup-email-course .writeup-sub p {
+  font-size: 16px; }
+@media (max-width: 35em) {
+  #sh-writeup-email-course .writeup-sub {
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 300; }
+    #sh-writeup-email-course .writeup-sub p {
+      font-size: 14px; } }
+#sh-writeup-email-course #sh-w-pic {
+  padding-right: 10%; }
+#sh-writeup-email-course .title-dark-s h2 {
+  text-align: center;
+  margin-bottom: -20px; }
+#sh-writeup-email-course .course-content p, #sh-writeup-email-course .course-form p {
+  font-size: 16px; }
+@media (max-width: 35em) {
+  #sh-writeup-email-course .course-content, #sh-writeup-email-course .course-form {
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 300; }
+    #sh-writeup-email-course .course-content h2, #sh-writeup-email-course .course-form h2 {
+      font-size: 18px; }
+    #sh-writeup-email-course .course-content p, #sh-writeup-email-course .course-content li, #sh-writeup-email-course .course-form p, #sh-writeup-email-course .course-form li {
+      font-size: 14px; }
+    #sh-writeup-email-course .course-content .ck_subscribe_button, #sh-writeup-email-course .course-form .ck_subscribe_button {
+      margin-top: 10px;
+      width: 100%; } }
+#sh-writeup-email-course #email-course-section {
+  margin: -45px 0 0 0; }
+#sh-writeup-email-course .course-pic-caption {
+  margin: 10px auto;
+  font-size: 18px;
+  font-style: italic; }
+#sh-writeup-email-course #course-testimonials .kevin-photo {
+  margin-left: 30%;
+  width: 40%; }
+#sh-writeup-email-course .sh-w-writeup {
+  width: 100%;
   margin: 50px 50px 0 0;
   padding: 0px 10px 10px 100px; }
-  .sh-w-writeup p {
+  #sh-writeup-email-course .sh-w-writeup p {
     font: 18px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
     margin: 10px 0 10px 0; }
   @media (max-width: 35em) {
-    .sh-w-writeup {
+    #sh-writeup-email-course .sh-w-writeup {
       width: 100%;
       padding: 0px 0px 0px 0px; }
-      .sh-w-writeup p {
+      #sh-writeup-email-course .sh-w-writeup p {
         font: 16px 'Roboto Slab', serif;
         font-weight: 400;
         color: #362f2d;

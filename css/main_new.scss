@@ -249,6 +249,7 @@ td p{
 
     @include mq-personal {
     font: 14px 'Roboto Slab', serif;
+    padding: 10px 10px 10px 10px;
     }
 
     -webkit-border-radius: 3px 3px 3px 3px;
@@ -282,12 +283,16 @@ header{
   background: #c0392b;
   height: 48px;
   padding-top: 7px;
+  @include mq-personal {
+      height: 96px;
+  }
+
 }
 
 #logo{
   float: left;
   @include mq-personal {
-    max-width: 30%;
+    max-width: 20%;
   }
 }
 
@@ -367,6 +372,17 @@ header{
       font-weight: 300;
     }
   }
+  h3 {
+    font: 20px 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 30px 0 70px 0;
+
+    @include mq-personal {
+      font: 16px 'Roboto Slab', serif;
+      font-weight: 300;
+    }
+  }
 }
 
 
@@ -420,8 +436,13 @@ header{
 }
 
 .h-sh-w-image{
+  width: 50%;
   margin: 15px auto 15px auto;
   text-align: center;
+  @include mq-personal {
+    width: 100%;
+  }
+
 }
 
 
@@ -585,7 +606,7 @@ header{
   margin: 30px 0 50px 0;
 
   h2{
-    font: 24px 'Roboto Slab', serif;
+    font: 20px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
     margin: 10px 0 10px 0;
@@ -627,14 +648,14 @@ header{
 #testimonial-ss{
   width: 80%;
   background: #fff;
-  margin: 25px auto;
+  margin: 25px auto 65px auto;
   text-align: center;
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px;
 }
 
 .testimonial-container{
-  padding: 40px 40px 20px 40px;
+  padding: 20px 40px 0px 40px;
 }
 
 .testi-pic{
@@ -679,23 +700,50 @@ header{
 
 /*--------Profile--------------------*/
 
-#sh-profile-screenshot{
-  margin: 30px auto;
-  text-align: center;
+#sh-profile {
+
+  .profile-subtitle {
+    margin: 10px auto;
+
+    h3 {
+      font-weight: 400;
+
+    }
+
+  }
+
+  #sh-profile-screenshot{
+    margin: 10px auto 25px auto;
+    padding-right: 5%;
+    text-align: center;
+  }
+
+  @include mq-personal {
+    @include mobile-readable-font;
+    text-align: left;
+    font: 14px 'Roboto Slab', serif;
+  }
+
+
 }
-
-
 /*------End Profile-----------------*/
 
 
-/*--------Network--------------------*/
+/*--------Widget--------------------*/
 
 #sh-network{
   width: 100%;
   background: #d35400;
   text-align: center;
 
+  .widget-block {
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+  }
+
   .widget-box {
+    width: 60%;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -703,7 +751,7 @@ header{
   }
 
   h2 {
-    font: 24px 'Roboto Slab', serif;
+    font: 20px 'Roboto Slab', serif;
     font-weight: 300;
     color: #ffffff;
     margin: 30px 0 30px 0;
@@ -711,6 +759,8 @@ header{
     @include mq-personal {
       @include mobile-readable-font;
       text-align: left;
+      font: 16px 'Roboto Slab', serif;
+      margin: 10px 0 10px 0;
     }
   }
 }
@@ -719,7 +769,7 @@ header{
   margin: 70px 0;
 }
 
-/*--------End Network--------------------*/
+/*--------End Widget--------------------*/
 
 
 /*--------Case Studies--------------------*/
@@ -728,8 +778,11 @@ header{
   width: 100%;
   font-family: 'Roboto Slab', serif;
 
-  #sh-case-subtitle {
-
+  #sh-case-subtitle h2 {
+    font-weight: 300;
+    @include mq-personal {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -741,15 +794,21 @@ header{
 
   .case-header {
     text-align: center;
+    @include mq-personal {
+      font-size: 20px;
+    }
   }
 
-  .case-pic {
+  .case-pic img {
     float: left;
     width: 40%;
     margin: 0 15px 5px 0;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
   }
 
-  .case-text {
+  .case-text p {
+    font-size: 16px;
   }
 
   .case-quote {
@@ -758,6 +817,9 @@ header{
     font-style: italic;
     color: #362f2d;
     margin: 20px 0 10px 0;
+    @include mq-personal {
+      font-size: 18px;
+    }
   }
 
   .case-read-more {
@@ -766,7 +828,12 @@ header{
     margin-right: 10px;
   }
 
+  .case-study-trial-block {
+    margin: 50px 0 -5px 0;
+  }
+
   @include mq-personal {
+    @include mobile-readable-font;
     width: 100%;
     padding: 0px 0px 0px 0px;
 
@@ -782,35 +849,95 @@ header{
 /*--------End Case Studies--------------------*/
 
 
-/*--------Writeup------------------*/
+/*--------Writeup Email course------------------*/
 
+#sh-writeup-email-course {
 
-#sh-w-pic {
-  float: left;
-  margin: 20px 20px 0 100px;
-}
-
-.sh-w-writeup {
-  width: 70%;
-  margin: 50px 50px 0 0;
-  padding: 0px 10px 10px 100px;
-
-  p {
-    font: 18px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
+  .writeup-sub {
+    h3 {
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+    }
+    @include mq-personal {
+      @include mobile-readable-font;
+      p {
+      font-size: 14px;
+      }
+    }
   }
 
-  @include mq-personal {
+  #sh-w-pic {
+    padding-right: 10%;
+  }
+
+  .title-dark-s h2 {
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .course-content, .course-form {
+    h2 {
+    }
+    p {
+      font-size: 16px;
+    }
+    @include mq-personal {
+      @include mobile-readable-font;
+      h2 {
+        font-size: 18px;
+      }
+      p, li {
+      font-size: 14px;
+      }
+      .ck_subscribe_button{
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
+  }
+
+  #email-course-section{
+    margin: -45px 0 0 0;
+  }
+
+  .course-pic-caption {
+    margin: 10px auto;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  #course-testimonials {
+    .kevin-photo{
+      margin-left: 30%;
+      width: 40%;
+    }
+  }
+
+  .sh-w-writeup {
     width: 100%;
-    padding: 0px 0px 0px 0px;
+    margin: 50px 50px 0 0;
+    padding: 0px 10px 10px 100px;
 
     p {
-      font: 16px 'Roboto Slab', serif;
+      font: 18px 'Roboto Slab', serif;
       font-weight: 400;
       color: #362f2d;
       margin: 10px 0 10px 0;
+    }
+
+    @include mq-personal {
+      width: 100%;
+      padding: 0px 0px 0px 0px;
+
+      p {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 400;
+        color: #362f2d;
+        margin: 10px 0 10px 0;
+      }
     }
   }
 }
