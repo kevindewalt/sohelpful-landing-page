@@ -169,29 +169,29 @@ td p {
   height: 4px;
   width: 100%; }
 
-.trial-btn {
-  margin: 0 0 60px 0;
+.try-button-block {
   text-align: center; }
+
+.trial-btn {
+  margin: 0 0 20px 0;
+  text-align: center;
+  background: #27ae60;
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .trial-btn:hover {
+    background: #30c26e; }
   .trial-btn a {
-    background: #27ae60;
-    width: 100%;
-    height: 60px;
-    margin: 30px auto 0 auto;
-    padding: 10px 45px 10px 45px;
     font: 28px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
-    text-decoration: none;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
-    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+    text-decoration: none; }
     @media (max-width: 35em) {
       .trial-btn a {
-        font: 14px 'Roboto Slab', serif;
-        padding: 10px 10px 10px 10px; } }
-    .trial-btn a:hover {
-      background: #30c26e; }
+        font: 14px 'Roboto Slab', serif; } }
 
 @media (max-width: 35em) {
   .not-phone {
@@ -203,11 +203,8 @@ td p {
 /*----- Header -------------------*/
 header {
   background: #c0392b;
-  height: 48px;
+  height: auto;
   padding-top: 7px; }
-  @media (max-width: 35em) {
-    header {
-      height: 96px; } }
 
 #logo {
   float: left; }
@@ -227,7 +224,7 @@ header {
 
 #head-login li {
   float: left;
-  margin: 0 5px 0 5px;
+  margin: 0 10px 0 5px;
   color: #ffffff; }
 
 #head-login a {
@@ -430,12 +427,12 @@ header {
   background: #f1c40f; }
 
 #sh-testimonials-subheading {
-  margin: 30px 0 50px 0; }
+  margin: 0 0 0 0; }
   #sh-testimonials-subheading h2 {
-    font: 20px 'Roboto Slab', serif;
+    font: 18px 'Roboto Slab', serif;
     font-weight: 400;
     color: #362f2d;
-    margin: 10px 0 10px 0; }
+    margin: -20px 0 0px 0; }
     @media (max-width: 35em) {
       #sh-testimonials-subheading h2 {
         font: 16px 'Roboto Slab', serif;
@@ -443,8 +440,8 @@ header {
 
 #sh-t-table {
   background: #ffffff;
-  width: 90%;
-  margin: 30px 5% 50px 5%;
+  width: 100%;
+  margin: -30px 5% 0 5%;
   overflow: hidden;
   -webkit-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px; }
@@ -463,64 +460,69 @@ header {
   text-align: center;
   background: #ffffff; }
 
-#testimonial-ss {
-  width: 80%;
-  background: #fff;
-  margin: 25px auto 65px auto;
+#written-testimonials-section {
   text-align: center;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px; }
-
-.testimonial-container {
-  padding: 20px 40px 0px 40px; }
-
-.testi-pic {
-  float: left;
-  width: 10%; }
-
-.testi-box {
-  width: 85%;
-  margin-left: 5%;
-  float: right;
-  text-align: left;
-  margin-bottom: 20px; }
-
-.testi-name {
-  font: 16px 'Roboto Slab', serif;
-  font-weight: bold;
-  color: #362f2d;
-  margin: 0;
-  float: left; }
-
-.testi-loc {
-  font: 16px 'Roboto Slab', serif;
-  font-weight: 400;
-  color: #362f2d;
-  margin: 0; }
-
-.testi-text {
-  font: 14px 'Roboto Slab', serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #362f2d;
-  margin: 10px 0 10px 0; }
+  margin: -40px; }
+  #written-testimonials-section h2 {
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
+    @media (max-width: 35em) {
+      #written-testimonials-section h2 {
+        font: 16px 'Roboto Slab', serif;
+        font-weight: 300; } }
+  #written-testimonials-section #testimonial-ss {
+    width: 100%;
+    background: #fff;
+    margin: 15px auto 10px auto;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px; }
+  #written-testimonials-section .testi-pic {
+    float: left;
+    width: 10%; }
+  #written-testimonials-section .testi-box {
+    width: 88%;
+    margin-left: 2%;
+    float: right;
+    text-align: left;
+    margin-bottom: 20px; }
+  #written-testimonials-section .testi-name {
+    font: 16px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #362f2d;
+    margin: 0;
+    float: left; }
+  #written-testimonials-section .testi-loc {
+    font: 16px 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 0; }
+  #written-testimonials-section .testi-text {
+    font: 14px 'Roboto Slab', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #362f2d;
+    margin: 10px 0 10px 0; }
 
 /*--------End Testimonials----------*/
 /*--------Profile--------------------*/
-#sh-profile .profile-subtitle {
-  margin: 10px auto; }
-  #sh-profile .profile-subtitle h3 {
-    font-weight: 400; }
-#sh-profile #sh-profile-screenshot {
-  margin: 10px auto 25px auto;
-  padding-right: 5%;
-  text-align: center; }
-@media (max-width: 35em) {
-  #sh-profile {
-    font: 16px 'Roboto Slab', serif;
-    font-weight: 300;
-    text-align: left;
-    font: 14px 'Roboto Slab', serif; } }
+#sh-profile {
+  font-family: 'Roboto Slab', serif; }
+  #sh-profile #profile-details {
+    margin: -20px auto; }
+    #sh-profile #profile-details h3 {
+      font-weight: 400; }
+  #sh-profile #sh-profile-screenshot {
+    padding-right: 5%; }
+  @media (max-width: 35em) {
+    #sh-profile {
+      font: 16px 'Roboto Slab', serif;
+      font-weight: 300;
+      text-align: left;
+      font: 14px 'Roboto Slab', serif; } }
 
 /*------End Profile-----------------*/
 /*--------Widget--------------------*/
@@ -595,8 +597,6 @@ header {
     text-align: right;
     font-size: 14px;
     margin-right: 10px; }
-  #sh-w-case .case-study-trial-block {
-    margin: 50px 0 -5px 0; }
   @media (max-width: 35em) {
     #sh-w-case {
       font: 16px 'Roboto Slab', serif;
