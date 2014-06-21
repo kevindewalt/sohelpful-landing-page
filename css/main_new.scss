@@ -421,6 +421,7 @@ header{
       font-weight: 300;
     }
   }
+
 }
 
 
@@ -823,7 +824,7 @@ header{
 
 /*--------Case Studies--------------------*/
 
-#sh-w-case {
+#case-studies {
   width: 100%;
   font-family: 'Roboto Slab', serif;
 
@@ -850,10 +851,11 @@ header{
 
   .case-pic img {
     float: left;
-    width: 40%;
-    margin: 0 15px 5px 0;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
+    width: 100%;
+    margin: 0 15px 20px 0;
+    max-width: 290px;
+    -webkit-boxrder-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
   }
 
   .case-text p {
