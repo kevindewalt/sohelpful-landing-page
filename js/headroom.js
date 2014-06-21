@@ -9,7 +9,7 @@
   'use strict';
 
   window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
-  
+
   /**
    * Handles debouncing of events via requestAnimationFrame
    * @see http://www.html5rocks.com/en/tutorials/speed/animations/
@@ -21,7 +21,7 @@
   }
   Debouncer.prototype = {
     constructor : Debouncer,
-  
+
     /**
      * dispatches the event to the supplied callback
      * @private
@@ -30,7 +30,7 @@
       this.callback && this.callback();
       this.ticking = false;
     },
-  
+
     /**
      * ensures events don't get stacked
      * @private
@@ -41,7 +41,7 @@
         this.ticking = true;
       }
     },
-  
+
     /**
      * Attach this as the event listeners
      */
@@ -59,7 +59,7 @@
    */
   function Headroom (elem, options) {
     options = options || Headroom.options;
-  
+
     this.lastKnownScrollY = 0;
     this.elem             = elem;
     this.debouncer        = new Debouncer(this.update.bind(this));
@@ -70,18 +70,18 @@
   }
   Headroom.prototype = {
     constructor : Headroom,
-  
+
     /**
      * Initialises the widget
      */
     init : function() {
       this.elem.classList.add(this.classes.initial);
-  
-      // defer event registration to handle browser 
+
+      // defer event registration to handle browser
       // potentially restoring previous scroll position
       setTimeout(this.attachEvent.bind(this), 100);
     },
-  
+
     /**
      * Unattaches events and removes any classes that were added
      */
@@ -90,7 +90,7 @@
       window.removeEventListener('scroll', this.debouncer, false);
       this.elem.classList.remove(this.classes.unpinned, this.classes.pinned, this.classes.initial);
     },
-  
+
     /**
      * Attaches the scroll event
      * @private
@@ -101,7 +101,7 @@
         window.addEventListener('scroll', this.debouncer, false);
       }
     },
-    
+
     /**
      * Unpins the header if it's currently pinned
      */
@@ -109,7 +109,7 @@
       this.elem.classList.add(this.classes.unpinned);
       this.elem.classList.remove(this.classes.pinned);
     },
-  
+
     /**
      * Pins the header if it's currently unpinned
      */
@@ -117,7 +117,7 @@
       this.elem.classList.remove(this.classes.unpinned);
       this.elem.classList.add(this.classes.pinned);
     },
-  
+
     /**
      * Gets the Y scroll position
      * @see https://developer.mozilla.org/en-US/docs/Web/API/Window.scrollY
@@ -126,18 +126,18 @@
     getScrollY : function() {
       return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     },
-  
+
     /**
      * Handles updating the state of the widget
      */
     update : function() {
       var currentScrollY     = this.getScrollY(),
         toleranceExceeded    = Math.abs(currentScrollY-this.lastKnownScrollY) >= this.tolerance;
-  
+
       if(currentScrollY < 0) { // Ignore bouncy scrolling in OSX
         return;
       }
-  
+
       if(toleranceExceeded) {
         if(currentScrollY > this.lastKnownScrollY && currentScrollY >= this.offset) {
           this.unpin();
@@ -146,7 +146,7 @@
           this.pin();
         }
       }
-  
+
       this.lastKnownScrollY = currentScrollY;
     }
   };
