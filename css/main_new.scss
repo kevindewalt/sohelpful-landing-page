@@ -105,6 +105,8 @@ textarea {
     Common to all sections
    ========================================================================== */
 
+$orange: #c0392b;
+
 .title h1{
   font: 50px 'Roboto Slab', serif;
   font-weight: bold;
@@ -230,7 +232,6 @@ td p{
   width: 100%;
 }
 
-
 .try-button-block{
   text-align: center;
 }
@@ -281,7 +282,7 @@ td p{
 /*----- Header -------------------*/
 
 header{
-  background: #c0392b;
+  background: $orange;
   height: auto;
   padding-top: 7px;
 }
@@ -543,10 +544,6 @@ header{
     font-size: 14px;
     margin-right: 10px;
   }
-//  .case-study-trial-block {
-//    margin: 50px 0 -5px 0;
-//  }
-
 
   @include mq-personal {
     @include mobile-readable-font;
@@ -565,10 +562,21 @@ header{
 /*--------End Case Studies--------------------*/
 
 
-/*--------Benefits --------------*/
+/*--------Features --------------*/
 
 #benefits-of-sh{
   background: #c0392b;
+
+  a {
+    color: $orange;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+   }
+  }
+
+
 
   .benefits-desc{
     margin-left: 5%;
@@ -607,7 +615,7 @@ header{
 }
 
 
-/*--------End Benefits---------*/
+/*--------End Features---------*/
 
 /*--------Course Link----------*/
 
@@ -615,72 +623,11 @@ header{
   background: #f1c40f;
 
 
-//#sh-testimonials-subheading{
-//  margin: 0 0 0 0;
-//
-//  h2{
-//    font: 18px 'Roboto Slab', serif;
-//    font-weight: 400;
-//    color: #362f2d;
-//    margin: -20px 0 0px 0;
-//
-//    @include mq-personal {
-//      @include mobile-readable-font;
-//    }
-//  }
-//}
-//
-//#sh-t-table{
-//  background: #ffffff;
-//  width: 100%;
-//  margin: -30px 5% 0 5%;
-//  overflow: hidden;
-//  -webkit-border-radius: 3px 3px 3px 3px;
-//  border-radius: 3px 3px 3px 3px;
-//}
-//
-//
-//.table-head{
-//  background: #3498db;
-//}
-//
-//.td-gray{
-//  background: #e5e5e5;
-//}
-//
-//.td-center-gray{
-//  text-align: center;
-//  background: #e5e5e5;
-//}
-//
-//.td-center-white{
-//  text-align: center;
-//  background: #ffffff;
-//}
-//
-//#course-outer {
-//  text-align: center;
-//  margin: -40px;
-//
-//  h2{
-//    font: 24px 'Roboto Slab', serif;
-//    font-weight: 400;
-//    color: #362f2d;
-//    margin: 10px 0 10px 0;
-//
-//    @include mq-personal {
-//      @include mobile-readable-font;
-//    }
-//  }
-//}
 
-//
   #course-box {
     width: 100%;
     background: #fff;
-//    margin: 15px auto 10px auto;
     padding: 20px 20px 20px 20px;
-//    text-align: center;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
   }
@@ -743,39 +690,6 @@ header{
 
     }
   }
-
-
-
- // .testi-box{
-//    width: 88%;
-//    margin-left: 2%;
-//    float: right;
-//    text-align: left;
-//    margin-bottom: 20px;
-//  }
-//
-//  .testi-name{
-//    font: 16px 'Roboto Slab', serif;
-//    font-weight: bold;
-//    color: #362f2d;
-//    margin: 0;
-//    float: left;
-//  }
-//
-//  .testi-loc{
-//    font: 16px 'Roboto Slab', serif;
-//    font-weight: 400;
-//    color: #362f2d;
-//    margin: 0;
-//  }
-//
-//  .testi-text{
-//    font: 14px 'Roboto Slab', serif;
-//    font-weight: 400;
-//    font-style: italic;
-//    color: #362f2d;
-//    margin: 10px 0 10px 0;
-//  }
 }
 
 
@@ -1031,7 +945,7 @@ header{
 
 /*--------Widget--------------------*/
 
-#sh-network{
+#widget{
   width: 100%;
   background: #2980b9;
   text-align: center;

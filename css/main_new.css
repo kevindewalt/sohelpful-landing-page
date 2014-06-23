@@ -369,9 +369,14 @@ header {
         margin: 10px 0 10px 0; } }
 
 /*--------End Case Studies--------------------*/
-/*--------Benefits --------------*/
+/*--------Features --------------*/
 #benefits-of-sh {
   background: #c0392b; }
+  #benefits-of-sh a {
+    color: #c0392b;
+    text-decoration: none; }
+    #benefits-of-sh a:hover {
+      text-decoration: underline; }
   #benefits-of-sh .benefits-desc {
     margin-left: 5%;
     width: 85%;
@@ -400,7 +405,7 @@ header {
 .benefits-b-e-c {
   margin: 20px 0 20px 0; }
 
-/*--------End Benefits---------*/
+/*--------End Features---------*/
 /*--------Course Link----------*/
 #course-link {
   background: #f1c40f; }
@@ -629,27 +634,27 @@ header {
 
 /*------End Profile-----------------*/
 /*--------Widget--------------------*/
-#sh-network {
+#widget {
   width: 100%;
   background: #2980b9;
   text-align: center; }
-  #sh-network .widget-block {
+  #widget .widget-block {
     margin-left: 15%;
     width: 70%;
     text-align: center; }
-  #sh-network .widget-box {
+  #widget .widget-box {
     width: 60%;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px; }
-  #sh-network h2 {
+  #widget h2 {
     font: 20px 'Roboto Slab', serif;
     font-weight: 300;
     color: #ffffff;
     margin: 30px 0 30px 0; }
     @media (max-width: 35em) {
-      #sh-network h2 {
+      #widget h2 {
         font: 16px 'Roboto Slab', serif;
         font-weight: 300;
         text-align: left;
