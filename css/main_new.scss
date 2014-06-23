@@ -487,6 +487,83 @@ header{
 
 /*-------End How SH Works--------*/
 
+/*--------Case Studies--------------------*/
+
+#case-studies {
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+
+  #sh-case-subtitle h2 {
+    font-weight: 300;
+    @include mq-personal {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #362f2d;
+    margin: 10px 0 10px 0;
+  }
+
+  .case-header {
+    text-align: center;
+    @include mq-personal {
+      font-size: 20px;
+    }
+  }
+
+  .case-pic img {
+    float: left;
+    width: 100%;
+    margin: 0 15px 20px 0;
+    max-width: 290px;
+    -webkit-boxrder-radius: 25px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
+  }
+
+  .case-text p {
+    font-size: 16px;
+  }
+
+  .case-quote {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    color: #362f2d;
+    margin: 20px 0 10px 0;
+    @include mq-personal {
+      font-size: 18px;
+    }
+  }
+
+  .case-read-more {
+    text-align: right;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+//  .case-study-trial-block {
+//    margin: 50px 0 -5px 0;
+//  }
+
+
+  @include mq-personal {
+    @include mobile-readable-font;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #362f2d;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+/*--------End Case Studies--------------------*/
+
 
 /*--------Benefits --------------*/
 
@@ -531,6 +608,179 @@ header{
 
 
 /*--------End Benefits---------*/
+
+/*--------Course Link----------*/
+
+#course-link {
+  background: #f1c40f;
+
+
+//#sh-testimonials-subheading{
+//  margin: 0 0 0 0;
+//
+//  h2{
+//    font: 18px 'Roboto Slab', serif;
+//    font-weight: 400;
+//    color: #362f2d;
+//    margin: -20px 0 0px 0;
+//
+//    @include mq-personal {
+//      @include mobile-readable-font;
+//    }
+//  }
+//}
+//
+//#sh-t-table{
+//  background: #ffffff;
+//  width: 100%;
+//  margin: -30px 5% 0 5%;
+//  overflow: hidden;
+//  -webkit-border-radius: 3px 3px 3px 3px;
+//  border-radius: 3px 3px 3px 3px;
+//}
+//
+//
+//.table-head{
+//  background: #3498db;
+//}
+//
+//.td-gray{
+//  background: #e5e5e5;
+//}
+//
+//.td-center-gray{
+//  text-align: center;
+//  background: #e5e5e5;
+//}
+//
+//.td-center-white{
+//  text-align: center;
+//  background: #ffffff;
+//}
+//
+//#course-outer {
+//  text-align: center;
+//  margin: -40px;
+//
+//  h2{
+//    font: 24px 'Roboto Slab', serif;
+//    font-weight: 400;
+//    color: #362f2d;
+//    margin: 10px 0 10px 0;
+//
+//    @include mq-personal {
+//      @include mobile-readable-font;
+//    }
+//  }
+//}
+
+//
+  #course-box {
+    width: 100%;
+    background: #fff;
+//    margin: 15px auto 10px auto;
+    padding: 20px 20px 20px 20px;
+//    text-align: center;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .course-pic{
+    float: left;
+    width: 10%;
+
+    img{
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    }
+  }
+
+  .course-copy{
+    float: left;
+    margin: 0 5%;
+    width: 50%;
+    h3{
+      margin: 0;
+      font: 18px 'Roboto Slab', serif;
+      font-weight: 700;
+      color: #362f2d;
+    }
+
+    p{
+      margin: 10px 0;
+    }
+  }
+
+
+
+  .course-btn{
+    margin: 15px 0 0 0;
+    text-align: center;
+    background: #3498DB;
+    float: right;
+    padding: 10px 20px;
+//    width: 20%;
+
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+    &:hover {
+        background: #4EB2F5;
+   }
+    a {
+
+      font: 20px 'Roboto Slab', serif;
+//      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+
+      @include mq-personal {
+      font: 14px 'Roboto Slab', serif;
+      }
+
+    }
+  }
+
+
+
+ // .testi-box{
+//    width: 88%;
+//    margin-left: 2%;
+//    float: right;
+//    text-align: left;
+//    margin-bottom: 20px;
+//  }
+//
+//  .testi-name{
+//    font: 16px 'Roboto Slab', serif;
+//    font-weight: bold;
+//    color: #362f2d;
+//    margin: 0;
+//    float: left;
+//  }
+//
+//  .testi-loc{
+//    font: 16px 'Roboto Slab', serif;
+//    font-weight: 400;
+//    color: #362f2d;
+//    margin: 0;
+//  }
+//
+//  .testi-text{
+//    font: 14px 'Roboto Slab', serif;
+//    font-weight: 400;
+//    font-style: italic;
+//    color: #362f2d;
+//    margin: 10px 0 10px 0;
+//  }
+}
+
+
+
+/*--------end Course Link------/
 
 
 /*--------SH-Schedule----------*/
@@ -783,7 +1033,7 @@ header{
 
 #sh-network{
   width: 100%;
-  background: #d35400;
+  background: #2980b9;
   text-align: center;
 
   .widget-block {
@@ -822,82 +1072,7 @@ header{
 /*--------End Widget--------------------*/
 
 
-/*--------Case Studies--------------------*/
 
-#case-studies {
-  width: 100%;
-  font-family: 'Roboto Slab', serif;
-
-  #sh-case-subtitle h2 {
-    font-weight: 300;
-    @include mq-personal {
-      font-size: 16px;
-    }
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-  }
-
-  .case-header {
-    text-align: center;
-    @include mq-personal {
-      font-size: 20px;
-    }
-  }
-
-  .case-pic img {
-    float: left;
-    width: 100%;
-    margin: 0 15px 20px 0;
-    max-width: 290px;
-    -webkit-boxrder-radius: 25px 25px 25px 25px;
-    border-radius: 25px 25px 25px 25px;
-  }
-
-  .case-text p {
-    font-size: 16px;
-  }
-
-  .case-quote {
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    color: #362f2d;
-    margin: 20px 0 10px 0;
-    @include mq-personal {
-      font-size: 18px;
-    }
-  }
-
-  .case-read-more {
-    text-align: right;
-    font-size: 14px;
-    margin-right: 10px;
-  }
-//  .case-study-trial-block {
-//    margin: 50px 0 -5px 0;
-//  }
-
-
-  @include mq-personal {
-    @include mobile-readable-font;
-    width: 100%;
-    padding: 0px 0px 0px 0px;
-
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      color: #362f2d;
-      margin: 10px 0 10px 0;
-    }
-  }
-}
-
-/*--------End Case Studies--------------------*/
 
 
 /*--------Writeup Email course------------------*/
