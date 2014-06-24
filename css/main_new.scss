@@ -105,7 +105,8 @@ textarea {
     Common to all sections
    ========================================================================== */
 
-$orange: #c0392b;
+$orange: #D35400;
+$red: #C0392B;
 
 .title h1{
   font: 50px 'Roboto Slab', serif;
@@ -273,6 +274,10 @@ td p{
 
 }
 
+#photo-credit {
+  font-size: 14px;
+  margin: 20px 10px;
+}
 
 /* ==========================================================================
    Individual sections
@@ -282,7 +287,7 @@ td p{
 /*----- Header -------------------*/
 
 header{
-  background: $orange;
+  background: $red;
   height: auto;
   padding-top: 7px;
 }
@@ -1098,6 +1103,128 @@ header{
 }
 
 /*--------End Writeup--------------*/
+
+
+/*--------Open Letter--------------*/
+
+#open-letter {
+  font-family: 'Roboto Slab', serif;
+
+  #letter-headline{
+    background-color: $orange;
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+
+      @include mq-personal {
+        font-size: 24px;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 300;
+      color: #ffffff;
+      margin: 120px 0 70px 0;
+
+      @include mq-personal {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  #kevin-message {
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin: 40px 0 20px 0;
+      @include mq-personal {
+        font-size: 24px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      margin: 40px 0 0 0;
+    }
+  }
+
+  #letter-copy {
+    font-family: arial;
+    text-align: center;
+
+    #copy-body{
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px 7%;
+    margin: 0 7%;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+
+
+      #letter-heading {
+        margin: 50px 0;
+        text-align: center;
+        font-size: 36px;
+        }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 40px 0 10px 0;
+      }
+
+
+      blockquote {
+        font-style: italic;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    #gary{
+      margin: 50px 0;
+
+      #gary-pic {
+        float: left;
+        width: 40%;
+        img {
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        }
+      }
+
+      #gary-quote {
+        font-style: italic;
+        font-size: 20px;
+        float: left;
+        margin: 0 0 0 5%;
+        width: 50%;
+      }
+
+    }
+
+
+  }
+
+}
+
+/*--------End Open Letter---------*/
 
 
 

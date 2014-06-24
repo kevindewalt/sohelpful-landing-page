@@ -197,6 +197,10 @@ td p {
   .not-phone {
     display: none; } }
 
+#photo-credit {
+  font-size: 14px;
+  margin: 20px 10px; }
+
 /* ==========================================================================
    Individual sections
    ========================================================================== */
@@ -344,7 +348,7 @@ header {
   #case-studies .case-text p {
     font-size: 16px; }
     #case-studies .case-text p a {
-      color: #c0392b;
+      color: #d35400;
       text-decoration: none; }
       #case-studies .case-text p a:hover {
         text-decoration: underline; }
@@ -362,7 +366,7 @@ header {
     font-size: 14px;
     margin-right: 10px; }
     #case-studies .case-read-more a {
-      color: #c0392b;
+      color: #d35400;
       text-decoration: none; }
       #case-studies .case-read-more a:hover {
         text-decoration: underline; }
@@ -383,7 +387,7 @@ header {
 #benefits-of-sh {
   background: #c0392b; }
   #benefits-of-sh a {
-    color: #c0392b;
+    color: #d35400;
     text-decoration: none; }
     #benefits-of-sh a:hover {
       text-decoration: underline; }
@@ -733,6 +737,83 @@ header {
         margin: 10px 0 10px 0; } }
 
 /*--------End Writeup--------------*/
+/*--------Open Letter--------------*/
+#open-letter {
+  font-family: 'Roboto Slab', serif; }
+  #open-letter #letter-headline {
+    background-color: #d35400;
+    padding: 100px;
+    text-align: center;
+    color: #fff; }
+    #open-letter #letter-headline h1 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0; }
+      @media (max-width: 35em) {
+        #open-letter #letter-headline h1 {
+          font-size: 24px; } }
+    #open-letter #letter-headline h2 {
+      font-size: 24px;
+      font-weight: 300;
+      color: #ffffff;
+      margin: 120px 0 70px 0; }
+      @media (max-width: 35em) {
+        #open-letter #letter-headline h2 {
+          font-size: 18px;
+          font-weight: 300; } }
+  #open-letter #kevin-message h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0 20px 0; }
+    @media (max-width: 35em) {
+      #open-letter #kevin-message h1 {
+        font-size: 24px; } }
+  #open-letter #kevin-message h3 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin: 40px 0 0 0; }
+  #open-letter #letter-copy {
+    font-family: arial;
+    text-align: center; }
+    #open-letter #letter-copy #copy-body {
+      text-align: left;
+      background-color: #f0f0f0;
+      padding: 10px 7%;
+      margin: 0 7%;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px; }
+      #open-letter #letter-copy #copy-body #letter-heading {
+        margin: 50px 0;
+        text-align: center;
+        font-size: 36px; }
+      #open-letter #letter-copy #copy-body h1 {
+        text-align: center;
+        margin-top: 50px; }
+      #open-letter #letter-copy #copy-body h2 {
+        font-size: 20px;
+        margin: 40px 0 10px 0; }
+      #open-letter #letter-copy #copy-body blockquote {
+        font-style: italic; }
+      #open-letter #letter-copy #copy-body p {
+        font-size: 16px; }
+    #open-letter #letter-copy #gary {
+      margin: 50px 0; }
+      #open-letter #letter-copy #gary #gary-pic {
+        float: left;
+        width: 40%; }
+        #open-letter #letter-copy #gary #gary-pic img {
+          -webkit-border-radius: 5px 5px 5px 5px;
+          border-radius: 5px 5px 5px 5px; }
+      #open-letter #letter-copy #gary #gary-quote {
+        font-style: italic;
+        font-size: 20px;
+        float: left;
+        margin: 0 0 0 5%;
+        width: 50%; }
+
+/*--------End Open Letter---------*/
 /* ==========================================================================
    Print styles
    ========================================================================== */
