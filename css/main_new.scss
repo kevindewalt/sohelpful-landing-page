@@ -107,6 +107,7 @@ textarea {
 
 $orange: #D35400;
 $red: #C0392B;
+$blue: #2980B9;
 
 .title h1{
   font: 50px 'Roboto Slab', serif;
@@ -299,47 +300,6 @@ header{
   }
 }
 
-// KMD - could not get this collapsable header to work. Inline would not work.
-
-//header .nav-collapse {
-//
-//  a {
-//    text-decoration: none;
-//    font: 16px 'Roboto Slab', serif;
-//    font-weight: regular;
-//    color: #ffffff;
-//
-//    @include mq-personal {
-//    font: 12px 'Roboto Slab', serif;
-//    }
-//  }
-//
-//  a:hover{
-//    text-decoration: none;
-//    font: 16px 'Roboto Slab', serif;
-//    font-weight: regular;
-//    color: #f1c40f;
-//
-//    @include mq-personal {
-//    font: 12px 'Roboto Slab', serif;
-//    }
-//  }
-//
-//  ul {
-//    list-style-type:none;
-//    display: inline;
-//    padding: 0;
-//    margin: 0;
-//  }
-//
-//  li {
-//    display: inline;
-//    float: left;
-//    margin: 0 5px 0 5px;
-//    color: #ffffff;
-//  }
-//}
-
 #head-login{
   float: right;
   text-align: right;
@@ -406,28 +366,16 @@ header{
   }
 
   h2 {
-    font: 24px 'Roboto Slab', serif;
+    font: 26px 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #ffffff;
-    margin: 30px 0 70px 0;
+    margin: 30px 0 20px 0;
 
     @include mq-personal {
-      font: 18px 'Roboto Slab', serif;
+      font-size: 18px;
       font-weight: 300;
     }
   }
-  h3 {
-    font: 20px 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 30px 0 70px 0;
-
-    @include mq-personal {
-      font: 16px 'Roboto Slab', serif;
-      font-weight: 300;
-    }
-  }
-
 }
 
 
@@ -435,26 +383,54 @@ header{
 /*-------End of Intro--------------*/
 
 
-/*-------Sub-Intro----------------*/
+/*-------Promise-Intro----------------*/
 
 
-#sub-intro{
+#promise-intro{
 
-  h3{
-    font: 16px 'Roboto Slab', serif;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
+  h2 {
+    font: 30px 'Roboto Slab', serif;
+    font-weight: 400;
+  }
+
+  h3 {
+//    color: #ffffff;
+    font: 24px 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin-top: -10px;
+  }
+
+  .pain-point {
+    margin: 40px 0;
   }
 }
 
 
-#si-left{
-  padding-right: 20px;
-  margin-top: 50px;
-}
 
-#si-right{
-}
+
+/*-------End of Promise-Intro----------------*/
+
+
+/*-------Sub-Intro----------------*/
+
+//
+//#sub-intro{
+//
+//  h3{
+//    font: 16px 'Roboto Slab', serif;
+//    color: #362f2d;
+//    margin: 10px 0 10px 0;
+//  }
+//}
+//
+//
+//#si-left{
+//  padding-right: 20px;
+//  margin-top: 50px;
+//}
+//
+//#si-right{
+//}
 
 
 /*--------End Sub-Intro----------*/
@@ -466,27 +442,94 @@ header{
 #how-sh-works{
   background: #2980b9;
   padding: 20px 0 20px 0;
-  text-align: center;
+//  text-align: center;
 
   h3{
-    font: 20px 'Roboto Slab', serif;
-    font-weight: 300;
+    font: 26px 'Roboto Slab', serif;
+    font-weight: 400;
     color: #ffffff;
     margin: 10px 0 10px 0;
 
     @include mq-personal {
       @include mobile-readable-font;
+      font-size: 20px;
     }
   }
-}
-
-.h-sh-w-image{
-  width: 50%;
-  margin: 15px auto 15px auto;
-  text-align: center;
-  @include mq-personal {
-    width: 100%;
+  p {
+    color: #ffffff;
+    font: 20px 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    @include mq-personal {
+      @include mobile-readable-font;
+    }
   }
+
+  .step-block {
+    margin-bottom: 20px;
+  }
+
+  .step-copy {
+    margin-top: 50px;
+  }
+
+  .pic-image-box {
+
+  }
+
+  #step-1-pic img {
+    width: 90%;
+  }
+
+  #step-2-pic img {
+    border: 5px solid #D4E6F1;
+    width: 90%;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  #step-3-pic img {
+    border: 5px solid #D4E6F1;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  #step-4-pic img {
+    width: 90%;
+  }
+
+  #mini-testimonials-section {
+    background: #fff;
+    padding: 20px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+
+
+    .mini-testi-pic {
+      float: left;
+      margin-right: 15px;
+
+      img {
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+      }
+    }
+
+    .mini-testi-box{
+    }
+
+    .mini-testi-name{
+      font: 16px 'Roboto Slab', serif;
+      margin: 0;
+    }
+
+    .mini-testi-text{
+      font: 18px 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      color: #362f2d;
+    }
+  }
+
 
 }
 
