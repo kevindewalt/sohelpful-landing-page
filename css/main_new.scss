@@ -108,6 +108,7 @@ textarea {
 $orange: #D35400;
 $red: #C0392B;
 $blue: #2980B9;
+$yellow: #f1c40f;
 
 .title h1{
   font: 50px 'Roboto Slab', serif;
@@ -275,6 +276,10 @@ td p{
 
 }
 
+.hide {
+  display: none;
+}
+
 #photo-credit {
   font-size: 14px;
   margin: 20px 10px;
@@ -375,6 +380,22 @@ header{
       font-size: 18px;
       font-weight: 300;
     }
+  }
+
+  #page-nav {
+
+    span.link {
+      font: 26px 'Roboto Slab', serif;
+      font-weight: 300;
+      color: #ffffff;
+//      margin: 30px 0 20px 0;
+
+      @include mq-personal {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+
   }
 }
 
@@ -481,14 +502,14 @@ header{
   }
 
   #step-2-pic img {
-    border: 5px solid #D4E6F1;
+    border: 5px solid #F7FAFC;
     width: 90%;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
   }
 
   #step-3-pic img {
-    border: 5px solid #D4E6F1;
+    border: 5px solid #F7FAFC;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
   }
@@ -540,7 +561,7 @@ header{
 
 #case-studies {
   width: 100%;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
   #sh-case-subtitle h2 {
     font-weight: 300;
@@ -551,8 +572,8 @@ header{
 
   p {
     font-size: 18px;
-    font-weight: 400;
-    color: #362f2d;
+    font-weight: 300;
+//    color: #362f2d;
     margin: 10px 0 10px 0;
   }
 
@@ -573,7 +594,8 @@ header{
   }
 
   .case-text p {
-    font-size: 16px;
+    font-size: 18px;
+    padding-bottom: 5px;
 
     a {
       color: $orange;
@@ -584,29 +606,34 @@ header{
     }
   }
 
+  .case-name {
+    font-size: 20px;
+    margin: -5px 0px 10px 10px;
+  }
+
   .case-quote {
     font-size: 20px;
     font-weight: 300;
     font-style: italic;
-    color: #362f2d;
+//    color: #362f2d;
     margin: 20px 0 10px 0;
     @include mq-personal {
       font-size: 18px;
     }
   }
 
-  .case-read-more {
-    text-align: right;
-    font-size: 14px;
-    margin-right: 10px;
-      a {
-      color: $orange;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+//  .case-read-more {
+//    text-align: right;
+//    font-size: 14px;
+//    margin-right: 10px;
+//      a {
+//      color: $orange;
+//      text-decoration: none;
+//      &:hover {
+//        text-decoration: underline;
+//      }
+//    }
+//  }
 
   @include mq-personal {
     @include mobile-readable-font;
@@ -624,68 +651,10 @@ header{
 
 /*--------End Case Studies--------------------*/
 
-
-/*--------Features --------------*/
-
-#benefits-of-sh{
-  background: #c0392b;
-
-  a {
-    color: $orange;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-   }
-  }
-
-
-
-  .benefits-desc{
-    margin-left: 5%;
-    width: 85%;
-    float: right;
-
-    h3{
-      font: 20px 'Roboto Slab', serif;
-      font-weight: 300;
-      color: #362f2d;
-      margin: 0px 0 20px 0;
-
-      @include mq-personal {
-        @include mobile-readable-font;
-      }
-    }
-  }
-}
-
-#benefits-box{
-  background: #ffffff;
-  margin: 20px auto 20px auto;
-  padding: 30px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
-}
-
-.benefits-icon{
-  width: 10%;
-  float: left;
-}
-
-
-.benefits-b-e-c{
-  margin: 20px 0 20px 0;
-}
-
-
-/*--------End Features---------*/
-
 /*--------Course Link----------*/
 
 #course-link {
   background: #f1c40f;
-
-
 
   #course-box {
     width: 100%;
@@ -717,6 +686,7 @@ header{
     }
 
     p{
+      font-family: 'Source Sans Pro', sans-serif;
       margin: 10px 0;
     }
   }
@@ -760,103 +730,140 @@ header{
 /*--------end Course Link------/
 
 
+/*--------Features --------------*/
+
+#benefits-of-sh{
+  background: #c0392b;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  a {
+    color: $orange;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+   }
+  }
+
+
+
+  .benefits-desc{
+    margin-left: 5%;
+    width: 85%;
+    float: right;
+
+    h2{
+      font: 24px 'Roboto Slab', serif;
+      font-weight: 300;
+      color: #362f2d;
+      margin: 0px 0 0px 0;
+
+      @include mq-personal {
+        @include mobile-readable-font;
+      }
+    }
+
+    h3{
+      font-size: 20px;
+      font-weight: 300;
+      color: #362f2d;
+      margin: 0px 0 15px 0;
+
+      @include mq-personal {
+        @include mobile-readable-font;
+      }
+    }
+  }
+}
+
+#benefits-box{
+  background: #ffffff;
+  margin: 20px auto 20px auto;
+  padding: 30px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.benefits-icon{
+  width: 10%;
+  float: left;
+}
+
+
+.benefits-b-e-c{
+  margin: 20px 0 20px 0;
+}
+
+
+/*--------End Features---------*/
+
+
+
+
 /*--------SH-Schedule----------*/
 
 #sh-schedule{
 
-  h2{
-    font: 25px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
+  #sh-sched-desc-c{
 
-    @include mq-personal {
-      @include mobile-readable-font;
-    }
-  }
-}
-
-#sh-sched-desc-c{
-  margin: 60px auto 0 auto;
-
-  h1{
-    font: 30px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-
-    @include mq-personal {
-      text-align: center;
-    }
-  }
-
-  h2{
-    font: 18px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 30px 0 10px 0;
-  }
-
-  h3{
-    font: 20px 'Roboto Slab', serif;
-    font-weight: bold;
-    color: #362f2d;
-    margin: 5px 0 15px 0;
-
-    @include mq-personal {
-      @include mobile-readable-font;
+    h2{
+      font: 20px  'Source Sans Pro', sans-serif;
       font-weight: 400;
+      color: #362f2d;
+      margin: 30px 0 10px 0;
+    }
+
+    h3{
+      font: 20px 'Roboto Slab', serif;
+      font-weight: bold;
+      color: #362f2d;
+      margin: 5px 0 15px 0;
+
+      @include mq-personal {
+        @include mobile-readable-font;
+        font-weight: 400;
+      }
+    }
+
+    h4{
+      font: 15px 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      color: #362f2d;
+      margin-top: -6px;
+
+      @include mq-personal {
+        font: 12px 'Roboto Slab', serif;
+        font-weight: 300;
+      }
     }
   }
 
-  h4{
-    font: 15px 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #362f2d;
-    margin: 10px 0 10px 0;
-
-    @include mq-personal {
-      font: 12px 'Roboto Slab', serif;
-      font-weight: 300;
-    }
+  #sh-sched-desc-left{
+    padding-right: 20px;
+    float: left;
   }
-}
 
+  #sh-sched-desc-right{
+    float: right;
+  }
 
-#sh-schedule-left{
-  margin: 100px 0 30px 0px;
-  text-align: center;
-}
+  .sh-sched-desc-e{
+    margin: 5px 0 5px 0;
+    padding: 5px;
+  }
 
-#sh-schedule-right{
-  margin: 30px 0 30px 0;
-}
+  .sh-sched-desc-icon{
+    float: left;
+    width: 10%;
+    padding: 8px 0 8px 0;
+  }
 
+  .sh-sched-desc-text{
+    float: right;
+    margin-left: 5%;
+    width: 85%;
+  }
 
-#sh-sched-desc-left{
-  padding-right: 20px;
-  float: left;
-}
-
-#sh-sched-desc-right{
-  float: right;
-}
-
-.sh-sched-desc-e{
-  margin: 5px 0 5px 0;
-  padding: 5px;
-}
-
-.sh-sched-desc-icon{
-  float: left;
-  width: 10%;
-  padding: 8px 0 8px 0;
-}
-
-.sh-sched-desc-text{
-  float: right;
-  margin-left: 5%;
-  width: 85%;
 }
 
 /*-------End SH-Scheudle--------*/
@@ -865,17 +872,17 @@ header{
 /*--------Testimonials----------*/
 
 #sh-testimonials{
-  background: #f1c40f;
+  background: $yellow;
 }
 
 #sh-testimonials-subheading{
-  margin: 0 0 0 0;
+  margin: -20px 0 0 0;
 
-  h2{
-    font: 18px 'Roboto Slab', serif;
+  h4 {
+    font: 18px 'Source Sans Pro', sans-serif;
     font-weight: 400;
     color: #362f2d;
-    margin: -20px 0 0px 0;
+//    margin: -20px 0 0px 0;
 
     @include mq-personal {
       @include mobile-readable-font;
@@ -940,6 +947,14 @@ header{
   .testi-pic{
     float: left;
     width: 10%;
+
+    img {
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px;
+
+
+    }
+
   }
 
   .testi-box{
@@ -966,7 +981,7 @@ header{
   }
 
   .testi-text{
-    font: 14px 'Roboto Slab', serif;
+    font: 16px 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-style: italic;
     color: #362f2d;
@@ -981,12 +996,13 @@ header{
 /*--------Profile--------------------*/
 
 #sh-profile {
-  font-family: 'Roboto Slab', serif;
+  font-family:  'Source Sans Pro', sans-serif;
 
   #profile-details {
     margin: -20px auto;
 
     h3 {
+      font-size: 24px;
       font-weight: 400;
     }
   }
@@ -1028,8 +1044,8 @@ header{
   }
 
   h2 {
-    font: 20px 'Roboto Slab', serif;
-    font-weight: 300;
+    font: 24px 'Source Sans Pro', sans-serif;
+    font-weight: 400;
     color: #ffffff;
     margin: 30px 0 30px 0;
 
@@ -1050,108 +1066,108 @@ header{
 
 
 
-
-
-/*--------Writeup Email course------------------*/
-
-#sh-writeup-email-course {
-
-  .writeup-sub {
-    h3 {
-      font-weight: 400;
-    }
-    p {
-      font-size: 16px;
-    }
-    @include mq-personal {
-      @include mobile-readable-font;
-      p {
-      font-size: 14px;
-      }
-    }
-  }
-
-  #sh-w-pic {
-    padding-right: 10%;
-  }
-
-  .title-dark-s h2 {
-    text-align: center;
-    margin-bottom: -20px;
-  }
-
-  .course-content, .course-form {
-    h2 {
-    }
-    p {
-      font-size: 16px;
-    }
-    @include mq-personal {
-      @include mobile-readable-font;
-      h2 {
-        font-size: 18px;
-      }
-      p, li {
-      font-size: 14px;
-      }
-      .ck_subscribe_button{
-        margin-top: 10px;
-        width: 100%;
-      }
-    }
-
-  }
-
-  #email-course-section{
-    margin: -45px 0 0 0;
-  }
-
-  .course-pic-caption {
-    margin: 10px auto;
-    font-size: 18px;
-    font-style: italic;
-  }
-
-  #course-testimonials {
-    .kevin-photo{
-      margin-left: 30%;
-      width: 40%;
-    }
-  }
-
-  .sh-w-writeup {
-    width: 100%;
-    margin: 50px 50px 0 0;
-    padding: 0px 10px 10px 100px;
-
-    p {
-      font: 18px 'Roboto Slab', serif;
-      font-weight: 400;
-      color: #362f2d;
-      margin: 10px 0 10px 0;
-    }
-
-    @include mq-personal {
-      width: 100%;
-      padding: 0px 0px 0px 0px;
-
-      p {
-        font: 16px 'Roboto Slab', serif;
-        font-weight: 400;
-        color: #362f2d;
-        margin: 10px 0 10px 0;
-      }
-    }
-  }
-}
-
-/*--------End Writeup--------------*/
+//
+//
+///*--------Writeup Email course------------------*/
+//
+//#sh-writeup-email-course {
+//
+//  .writeup-sub {
+//    h3 {
+//      font-weight: 400;
+//    }
+//    p {
+//      font-size: 16px;
+//    }
+//    @include mq-personal {
+//      @include mobile-readable-font;
+//      p {
+//      font-size: 14px;
+//      }
+//    }
+//  }
+//
+//  #sh-w-pic {
+//    padding-right: 10%;
+//  }
+//
+//  .title-dark-s h2 {
+//    text-align: center;
+//    margin-bottom: -20px;
+//  }
+//
+//  .course-content, .course-form {
+//    h2 {
+//    }
+//    p {
+//      font-size: 16px;
+//    }
+//    @include mq-personal {
+//      @include mobile-readable-font;
+//      h2 {
+//        font-size: 18px;
+//      }
+//      p, li {
+//      font-size: 14px;
+//      }
+//      .ck_subscribe_button{
+//        margin-top: 10px;
+//        width: 100%;
+//      }
+//    }
+//
+//  }
+//
+//  #email-course-section{
+//    margin: -45px 0 0 0;
+//  }
+//
+//  .course-pic-caption {
+//    margin: 10px auto;
+//    font-size: 18px;
+//    font-style: italic;
+//  }
+//
+//  #course-testimonials {
+//    .kevin-photo{
+//      margin-left: 30%;
+//      width: 40%;
+//    }
+//  }
+//
+//  .sh-w-writeup {
+//    width: 100%;
+//    margin: 50px 50px 0 0;
+//    padding: 0px 10px 10px 100px;
+//
+//    p {
+//      font: 18px 'Roboto Slab', serif;
+//      font-weight: 400;
+//      color: #362f2d;
+//      margin: 10px 0 10px 0;
+//    }
+//
+//    @include mq-personal {
+//      width: 100%;
+//      padding: 0px 0px 0px 0px;
+//
+//      p {
+//        font: 16px 'Roboto Slab', serif;
+//        font-weight: 400;
+//        color: #362f2d;
+//        margin: 10px 0 10px 0;
+//      }
+//    }
+//  }
+//}
+//
+///*--------End Writeup--------------*/
 
 
 /*--------Open Letter--------------*/
 
 #open-letter {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 
   #letter-headline{
     background-color: $orange;
@@ -1202,7 +1218,7 @@ header{
   }
 
   #letter-copy {
-    font-family: arial;
+//    font-family: arial;
     text-align: center;
 
     #copy-body{
@@ -1217,16 +1233,17 @@ header{
       #letter-heading {
         margin: 50px 0;
         text-align: center;
-        font-size: 36px;
+        font-size: 40px;
         }
 
       h1 {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 60px;
+        font-size: 36px;
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 30px;
         margin: 40px 0 10px 0;
       }
 
@@ -1236,7 +1253,8 @@ header{
       }
 
       p {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 300;
       }
     }
 
