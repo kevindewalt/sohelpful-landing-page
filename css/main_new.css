@@ -200,6 +200,9 @@ td p {
 .hide {
   display: none; }
 
+.centered-text {
+  text-align: center; }
+
 #photo-credit {
   font-size: 14px;
   margin: 20px 10px; }
@@ -210,47 +213,42 @@ td p {
 /*----- Header -------------------*/
 header {
   background: #c0392b;
-  height: auto;
-  padding-top: 7px; }
-
-#logo {
-  float: left; }
-  @media (max-width: 35em) {
-    #logo {
-      max-width: 20%; } }
-
-#head-login {
-  float: right;
-  text-align: right; }
-
-#head-login ul {
-  list-style-type: none;
-  display: inline;
-  padding: 0;
-  margin: 0; }
-
-#head-login li {
-  float: left;
-  margin: 0 10px 0 5px;
-  color: #ffffff; }
-
-#head-login a {
-  text-decoration: none;
-  font: 16px 'Roboto Slab', serif;
-  font-weight: regular;
-  color: #ffffff; }
-  @media (max-width: 35em) {
-    #head-login a {
-      font: 12px 'Roboto Slab', serif; } }
-
-#head-login a:hover {
-  text-decoration: none;
-  font: 16px 'Roboto Slab', serif;
-  font-weight: regular;
-  color: #f1c40f; }
-  @media (max-width: 35em) {
-    #head-login a:hover {
-      font: 12px 'Roboto Slab', serif; } }
+  padding-top: 7px;
+  font-family: 'Roboto Slab', serif; }
+  header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  header li {
+    float: left;
+    margin: 0 10px 0 0px; }
+  header a, header a:hover {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff; }
+    @media (max-width: 35em) {
+      header a, header a:hover {
+        font-size: 10px; } }
+  header a:hover {
+    color: #f1c40f; }
+  header #logo {
+    float: left; }
+    @media (max-width: 35em) {
+      header #logo {
+        max-width: 20%; } }
+  header #head-login {
+    float: right; }
+  header #page-navbar {
+    text-align: center; }
+    header #page-navbar ul {
+      display: inline-block; }
+    header #page-navbar li {
+      margin: 0 20px 0 0px; }
+    header #page-navbar a, header #page-navbar a:hover {
+      font-size: 20px; }
+      @media (max-width: 35em) {
+        header #page-navbar a, header #page-navbar a:hover {
+          font-size: 1px; } }
 
 /*--------End of Header --------*/
 /*--------Intro ----------------*/
@@ -654,7 +652,7 @@ header {
       font-size: 24px;
       font-weight: 400; }
   #sh-profile #sh-profile-screenshot {
-    padding-right: 5%; }
+    padding-right: 15%; }
   @media (max-width: 35em) {
     #sh-profile {
       font: 16px 'Roboto Slab', serif;
@@ -673,7 +671,7 @@ header {
     width: 70%;
     text-align: center; }
   #widget .widget-box {
-    width: 60%;
+    width: 50%;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -690,9 +688,6 @@ header {
         text-align: left;
         font: 16px 'Roboto Slab', serif;
         margin: 10px 0 10px 0; } }
-
-#sh-network-chat {
-  margin: 70px 0; }
 
 /*--------End Widget--------------------*/
 /*--------Open Letter--------------*/

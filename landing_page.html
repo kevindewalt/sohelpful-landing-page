@@ -35,15 +35,12 @@
 
             <header>
               <div class="grid">
-
                   <div class="unit whole">
                     <div id="logo">
                       <img class="responsive-image" src="img/sohelpful-logo.png">
                     </div>
                     <div id="head-login">
                       <ul>
-                        <li><a href="##case-studies">Success Stories</a></li>
-                        <li><a href="##benefits-of-sh">Features</a></li>
                         <li><a href="course.html", target="_blank">Take a Free Course</a></li>
                         <li><a href="mailto:admin@sohelpful.me" data-uv-trigger>Contact</a></li>
                         <!-- <li> | </li> -->
@@ -55,7 +52,19 @@
                       </ul>
                     </div>
                   </div>
-
+              </div><!--grid-->
+              <div id="page-navbar">
+                <div class="grid content-container">
+                  <div class="unit whole">
+                    <ul>
+                      <li><a href="##how-sh-works">How it works</a></li>
+                      <li><a href="##case-studies">Success stories</a></li>
+                      <li><a href="##benefits-of-sh">Features</a></li>
+                      <li><a href="##open-letter">Not sure?</a></li>
+                      <li><a href="#h1#page-faq">Common questions</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </header>
 
@@ -491,14 +500,14 @@
                             </div><!-- end of testi-box -->
                             <div class="clear"></div>
 
-                            <div class="testi-pic"><img class="responsive-image" src="img/gabe.jpg"></div>
+                            <!-- <div class="testi-pic"><img class="responsive-image" src="img/gabe.jpg"></div>
                             <div class="testi-box">
                                 <h1 class="testi-name">Gabriel Stein,&nbsp; </h1>
                                 <h2 class="testi-loc">Sacramento, California</h2>
                                 <div class="clear"></div>
                                 <p class="testi-text">On our first call, Kevin was able to cut through my mental chatter and focus on what will create results in my business as I develop it! Just go ahead and set up the call with Kevin! The value is Huge!</p>
-                            </div><!-- end of testi-box -->
-                            <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div> -->
                         </div><!--testimonials-ss-->
                       </div><!--written-testimonials-section-->
                     </div><!--unit whole-->
@@ -673,7 +682,7 @@
                   <p>You can <a href="https://www.sohelpful.me/users/sign_up?plan=sohelpful9">try SoHelpful for absolutely no risk </a>- what in the world do you have to lose?</p>
 
 
-                  <h1 id="answerstoyouquestions">Answers to your questions</h1>
+                  <h1 id="page-faq">Answers to your questions</h1>
 
                   <h2 id="idontfeellikeanexpert.canireallyhelppeoplethroughsohelpful">I don’t feel like an expert. Can I really help people through SoHelpful?</h2>
 
@@ -743,6 +752,9 @@
         <div id="photo-credit">Photo credit: <a href="https://www.flickr.com/photos/siliconprairienews/5716225521/in/photolist-9H89Gr-4ZMWF5-5drcvL-9sREVa-9sUFqE-9sRFn2-9sUGmj-9sUFC9-9sUGsU-9sUFXo-9sUFQA-9sRFQ4-9sRFFk-9sRF92-aFcT8K-aFgHvC-aFdbWe-4ZHHpX-9Hb1Yu-9H88Gr-9H88Mi-3pESCK-5HNct4-5HSt97-aFh6dw-9H6fVi-9H5Ufk-9H6y3x-9H8RJU-9H8vkf-9H9rf1-9H6fZt-9H99H1-9H5YV6-9H8wob-9H6fKr-9H5UqK-9H6xQg-9H8S2u-9H5YrM-9H8w8C-9H8SsJ-9H5Cvz-9H99P7-9H8vvu-9H5BCV-9H5Yvi-9H5ZdP-9H5YFR-9H8SA7">Big Omaha/Malone &amp; Company</a></div>
 
         <!-- <link rel="stylesheet" href="css/jquery-ui.custom.css" /> -->
+        <link id="scrollUpTheme" rel="stylesheet" href="css/themes/pill.css">
+        <!-- <link id="scrollUpTheme" rel="stylesheet" href="css/labs.css"> -->
+
         <script src="js/jquery-1.10.2.js"></script>
         <script src="js/jquery-ui-1.10.4.min.js"></script>
 
@@ -752,19 +764,25 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/uservoice.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
 
-        <!--script>
-            $('.case-text').readmore({
-              // heightMargin: 50,
-              maxHeight: 0
-            });
-        </script-->
 
           <script>
-          // $( "button.showmore" ).click(function() {
-          //   $( ".case-text" ).toggle( "fold", 1000 );
-          // });
+          $(function () {
+              $.scrollUp({
+                  scrollName: 'scrollUp', // Element ID
+                  topDistance: '300', // Distance from top before showing element (px)
+                  topSpeed: 300, // Speed back to top (ms)
+                  animation: 'fade', // Fade, slide, none
+                  animationInSpeed: 200, // <a href="http://www.jqueryscript.net/animation/">Animation</a> in speed (ms)
+                  animationOutSpeed: 200, // Animation out speed (ms)
+                  scrollText: 'Scroll to top', // Text for element
+                  activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              });
+          });
+          </script>
 
+          <script>
           // Hide the extra content initially, using JS so that if JS is disabled, no problemo:
           $('.read-more-content').addClass('hide')
           $('.read-more-show, .read-more-hide').removeClass('hide')

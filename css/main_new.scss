@@ -280,6 +280,10 @@ td p{
   display: none;
 }
 
+.centered-text {
+  text-align: center;
+}
+
 #photo-credit {
   font-size: 14px;
   margin: 20px 10px;
@@ -294,54 +298,67 @@ td p{
 
 header{
   background: $red;
-  height: auto;
+//  height: auto;
   padding-top: 7px;
-}
+  font-family: 'Roboto Slab', serif;
 
-#logo{
-  float: left;
-  @include mq-personal {
-    max-width: 20%;
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
-}
 
-#head-login{
-  float: right;
-  text-align: right;
-}
-
-#head-login ul{
-  list-style-type:none;
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-
-#head-login li{
-  float: left;
-  margin: 0 10px 0 5px;
-  color: #ffffff;
-}
-
-#head-login a{
-  text-decoration: none;
-  font: 16px 'Roboto Slab', serif;
-  font-weight: regular;
-  color: #ffffff;
-
-  @include mq-personal {
-  font: 12px 'Roboto Slab', serif;
+  li{
+    float: left;
+    margin: 0 10px 0 0px;
   }
-}
 
-#head-login a:hover{
-  text-decoration: none;
-  font: 16px 'Roboto Slab', serif;
-  font-weight: regular;
-  color: #f1c40f;
+  a, a:hover {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
 
-  @include mq-personal {
-  font: 12px 'Roboto Slab', serif;
+    @include mq-personal {
+    font-size: 10px;
+    }
+  }
+
+  a:hover{
+    color: #f1c40f;
+  }
+
+  #logo{
+    float: left;
+    @include mq-personal {
+      max-width: 20%;
+    }
+  }
+
+  #head-login{
+    float: right;
+  }
+
+  #page-navbar {
+    text-align: center;
+
+
+
+    ul {
+      display: inline-block;
+    }
+
+    li{
+      margin: 0 20px 0 0px;
+    }
+
+
+    a, a:hover {
+      font-size: 20px;
+
+      @include mq-personal {
+      font-size: 1px;
+      }
+    }
   }
 }
 
@@ -1008,7 +1025,7 @@ header{
   }
 
   #sh-profile-screenshot{
-    padding-right: 5%;
+    padding-right: 15%;
   }
 
   @include mq-personal {
@@ -1036,7 +1053,7 @@ header{
   }
 
   .widget-box {
-    width: 60%;
+    width: 50%;
     background-color: #ffffff;
     padding: 20px 20px 20px 20px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -1056,10 +1073,6 @@ header{
       margin: 10px 0 10px 0;
     }
   }
-}
-
-#sh-network-chat{
-  margin: 70px 0;
 }
 
 /*--------End Widget--------------------*/
