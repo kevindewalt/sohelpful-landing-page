@@ -340,8 +340,11 @@ header{
 
   #page-navbar {
     text-align: center;
+    padding-top: 0px;
 
-
+    .content-container{
+      padding-top: 0;
+    }
 
     ul {
       display: inline-block;
@@ -1079,103 +1082,6 @@ header{
 
 
 
-//
-//
-///*--------Writeup Email course------------------*/
-//
-//#sh-writeup-email-course {
-//
-//  .writeup-sub {
-//    h3 {
-//      font-weight: 400;
-//    }
-//    p {
-//      font-size: 16px;
-//    }
-//    @include mq-personal {
-//      @include mobile-readable-font;
-//      p {
-//      font-size: 14px;
-//      }
-//    }
-//  }
-//
-//  #sh-w-pic {
-//    padding-right: 10%;
-//  }
-//
-//  .title-dark-s h2 {
-//    text-align: center;
-//    margin-bottom: -20px;
-//  }
-//
-//  .course-content, .course-form {
-//    h2 {
-//    }
-//    p {
-//      font-size: 16px;
-//    }
-//    @include mq-personal {
-//      @include mobile-readable-font;
-//      h2 {
-//        font-size: 18px;
-//      }
-//      p, li {
-//      font-size: 14px;
-//      }
-//      .ck_subscribe_button{
-//        margin-top: 10px;
-//        width: 100%;
-//      }
-//    }
-//
-//  }
-//
-//  #email-course-section{
-//    margin: -45px 0 0 0;
-//  }
-//
-//  .course-pic-caption {
-//    margin: 10px auto;
-//    font-size: 18px;
-//    font-style: italic;
-//  }
-//
-//  #course-testimonials {
-//    .kevin-photo{
-//      margin-left: 30%;
-//      width: 40%;
-//    }
-//  }
-//
-//  .sh-w-writeup {
-//    width: 100%;
-//    margin: 50px 50px 0 0;
-//    padding: 0px 10px 10px 100px;
-//
-//    p {
-//      font: 18px 'Roboto Slab', serif;
-//      font-weight: 400;
-//      color: #362f2d;
-//      margin: 10px 0 10px 0;
-//    }
-//
-//    @include mq-personal {
-//      width: 100%;
-//      padding: 0px 0px 0px 0px;
-//
-//      p {
-//        font: 16px 'Roboto Slab', serif;
-//        font-weight: 400;
-//        color: #362f2d;
-//        margin: 10px 0 10px 0;
-//      }
-//    }
-//  }
-//}
-//
-///*--------End Writeup--------------*/
-
 
 /*--------Open Letter--------------*/
 
@@ -1294,6 +1200,12 @@ header{
     }
 
 
+  }
+
+  #bottom-faq {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px;
   }
 
 }

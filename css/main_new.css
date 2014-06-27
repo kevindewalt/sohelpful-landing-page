@@ -239,7 +239,10 @@ header {
   header #head-login {
     float: right; }
   header #page-navbar {
-    text-align: center; }
+    text-align: center;
+    padding-top: 0px; }
+    header #page-navbar .content-container {
+      padding-top: 0; }
     header #page-navbar ul {
       display: inline-block; }
     header #page-navbar li {
@@ -766,6 +769,10 @@ header {
         float: left;
         margin: 0 0 0 5%;
         width: 50%; }
+  #open-letter #bottom-faq {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 20px; }
 
 /*--------End Open Letter---------*/
 /* ==========================================================================
