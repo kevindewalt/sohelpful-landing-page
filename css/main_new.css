@@ -211,7 +211,7 @@ td p {
    ========================================================================== */
 /*----- Header -------------------*/
 header {
-  background: #c0392b;
+  background: #d35400;
   padding-top: 7px;
   font-family: 'Roboto Slab', serif; }
   header ul {
@@ -237,30 +237,15 @@ header {
         max-width: 20%; } }
   header #head-login {
     float: right; }
-  header #page-navbar {
-    text-align: center;
-    padding-top: 0px; }
-    header #page-navbar .content-container {
-      padding-top: 0; }
-    header #page-navbar ul {
-      display: inline-block; }
-    header #page-navbar li {
-      margin: 0 20px 0 0px; }
-    header #page-navbar a, header #page-navbar a:hover {
-      font-size: 20px; }
-      @media (max-width: 35em) {
-        header #page-navbar a, header #page-navbar a:hover {
-          font-size: 1px; } }
 
 /*--------End of Header --------*/
 /*--------Intro ----------------*/
 #intro {
   width: 100%;
   background: #d35400;
-  padding: 30px 0 0 0;
   text-align: center; }
   #intro h1 {
-    font: 50px 'Roboto Slab', serif;
+    font: 40px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0; }
@@ -268,25 +253,46 @@ header {
       #intro h1 {
         font: 24px 'Roboto Slab', serif; } }
   #intro h2 {
-    font: 26px 'Source Sans Pro', sans-serif;
+    font: 24px 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #ffffff;
-    margin: 30px 0 20px 0; }
+    margin: 40px 0 -10px 0; }
     @media (max-width: 35em) {
       #intro h2 {
-        font-size: 18px;
-        font-weight: 300; } }
-  #intro #page-nav span.link {
-    font: 26px 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #ffffff; }
-    @media (max-width: 35em) {
-      #intro #page-nav span.link {
         font-size: 18px;
         font-weight: 300; } }
 
 /*-------End of Intro--------------*/
 /*-------Promise-Intro----------------*/
+/*--------Tour-----------------------*/
+#tour {
+  background-color: #c0392b;
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff; }
+  #tour h1 {
+    margin: -10px 0;
+    display: none;
+    font: 40px 'Roboto Slab', serif; }
+  #tour ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+  #tour li {
+    float: left;
+    margin: 0 20px 0 0px; }
+  #tour a, #tour a:hover {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff; }
+    @media (max-width: 35em) {
+      #tour a, #tour a:hover {
+        font-size: 10px; } }
+  #tour a:hover {
+    color: #f1c40f; }
+
+/*--------End Tour----------------*/
 #promise-intro h2 {
   font: 30px 'Roboto Slab', serif;
   font-weight: 400; }
@@ -294,8 +300,13 @@ header {
   font: 24px 'Source Sans Pro', sans-serif;
   font-weight: 300;
   margin-top: -10px; }
+#promise-intro #sh-pitch {
+  margin: 0 50px;
+  text-align: center;
+  font: 24px 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
 #promise-intro .pain-point {
-  margin: 40px 0; }
+  margin: 0 0 40px 0; }
 
 /*-------End of Promise-Intro----------------*/
 /*-------How SH Works------------*/

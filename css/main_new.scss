@@ -296,7 +296,7 @@ td p{
 /*----- Header -------------------*/
 
 header{
-  background: $red;
+  background: $orange;
 //  height: auto;
   padding-top: 7px;
   font-family: 'Roboto Slab', serif;
@@ -337,31 +337,31 @@ header{
     float: right;
   }
 
-  #page-navbar {
-    text-align: center;
-    padding-top: 0px;
-
-    .content-container{
-      padding-top: 0;
-    }
-
-    ul {
-      display: inline-block;
-    }
-
-    li{
-      margin: 0 20px 0 0px;
-    }
-
-
-    a, a:hover {
-      font-size: 20px;
-
-      @include mq-personal {
-      font-size: 1px;
-      }
-    }
-  }
+//  #page-navbar {
+//    text-align: center;
+//    padding-top: 0px;
+//
+//    .content-container{
+//      padding-top: 0;
+//    }
+//
+//    ul {
+//      display: inline-block;
+//    }
+//
+//    li{
+//      margin: 0 20px 0 0px;
+//    }
+//
+//
+//    a, a:hover {
+//      font-size: 20px;
+//
+//      @include mq-personal {
+//      font-size: 1px;
+//      }
+//    }
+//  }
 }
 
 
@@ -375,11 +375,11 @@ header{
 #intro{
   width: 100%;
   background: #d35400;
-  padding: 30px 0 0 0;
+//  padding: 30px 0 0 0;
   text-align: center;
 
   h1 {
-    font: 50px 'Roboto Slab', serif;
+    font: 40px 'Roboto Slab', serif;
     font-weight: bold;
     color: #ffffff;
     margin: 0;
@@ -390,10 +390,10 @@ header{
   }
 
   h2 {
-    font: 26px 'Source Sans Pro', sans-serif;
+    font: 24px 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: #ffffff;
-    margin: 30px 0 20px 0;
+    margin: 40px 0 -10px 0;
 
     @include mq-personal {
       font-size: 18px;
@@ -401,21 +401,6 @@ header{
     }
   }
 
-  #page-nav {
-
-    span.link {
-      font: 26px 'Roboto Slab', serif;
-      font-weight: 300;
-      color: #ffffff;
-//      margin: 30px 0 20px 0;
-
-      @include mq-personal {
-        font-size: 18px;
-        font-weight: 300;
-      }
-    }
-
-  }
 }
 
 
@@ -425,8 +410,59 @@ header{
 
 /*-------Promise-Intro----------------*/
 
+/*--------Tour-----------------------*/
+
+#tour {
+  background-color: $red;
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+//  .content-container{
+//    padding-top: 0;
+//  }
+
+  h1 {
+    margin: -10px 0;
+    display: none;
+    font: 40px 'Roboto Slab', serif;
+
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  li{
+    float: left;
+    margin: 0 20px 0 0px;
+  }
+
+  a, a:hover {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+
+    @include mq-personal {
+    font-size: 10px;
+    }
+  }
+
+  a:hover{
+    color: #f1c40f;
+  }
+
+}
+
+/*--------End Tour----------------*/
+
 
 #promise-intro{
+
+//  background-color: $orange;
+//  color: #ffffff;
 
   h2 {
     font: 30px 'Roboto Slab', serif;
@@ -440,10 +476,18 @@ header{
     margin-top: -10px;
   }
 
+  #sh-pitch {
+    margin: 0 50px;
+    text-align: center;
+    font: 24px 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+
   .pain-point {
-    margin: 40px 0;
+    margin: 0 0 40px 0;
   }
 }
+
 
 
 
