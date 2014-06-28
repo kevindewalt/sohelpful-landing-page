@@ -333,6 +333,8 @@ header {
         font-weight: 300; } }
   #how-sh-works .step-block {
     margin-bottom: 20px; }
+  #how-sh-works .step-copy {
+    margin-top: 50px; }
   #how-sh-works #step-1-pic img {
     width: 90%; }
   #how-sh-works #step-2-pic img {

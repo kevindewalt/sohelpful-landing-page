@@ -18,11 +18,9 @@
   clear: both;
 }
 .grid .unit {
-/*  float: left; */
+  float: left;
   width: 100%;
   padding: 10px;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
@@ -51,9 +49,9 @@
 /* Width classes also have shorthand versions numbered as fractions
  * For example: for a grid unit 1/3 (one third) of the parent width,
  * simply apply class="w-1-3" to the element. */
-.grid .whole,          .grid .w-1-1 { width: 100%; display: table; }
+.grid .whole,          .grid .w-1-1 { width: 100%; }
 .grid .half,           .grid .w-1-2 { width: 50%; }
-.grid .one-third,      .grid .w-1-3 { width: 33.3332%; float: left; }
+.grid .one-third,      .grid .w-1-3 { width: 33.3332%; }
 .grid .two-thirds,     .grid .w-2-3 { width: 66.6665%; }
 .grid .one-quarter,    .grid .w-1-4 { width: 25%; }
 .grid .three-quarters, .grid .w-3-4 { width: 75%; }
