@@ -296,15 +296,27 @@ header {
 #promise-intro h2 {
   font: 30px 'Roboto Slab', serif;
   font-weight: 400; }
+  @media (max-width: 35em) {
+    #promise-intro h2 {
+      font: 20px 'Roboto Slab', serif;
+      font-weight: 300; } }
 #promise-intro h3 {
   font: 24px 'Source Sans Pro', sans-serif;
   font-weight: 300;
   margin-top: -10px; }
+  @media (max-width: 35em) {
+    #promise-intro h3 {
+      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 300; } }
 #promise-intro #sh-pitch {
   margin: 0 50px;
   text-align: center;
   font: 24px 'Source Sans Pro', sans-serif;
   font-weight: 400; }
+  @media (max-width: 35em) {
+    #promise-intro #sh-pitch {
+      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 300; } }
 #promise-intro .pain-point {
   margin: 0 0 40px 0; }
 
@@ -320,16 +332,15 @@ header {
     margin: 10px 0 10px 0; }
     @media (max-width: 35em) {
       #how-sh-works h3 {
-        font: 16px 'Roboto Slab', serif;
-        font-weight: 300;
-        font-size: 20px; } }
+        font: 20px 'Roboto Slab', serif;
+        font-weight: 300; } }
   #how-sh-works p {
     color: #ffffff;
     font: 20px 'Source Sans Pro', sans-serif;
     font-weight: 300; }
     @media (max-width: 35em) {
       #how-sh-works p {
-        font: 16px 'Roboto Slab', serif;
+        font: 16px 'Source Sans Pro', sans-serif;
         font-weight: 300; } }
   #how-sh-works .step-block {
     margin-bottom: 20px; }
@@ -367,6 +378,11 @@ header {
       font-weight: 300;
       font-style: italic;
       color: #362f2d; }
+      @media (max-width: 35em) {
+        #how-sh-works #mini-testimonials-section .mini-testi-text {
+          font: 16px 'Source Sans Pro', sans-serif;
+          font-weight: 300;
+          font-style: italic; } }
 
 /*-------End How SH Works--------*/
 /*--------Case Studies--------------------*/
@@ -388,12 +404,14 @@ header {
       #case-studies .case-header {
         font-size: 20px; } }
   #case-studies .case-pic img {
-    float: left;
     width: 100%;
     margin: 0 15px 20px 0;
     max-width: 290px;
     -webkit-boxrder-radius: 25px 25px 25px 25px;
     border-radius: 25px 25px 25px 25px; }
+    @media (max-width: 35em) {
+      #case-studies .case-pic img {
+        width: 50%; } }
   #case-studies .case-text p {
     font-size: 18px;
     padding-bottom: 5px; }
@@ -402,9 +420,17 @@ header {
       text-decoration: none; }
       #case-studies .case-text p a:hover {
         text-decoration: underline; }
+    @media (max-width: 35em) {
+      #case-studies .case-text p {
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300; } }
   #case-studies .case-name {
     font-size: 20px;
     margin: -5px 0px 10px 10px; }
+    @media (max-width: 35em) {
+      #case-studies .case-name {
+        font: 20px 'Source Sans Pro', sans-serif;
+        font-weight: 400; } }
   #case-studies .case-quote {
     font-size: 20px;
     font-weight: 300;
@@ -412,7 +438,9 @@ header {
     margin: 20px 0 10px 0; }
     @media (max-width: 35em) {
       #case-studies .case-quote {
-        font-size: 18px; } }
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-style: italic; } }
   @media (max-width: 35em) {
     #case-studies {
       font: 16px 'Roboto Slab', serif;
@@ -553,6 +581,11 @@ header {
   font: 18px 'Source Sans Pro', sans-serif;
   font-style: italic;
   font-weight: 300; }
+  @media (max-width: 35em) {
+    #sh-schedule #sh-quote {
+      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-style: italic; } }
 #sh-schedule #sh-sched-desc-left {
   padding-right: 20px;
   float: left; }
@@ -590,6 +623,11 @@ header {
     font: 18px 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 300; }
+    @media (max-width: 35em) {
+      #sh-testimonials-subheading #test-quote {
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-style: italic; } }
 
 #sh-t-table {
   background: #ffffff;
@@ -672,19 +710,22 @@ header {
     #sh-profile #profile-details h3 {
       font-size: 24px;
       font-weight: 400; }
+      @media (max-width: 35em) {
+        #sh-profile #profile-details h3 {
+          font: 20px 'Roboto Slab', serif;
+          font-weight: 300; } }
   #sh-profile #sh-profile-screenshot {
     padding-right: 15%; }
-  @media (max-width: 35em) {
-    #sh-profile {
-      font: 16px 'Roboto Slab', serif;
-      font-weight: 300;
-      text-align: left;
-      font: 14px 'Roboto Slab', serif; } }
   #sh-profile #test-quote {
     margin: 40px 0px 40px 10px;
     font: 18px 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 300; }
+    @media (max-width: 35em) {
+      #sh-profile #test-quote {
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-style: italic; } }
 
 /*------End Profile-----------------*/
 /*--------Widget--------------------*/
@@ -709,11 +750,8 @@ header {
     margin: 20px 0; }
     @media (max-width: 35em) {
       #widget h2 {
-        font: 16px 'Roboto Slab', serif;
-        font-weight: 300;
-        text-align: left;
-        font: 16px 'Roboto Slab', serif;
-        margin: 10px 0 10px 0; } }
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300; } }
 
 /*--------End Widget--------------------*/
 /*--------Open Letter--------------*/
@@ -721,7 +759,7 @@ header {
   font-family: 'Source Sans Pro', sans-serif; }
   #open-letter #letter-headline {
     background-color: #d35400;
-    padding: 100px;
+    padding: 10% 0;
     text-align: center;
     color: #fff; }
     #open-letter #letter-headline h1 {
@@ -731,7 +769,8 @@ header {
       margin: 0; }
       @media (max-width: 35em) {
         #open-letter #letter-headline h1 {
-          font-size: 24px; } }
+          font: 24px 'Roboto Slab', serif;
+          font-weight: 400; } }
     #open-letter #letter-headline h2 {
       font-size: 24px;
       font-weight: 300;
@@ -739,7 +778,7 @@ header {
       margin: 120px 0 70px 0; }
       @media (max-width: 35em) {
         #open-letter #letter-headline h2 {
-          font-size: 18px;
+          font: 16px 'Source Sans Pro', sans-serif;
           font-weight: 300; } }
   #open-letter #kevin-message h1 {
     font-size: 36px;
@@ -747,12 +786,17 @@ header {
     margin: 40px 0 20px 0; }
     @media (max-width: 35em) {
       #open-letter #kevin-message h1 {
-        font-size: 24px; } }
+        font: 20px 'Source Sans Pro', sans-serif;
+        font-weight: 400; } }
   #open-letter #kevin-message h3 {
     font-size: 24px;
     text-align: center;
     font-weight: 300;
     margin: 40px 0 0 0; }
+    @media (max-width: 35em) {
+      #open-letter #kevin-message h3 {
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300; } }
   #open-letter #letter-copy {
     text-align: center; }
     #open-letter #letter-copy #copy-body {
@@ -766,18 +810,39 @@ header {
         margin: 50px 0;
         text-align: center;
         font-size: 40px; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #copy-body #letter-heading {
+            font: 24px 'Roboto Slab', serif;
+            font-weight: 400; } }
       #open-letter #letter-copy #copy-body h1 {
         text-align: center;
         margin-top: 60px;
         font-size: 36px; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #copy-body h1 {
+            font: 24px 'Roboto Slab', serif;
+            font-weight: 400; } }
       #open-letter #letter-copy #copy-body h2 {
         font-size: 30px;
         margin: 40px 0 10px 0; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #copy-body h2 {
+            font: 20px 'Source Sans Pro', sans-serif;
+            font-weight: 400; } }
       #open-letter #letter-copy #copy-body blockquote {
         font-style: italic; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #copy-body blockquote {
+            font: 16px 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-style: italic; } }
       #open-letter #letter-copy #copy-body p {
         font-size: 18px;
         font-weight: 300; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #copy-body p {
+            font: 16px 'Source Sans Pro', sans-serif;
+            font-weight: 300; } }
     #open-letter #letter-copy #gary {
       margin: 50px 0; }
       #open-letter #letter-copy #gary #gary-pic {
@@ -786,12 +851,20 @@ header {
         #open-letter #letter-copy #gary #gary-pic img {
           -webkit-border-radius: 5px 5px 5px 5px;
           border-radius: 5px 5px 5px 5px; }
+          @media (max-width: 35em) {
+            #open-letter #letter-copy #gary #gary-pic img {
+              display: none; } }
       #open-letter #letter-copy #gary #gary-quote {
         font-style: italic;
         font-size: 20px;
         float: left;
         margin: 0 0 0 5%;
         width: 50%; }
+        @media (max-width: 35em) {
+          #open-letter #letter-copy #gary #gary-quote {
+            font: 16px 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-style: italic; } }
   #open-letter #bottom-faq {
     text-align: center;
     margin: 50px 0;

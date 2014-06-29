@@ -95,6 +95,32 @@ textarea {
   font-weight: 300;
 }
 
+@mixin mobile-big-headline {
+  font: 24px 'Roboto Slab', serif;
+  font-weight: 400;
+}
+@mixin mobile-small-headline {
+  font: 20px 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+@mixin mobile-big-copy {
+  font: 20px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+@mixin mobile-small-copy {
+  font: 16px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+@mixin mobile-quote {
+  font: 16px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
 @mixin mobile-table-font {
   font: 12px 'Roboto Slab', serif;
   font-weight: 300;
@@ -467,13 +493,21 @@ header{
   h2 {
     font: 30px 'Roboto Slab', serif;
     font-weight: 400;
+
+    @include mq-personal {
+      @include mobile-small-headline;
+    }
   }
+
 
   h3 {
 //    color: #ffffff;
     font: 24px 'Source Sans Pro', sans-serif;
     font-weight: 300;
     margin-top: -10px;
+    @include mq-personal {
+      @include mobile-small-copy;
+    }
   }
 
   #sh-pitch {
@@ -481,6 +515,10 @@ header{
     text-align: center;
     font: 24px 'Source Sans Pro', sans-serif;
     font-weight: 400;
+
+    @include mq-personal {
+      @include mobile-small-copy;
+    }
   }
 
   .pain-point {
@@ -511,16 +549,16 @@ header{
     margin: 10px 0 10px 0;
 
     @include mq-personal {
-      @include mobile-readable-font;
-      font-size: 20px;
+      @include mobile-small-headline;
     }
   }
+
   p {
     color: #ffffff;
     font: 20px 'Source Sans Pro', sans-serif;
     font-weight: 300;
     @include mq-personal {
-      @include mobile-readable-font;
+      @include mobile-small-copy;
     }
   }
 
@@ -587,6 +625,10 @@ header{
       font-weight: 300;
       font-style: italic;
       color: #362f2d;
+      @include mq-personal {
+        @include mobile-quote;
+      }
+
     }
   }
 
@@ -624,12 +666,15 @@ header{
   }
 
   .case-pic img {
-    float: left;
     width: 100%;
     margin: 0 15px 20px 0;
     max-width: 290px;
     -webkit-boxrder-radius: 25px 25px 25px 25px;
     border-radius: 25px 25px 25px 25px;
+
+    @include mq-personal {
+      width: 50%;
+    }
   }
 
   .case-text p {
@@ -643,11 +688,20 @@ header{
         text-decoration: underline;
       }
     }
+
+    @include mq-personal {
+      @include mobile-small-copy;
+    }
+
   }
 
   .case-name {
     font-size: 20px;
     margin: -5px 0px 10px 10px;
+    @include mq-personal {
+      @include mobile-big-copy;
+    }
+
   }
 
   .case-quote {
@@ -657,7 +711,7 @@ header{
 //    color: #362f2d;
     margin: 20px 0 10px 0;
     @include mq-personal {
-      font-size: 18px;
+      @include mobile-quote;
     }
   }
 
@@ -882,6 +936,9 @@ header{
     font: 18px 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 300;
+    @include mq-personal {
+      @include mobile-quote;
+    }
   }
 
   #sh-sched-desc-left{
@@ -940,6 +997,9 @@ header{
     font: 18px 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 300;
+    @include mq-personal {
+      @include mobile-quote;
+    }
   }
 }
 
@@ -1057,6 +1117,10 @@ header{
     h3 {
       font-size: 24px;
       font-weight: 400;
+      @include mq-personal {
+        @include mobile-small-headline;
+      }
+
     }
   }
 
@@ -1064,17 +1128,14 @@ header{
     padding-right: 15%;
   }
 
-  @include mq-personal {
-    @include mobile-readable-font;
-    text-align: left;
-    font: 14px 'Roboto Slab', serif;
-  }
-
   #test-quote {
     margin:40px 0px 40px 10px;
     font: 18px 'Source Sans Pro', sans-serif;
     font-style: italic;
     font-weight: 300;
+    @include mq-personal {
+      @include mobile-quote;
+    }
   }
 
 }
@@ -1109,11 +1170,9 @@ header{
     margin: 20px 0;
 
     @include mq-personal {
-      @include mobile-readable-font;
-      text-align: left;
-      font: 16px 'Roboto Slab', serif;
-      margin: 10px 0 10px 0;
+      @include mobile-small-copy;
     }
+
   }
 }
 
@@ -1129,7 +1188,7 @@ header{
 
   #letter-headline{
     background-color: $orange;
-    padding: 100px;
+    padding: 10% 0;
     text-align: center;
     color: #fff;
 
@@ -1140,7 +1199,8 @@ header{
       margin: 0;
 
       @include mq-personal {
-        font-size: 24px;
+        @include mobile-big-headline;
+
       }
     }
 
@@ -1151,8 +1211,8 @@ header{
       margin: 120px 0 70px 0;
 
       @include mq-personal {
-        font-size: 18px;
-        font-weight: 300;
+        @include mobile-small-copy;
+
       }
     }
   }
@@ -1163,7 +1223,7 @@ header{
       text-align: center;
       margin: 40px 0 20px 0;
       @include mq-personal {
-        font-size: 24px;
+        @include mobile-big-copy;
       }
     }
 
@@ -1172,6 +1232,10 @@ header{
       text-align: center;
       font-weight: 300;
       margin: 40px 0 0 0;
+      @include mq-personal {
+        @include mobile-small-copy;
+      }
+
     }
   }
 
@@ -1192,27 +1256,45 @@ header{
         margin: 50px 0;
         text-align: center;
         font-size: 40px;
+        @include mq-personal {
+          @include mobile-big-headline;
+        }
+
         }
 
       h1 {
         text-align: center;
         margin-top: 60px;
         font-size: 36px;
+        @include mq-personal {
+          @include mobile-big-headline;
+        }
       }
 
       h2 {
         font-size: 30px;
         margin: 40px 0 10px 0;
+        @include mq-personal {
+          @include mobile-big-copy;
+        }
+
       }
 
 
       blockquote {
         font-style: italic;
+        @include mq-personal {
+          @include mobile-quote;
       }
+    }
 
       p {
         font-size: 18px;
         font-weight: 300;
+        @include mq-personal {
+          @include mobile-small-copy;
+      }
+
       }
 
     }
@@ -1226,6 +1308,10 @@ header{
         img {
         -webkit-border-radius: 5px 5px 5px 5px;
         border-radius: 5px 5px 5px 5px;
+        @include mq-personal {
+          display: none;
+      }
+
         }
       }
 
@@ -1235,6 +1321,10 @@ header{
         float: left;
         margin: 0 0 0 5%;
         width: 50%;
+        @include mq-personal {
+          @include mobile-quote;
+      }
+
       }
 
     }
