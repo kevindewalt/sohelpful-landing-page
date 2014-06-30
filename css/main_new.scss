@@ -1250,6 +1250,10 @@ header{
     margin: 0 7%;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
+    @include mq-personal {
+      padding: 10px 3%;
+    }
+
 
 
       #letter-heading {
@@ -1336,6 +1340,10 @@ header{
     text-align: center;
     margin: 50px 0;
     font-size: 20px;
+    @include mq-personal {
+      @include mobile-big-copy;
+  }
+
   }
 
 }
