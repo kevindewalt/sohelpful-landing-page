@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'Black Rose';
+    src: url('BLACKR~1.TTF') format('truetype');
+}
+
+.font-container-template {
+    display: none;
+    width: 100%;
+}
+
+.font-container {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.col {
+    display: table-cell;
+    padding-left: 10px;
+    width: 200px;
+}
+
+h2.logo {
+    font-weight: normal;
+}
+
+.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before {
+    background: lightgray;
+    display: block;
+    font-size: 8px;
+    margin: 0 0 5px 2px;
+}
+
+.logo1:before {
+    content: 'Logo 1';
+}
+
+.logo2:before {
+    content: 'Logo 2';
+}
+
+.logo3:before {
+    content: 'Logo 3';
+}
+
+.logo4:before {
+    content: 'Logo 4';
+}
+
+.logo5:before {
+    content: 'Logo 5';
+}
+
+.logo6:before {
+    content: 'Logo 6';
+}
+
+.logo7:before {
+    content: 'Logo 7';
+}
+
+.logo8:before {
+    content: 'Logo 8';
+}
+
+.logo9:before {
+    content: 'Logo 9';
+}
+
+.logo10:before {
+    content: 'Logo 10';
+}
+
+.logo11:before {
+    content: 'Logo 11';
+}
+
+.logo12:before {
+    content: 'Logo 12';
+}
+
+.logo13:before {
+    content: 'Logo 13';
+}
+
+.logo14:before {
+    content: 'Logo 14';
+}
+
+.logo15:before {
+    content: 'Logo 15';
+}
+
+.logo16:before {
+    content: 'Logo 16';
+}
+
+.logo17:before {
+    content: 'Logo 17';
+}
+
+.logo18:before {
+    content: 'Logo 18';
+}
+
+.logo19:before {
+    content: 'Logo 19';
+}
+
+.logo20:before {
+    content: 'Logo 20';
+}
+
+.logo21:before {
+    content: 'Logo 21';
+}
+
+.logo22:before {
+    content: 'Logo 22';
+}
+
+.logo23:before {
+    content: 'Logo 23';
+}
+
+.logo24:before {
+    content: 'Logo 24';
+}
+
+.logo1 {
+    font-weight: bold !important;
+}
+
+.logo1 span {
+}
+
+.logo2 {
+    font-style: italic;
+}
+
+.logo2 span {
+}
+
+.logo3 {
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+.logo3 span {
+}
+
+.logo4 {
+    text-transform: uppercase;
+    font-weight: bold !important;
+}
+
+.logo4 span {
+}
+
+.logo5 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.logo5 span {
+}
+
+.logo6 {
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.logo6 span {
+}
+
+.logo7 {
+    text-transform: lowercase;
+    font-weight: bold !important;
+}
+
+.logo7 span {
+}
+
+.logo8 {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.logo8 span {
+}
+
+.logo9 {
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+.logo9 span {
+}
+
+.logo10 {
+    font-weight: bold !important;
+}
+
+.logo10 span {
+    padding-left: 0.15em;
+}
+
+.logo11 {
+    font-style: italic;
+}
+
+.logo11 span {
+    padding-left: 0.15em;
+}
+
+.logo12 {
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.logo12 span {
+    padding-left: 0.15em;
+}
+
+.logo13 {
+    text-transform: uppercase;
+}
+
+.logo13 span {
+    padding-left: 0.15em;
+}
+
+.logo14 {
+    text-transform: uppercase;
+    font-weight: bold !important;
+}
+
+.logo14 span {
+    padding-left: 0.15em;
+}
+
+.logo15 {
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.logo15 span {
+    padding-left: 0.15em;
+}
+
+.logo16 {
+    text-transform: lowercase;
+}
+
+.logo16 span {
+    padding-left: 0.15em;
+}
+
+.logo17 {
+    text-transform: lowercase;
+    font-weight: bold !important;
+}
+
+.logo17 span {
+    padding-left: 0.15em;
+}
+
+.logo18 {
+    text-transform: lowercase;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.logo18 span {
+    padding-left: 0.15em;
+}
+
+.logo19 {
+    text-transform: lowercase;
+}
+
+.logo19 span {
+    text-transform: capitalize;
+    padding-left: 0.15em;
+}
+
+.logo20 {
+    text-transform: lowercase;
+}
+
+.logo20 span {
+    text-transform: capitalize;
+    padding-left: 0.15em;
+    font-weight: bold !important;
+}
+
+.logo21 {
+    text-transform: lowercase;
+}
+
+.logo21 span {
+    text-transform: capitalize;
+    font-weight: bold !important;
+    font-style: italic;
+    padding-left: 0.15em;
+}
+
+.logo22 {
+    text-transform: lowercase;
+    color: gray;
+}
+
+.logo22 span {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold !important;
+    font-style: italic;
+    padding-left: 0.15em;
+}
+
+.logo23 {
+    color: gray;
+    text-transform: lowercase;
+    font-weight: bold !important;
+}
+
+.logo23 span {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold !important;
+    font-style: italic;
+    padding-left: 0.15em;
+}
+
+.logo24 {
+    color: gray;
+    text-transform: lowercase;
+    font-weight: bold !important;
+}
+
+.logo24 span {
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold !important;
+    font-style: italic;
+}
