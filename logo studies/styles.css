@@ -3,6 +3,21 @@
     src: url('BLACKR~1.TTF') format('truetype');
 }
 
+@font-face {
+    font-family: 'Mothproof Script';
+    src: url('Mothproof_Script.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gondola SD';
+    src: url('Gondola_SD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Archistico Simple';
+    src: url('Archistico_Simple.ttf') format('truetype');
+}
+
 .font-container-template {
     display: none;
     width: 100%;
@@ -25,9 +40,10 @@
 
 h2.logo {
     font-weight: normal;
+    text-align: center;
 }
 
-.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before {
+.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before, .logo25:before, .logo26:before, .logo27:before, .logo28:before, .logo29:before, .logo30:before {
     background: lightgray;
     display: block;
     font-size: 8px;
@@ -128,6 +144,30 @@ h2.logo {
 
 .logo24:before {
     content: 'Logo 24';
+}
+
+.logo25:before {
+    content: 'Logo 25';
+}
+
+.logo26:before {
+    content: 'Logo 26';
+}
+
+.logo27:before {
+    content: 'Logo 27';
+}
+
+.logo28:before {
+    content: 'Logo 28';
+}
+
+.logo29:before {
+    content: 'Logo 29';
+}
+
+.logo30:before {
+    content: 'Logo 30';
 }
 
 .logo1 {
@@ -349,4 +389,70 @@ h2.logo {
     text-transform: capitalize;
     font-weight: bold !important;
     font-style: italic;
+}
+
+.logo25 {
+    text-transform: capitalize;
+}
+
+.logo25 span {
+    text-transform: lowercase;
+    padding-left: 0.15em;
+}
+
+.logo26 {
+    text-transform: capitalize;
+    font-weight: bold !important;
+}
+
+.logo26 span {
+    text-transform: lowercase;
+    padding-left: 0.15em;
+    font-weight: normal !important;
+}
+
+.logo27 {
+    text-transform: capitalize;
+}
+
+.logo27 span {
+    text-transform: lowercase;
+    font-weight: bold !important;
+    font-style: italic;
+    padding-left: 0.15em;
+}
+
+.logo28 {
+    text-transform: capitalize;
+    font-weight: bold !important;
+    color: black;
+}
+
+.logo28 span {
+    text-transform: lowercase;
+    font-weight: normal !important;
+    color: gray;
+    font-style: italic;
+}
+
+.logo29 {
+    color: black;
+    text-transform: lowercase;
+}
+
+.logo29 span {
+    color: gray;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.logo30 {
+    color: gray;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.logo30 span {
+    color: black;
+    font-weight: bold !important;
 }
