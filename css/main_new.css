@@ -18,6 +18,39 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+#sh-writeup-email-course h2 {
+  text-align: center;
+  font: 28px 'Roboto Slab', serif;
+  font-weight: 700; }
+#sh-writeup-email-course h3 {
+  font: 24px 'Roboto Slab', serif;
+  font-weight: 400; }
+#sh-writeup-email-course p {
+  font: 18px 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+#sh-writeup-email-course li {
+  font: 18px 'Source Sans Pro', sans-serif;
+  font-weight: 400; }
+#sh-writeup-email-course #course-content {
+  margin-left: -40px; }
+  #sh-writeup-email-course #course-content ul {
+    list-style-type: none; }
+#sh-writeup-email-course #email-course-section {
+  margin-top: -25px; }
+#sh-writeup-email-course #course-pic-caption {
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  margin-top: 20px; }
+#sh-writeup-email-course #course-testimonials {
+  margin-top: -25px; }
+  #sh-writeup-email-course #course-testimonials .test-photos {
+    text-align: center;
+    margin: -50px 0 -20px 0; }
+    #sh-writeup-email-course #course-testimonials .test-photos img {
+      width: 150px; }
+  #sh-writeup-email-course #course-testimonials .course-quote p {
+    font-style: italic; }
+
 html,
 button,
 input,
