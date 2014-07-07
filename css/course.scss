@@ -1,0 +1,67 @@
+#sh-writeup-email-course {
+
+  h2 {
+    text-align: center;
+    font: 28px 'Roboto Slab', serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    font: 24px 'Roboto Slab', serif;
+    font-weight: 400;
+  }
+
+  p {
+    font: 18px 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+  }
+
+
+  li {
+    font: 18px 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+
+  #course-subheading {
+  }
+
+  #course-content {
+    margin-left: -40px;
+    ul {
+      list-style-type: none;
+    }
+
+  }
+
+  #email-course-section {
+    margin-top: -25px;
+  }
+
+  #course-pic-caption{
+    font: 14px 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  #course-testimonials {
+    margin-top: -25px;
+
+    .test-photos {
+      text-align:center;
+      margin: -50px 0 -20px 0;
+
+      img{
+        width: 150px;
+      }
+    }
+
+    .course-quote {
+      p {
+        font-style: italic;
+      }
+    }
+  }
+
+
+
+}
