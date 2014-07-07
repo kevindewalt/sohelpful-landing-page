@@ -4,18 +4,33 @@
 }
 
 @font-face {
-    font-family: 'Mothproof Script';
-    src: url('Mothproof_Script.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Gondola SD';
-    src: url('Gondola_SD.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Archistico Simple';
     src: url('Archistico_Simple.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Daniel';
+    src: url('daniel.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Desyrel';
+    src: url('desyrel.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rabiohead';
+    src: url('rabiohead.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vag Handwritten';
+    src: url('VAG-HandWritten.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Veggi';
+    src: url('VeggiBol.otf') format('opentype');
 }
 
 .font-container-template {
