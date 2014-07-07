@@ -1,14 +1,19 @@
+
+@import "common_sections.scss";
+
 #sh-writeup-email-course {
 
   h2 {
     text-align: center;
     font: 28px 'Roboto Slab', serif;
     font-weight: 700;
+    @include mobile-big-headline {}
   }
 
   h3 {
     font: 24px 'Roboto Slab', serif;
     font-weight: 400;
+    @include mobile-small-headline {}
   }
 
   p {
@@ -20,9 +25,9 @@
   li {
     font: 18px 'Source Sans Pro', sans-serif;
     font-weight: 400;
-  }
-
-  #course-subheading {
+    @include mq-personal {
+      @include mobile-small-copy;
+    }
   }
 
   #course-content {
@@ -34,13 +39,13 @@
   }
 
   #email-course-section {
-    margin-top: -25px;
-  }
+    margin-top: -55px;
 
-  #course-pic-caption{
-    font: 14px 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    margin-top: 20px;
+    #course-pic-caption{
+      font: 14px 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      margin-top: 20px;
+    }
   }
 
   #course-testimonials {
@@ -55,13 +60,18 @@
       }
     }
 
-    .course-quote {
-      p {
-        font-style: italic;
+    .course-quote p {
+      font-style: italic;
+      @include mq-personal {
+        @include mobile-small-copy;
       }
     }
+
   }
 
-
+  #course-long-copy {
+    @include long-form-letter {}
+  }
 
 }
+

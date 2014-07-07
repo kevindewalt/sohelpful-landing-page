@@ -18,29 +18,225 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+img {
+  vertical-align: middle; }
+
+img.responsive-image {
+  max-width: 100%; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.clear {
+  clear: both; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+    Common to all sections
+   ========================================================================== */
+.title h1 {
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .title h1 {
+      font: 30px 'Roboto Slab', serif; } }
+
+.title-s h1 {
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .title-s h1 {
+      font: 24px 'Roboto Slab', serif; } }
+
+.title-dark h1 {
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .title-dark h1 {
+      font: 30px 'Roboto Slab', serif; } }
+
+.title-dark-s h1 {
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .title-dark-s h1 {
+      font: 24px 'Roboto Slab', serif; } }
+
+.title-dark-xs h1 {
+  font: 30px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .title-dark-xs h1 {
+      font: 24px 'Roboto Slab', serif; } }
+
+.td-title {
+  font: 14px 'Roboto Slab', serif;
+  color: #ffffff;
+  margin: 10px 0 10px 0;
+  text-align: center; }
+  @media (max-width: 35em) {
+    .td-title {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
+
+td {
+  padding: 8px; }
+
+td p {
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0; }
+  @media (max-width: 35em) {
+    td p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
+
+.td-center-gray p {
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0; }
+  @media (max-width: 35em) {
+    .td-center-gray p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
+
+.td-center-white p {
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0; }
+  @media (max-width: 35em) {
+    .td-center-white p {
+      font: 12px 'Roboto Slab', serif;
+      font-weight: 300; } }
+
+.content-container {
+  padding: 20px 0 20px 0; }
+
+.line-separator {
+  background: url(../img/line-separator.jpg) repeat-x;
+  height: 4px;
+  width: 100%; }
+
+.line-separator-white {
+  background: #ffffff;
+  height: 4px;
+  width: 100%; }
+
+.try-button-block {
+  text-align: center; }
+
+.trial-btn {
+  margin: 0 0 20px 0;
+  text-align: center;
+  background: #27ae60;
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .trial-btn:hover {
+    background: #30c26e; }
+  .trial-btn a {
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none; }
+    @media (max-width: 35em) {
+      .trial-btn a {
+        font: 14px 'Roboto Slab', serif; } }
+
+@media (max-width: 35em) {
+  .not-phone {
+    display: none; } }
+
+.hide {
+  display: none; }
+
+.centered-text {
+  text-align: center; }
+
+#photo-credit {
+  font-size: 14px;
+  margin: 20px 10px; }
+
 #sh-writeup-email-course h2 {
   text-align: center;
   font: 28px 'Roboto Slab', serif;
-  font-weight: 700; }
-#sh-writeup-email-course h3 {
+  font-weight: 700;
   font: 24px 'Roboto Slab', serif;
   font-weight: 400; }
+#sh-writeup-email-course h3 {
+  font: 24px 'Roboto Slab', serif;
+  font-weight: 400;
+  font: 20px 'Roboto Slab', serif;
+  font-weight: 300; }
 #sh-writeup-email-course p {
   font: 18px 'Source Sans Pro', sans-serif;
   font-weight: 300; }
 #sh-writeup-email-course li {
   font: 18px 'Source Sans Pro', sans-serif;
   font-weight: 400; }
+  @media (max-width: 35em) {
+    #sh-writeup-email-course li {
+      font: 16px 'Source Sans Pro', sans-serif;
+      font-weight: 300; } }
 #sh-writeup-email-course #course-content {
   margin-left: -40px; }
   #sh-writeup-email-course #course-content ul {
     list-style-type: none; }
 #sh-writeup-email-course #email-course-section {
-  margin-top: -25px; }
-#sh-writeup-email-course #course-pic-caption {
-  font: 14px 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  margin-top: 20px; }
+  margin-top: -55px; }
+  #sh-writeup-email-course #email-course-section #course-pic-caption {
+    font: 14px 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin-top: 20px; }
 #sh-writeup-email-course #course-testimonials {
   margin-top: -25px; }
   #sh-writeup-email-course #course-testimonials .test-photos {
@@ -50,6 +246,83 @@
       width: 150px; }
   #sh-writeup-email-course #course-testimonials .course-quote p {
     font-style: italic; }
+    @media (max-width: 35em) {
+      #sh-writeup-email-course #course-testimonials .course-quote p {
+        font: 16px 'Source Sans Pro', sans-serif;
+        font-weight: 300; } }
+#sh-writeup-email-course #course-long-copy #letter-copy {
+  text-align: center; }
+  #sh-writeup-email-course #course-long-copy #letter-copy #copy-body {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px 7%;
+    margin: 0 7%;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; }
+    @media (max-width: 35em) {
+      #sh-writeup-email-course #course-long-copy #letter-copy #copy-body {
+        padding: 10px 3%; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #copy-body #letter-heading {
+      margin: 50px 0;
+      text-align: center;
+      font-size: 40px; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #copy-body #letter-heading {
+          font: 24px 'Roboto Slab', serif;
+          font-weight: 400; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #copy-body h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 36px; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #copy-body h1 {
+          font: 24px 'Roboto Slab', serif;
+          font-weight: 400; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #copy-body h2 {
+      text-align: left;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 30px;
+      margin: 40px 0 10px 0; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #copy-body h2 {
+          font: 20px 'Source Sans Pro', sans-serif;
+          font-weight: 400; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #copy-body blockquote {
+      font-style: italic; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #copy-body blockquote {
+          font: 16px 'Source Sans Pro', sans-serif;
+          font-weight: 300;
+          font-style: italic; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #copy-body p, #sh-writeup-email-course #course-long-copy #letter-copy #copy-body li {
+      font-size: 18px;
+      font-weight: 300; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #copy-body p, #sh-writeup-email-course #course-long-copy #letter-copy #copy-body li {
+          font: 16px 'Source Sans Pro', sans-serif;
+          font-weight: 300; } }
+  #sh-writeup-email-course #course-long-copy #letter-copy #gary {
+    margin: 50px 0; }
+    #sh-writeup-email-course #course-long-copy #letter-copy #gary #gary-pic {
+      float: left;
+      width: 40%; }
+      #sh-writeup-email-course #course-long-copy #letter-copy #gary #gary-pic img {
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px; }
+        @media (max-width: 35em) {
+          #sh-writeup-email-course #course-long-copy #letter-copy #gary #gary-pic img {
+            display: none; } }
+    #sh-writeup-email-course #course-long-copy #letter-copy #gary #gary-quote {
+      font-style: italic;
+      font-size: 20px;
+      float: left;
+      margin: 0 0 0 5%;
+      width: 50%; }
+      @media (max-width: 35em) {
+        #sh-writeup-email-course #course-long-copy #letter-copy #gary #gary-quote {
+          font: 16px 'Source Sans Pro', sans-serif;
+          font-weight: 300;
+          font-style: italic; } }
 
 html,
 button,
@@ -859,6 +1132,8 @@ header {
             font: 24px 'Roboto Slab', serif;
             font-weight: 400; } }
       #open-letter #letter-copy #copy-body h2 {
+        text-align: left;
+        font-family: 'Source Sans Pro', sans-serif;
         font-size: 30px;
         margin: 40px 0 10px 0; }
         @media (max-width: 35em) {
@@ -872,11 +1147,11 @@ header {
             font: 16px 'Source Sans Pro', sans-serif;
             font-weight: 300;
             font-style: italic; } }
-      #open-letter #letter-copy #copy-body p {
+      #open-letter #letter-copy #copy-body p, #open-letter #letter-copy #copy-body li {
         font-size: 18px;
         font-weight: 300; }
         @media (max-width: 35em) {
-          #open-letter #letter-copy #copy-body p {
+          #open-letter #letter-copy #copy-body p, #open-letter #letter-copy #copy-body li {
             font: 16px 'Source Sans Pro', sans-serif;
             font-weight: 300; } }
     #open-letter #letter-copy #gary {

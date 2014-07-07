@@ -1,0 +1,397 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+img.responsive-image{
+  max-width: 100%;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.clear{
+    clear: both;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+// For tabelts and mid-sized mobile devices. Typically 54em; but set here at 767px for Bootstrap compatibility.
+
+@mixin mq-tablet {
+  @media (max-width: 54em) {
+    @content;
+  }
+}
+
+// For smartphones and personal (small) mobile devices. Typically 30em.
+@mixin mq-personal {
+  @media  (max-width: 35em) {
+    @content;
+  }
+}
+
+@mixin mobile-readable-font {
+  font: 16px 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+@mixin mobile-big-headline {
+  font: 24px 'Roboto Slab', serif;
+  font-weight: 400;
+}
+@mixin mobile-small-headline {
+  font: 20px 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+@mixin mobile-big-copy {
+  font: 20px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+@mixin mobile-small-copy {
+  font: 16px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+@mixin mobile-quote {
+  font: 16px 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+
+@mixin mobile-table-font {
+  font: 12px 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+
+/* ==========================================================================
+    Common to all sections
+   ========================================================================== */
+
+$orange: #D35400;
+$red: #C0392B;
+$blue: #2980B9;
+$yellow: #f1c40f;
+
+.title h1{
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+
+  @include mq-personal {
+    font: 30px 'Roboto Slab', serif;
+  }
+}
+
+.title-s h1{
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
+}
+
+.title-dark h1{
+  font: 50px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
+
+  @include mq-personal {
+    font: 30px 'Roboto Slab', serif;
+  }
+}
+
+.title-dark-s h1{
+  font: 36px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
+}
+
+.title-dark-xs h1{
+  font: 30px 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #362f2d;
+  margin: 0;
+  text-align: center;
+
+  @include mq-personal {
+    font: 24px 'Roboto Slab', serif;
+  }
+}
+
+
+.td-title{
+  font: 14px 'Roboto Slab', serif;
+  color: #ffffff;
+  margin: 10px 0 10px 0;
+  text-align: center;
+
+  @include mq-personal {
+    @include mobile-table-font
+  }
+}
+
+td{
+  padding: 8px;
+}
+
+td p{
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
+
+  @include mq-personal {
+    @include mobile-table-font
+  }
+}
+
+.td-center-gray p{
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
+
+  @include mq-personal {
+    @include mobile-table-font
+  }
+}
+
+.td-center-white p{
+  font: 14px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #362f2d;
+  margin: 0;
+
+  @include mq-personal {
+    @include mobile-table-font
+  }
+}
+
+.content-container{
+  padding: 20px 0 20px 0;
+}
+
+.line-separator{
+  background: url(../img/line-separator.jpg) repeat-x;
+  height: 4px;
+  width: 100%;
+}
+
+.line-separator-white{
+  background: #ffffff;
+  height: 4px;
+  width: 100%;
+}
+
+.try-button-block{
+  text-align: center;
+}
+
+.trial-btn{
+  margin: 0 0 20px 0;
+  text-align: center;
+  background: #27ae60;
+  display: inline-block;
+  padding: 10px 20px;
+
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+
+  &:hover {
+      background: #30c26e;
+ }
+  a {
+
+    font: 28px 'Roboto Slab', serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+
+    @include mq-personal {
+    font: 14px 'Roboto Slab', serif;
+    }
+
+  }
+}
+
+.not-phone {
+  @include mq-personal {
+    display: none;
+  }
+
+}
+
+.hide {
+  display: none;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+#photo-credit {
+  font-size: 14px;
+  margin: 20px 10px;
+}
+
+
+//------Long Form Letter -------//
+
+@mixin long-form-letter{
+
+  #letter-copy {
+    text-align: center;
+
+    #copy-body{
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px 7%;
+    margin: 0 7%;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    @include mq-personal {
+      padding: 10px 3%;
+    }
+
+      #letter-heading {
+        margin: 50px 0;
+        text-align: center;
+        font-size: 40px;
+        @include mq-personal {
+          @include mobile-big-headline;
+        }
+
+        }
+
+      h1 {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 36px;
+        @include mq-personal {
+          @include mobile-big-headline;
+        }
+      }
+
+      h2 {
+        text-align: left;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 30px;
+        margin: 40px 0 10px 0;
+        @include mq-personal {
+          @include mobile-big-copy;
+        }
+
+      }
+
+
+      blockquote {
+        font-style: italic;
+        @include mq-personal {
+          @include mobile-quote;
+      }
+    }
+
+      p, li {
+        font-size: 18px;
+        font-weight: 300;
+        @include mq-personal {
+          @include mobile-small-copy;
+      }
+
+      }
+
+    }
+
+    #gary{
+      margin: 50px 0;
+
+      #gary-pic {
+        float: left;
+        width: 40%;
+        img {
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+        @include mq-personal {
+          display: none;
+      }
+
+        }
+      }
+
+      #gary-quote {
+        font-style: italic;
+        font-size: 20px;
+        float: left;
+        margin: 0 0 0 5%;
+        width: 50%;
+        @include mq-personal {
+          @include mobile-quote;
+      }
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+// ------end Long Form Letter------//
