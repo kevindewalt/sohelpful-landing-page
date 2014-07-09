@@ -471,3 +471,7 @@ h2.logo {
     color: black;
     font-weight: bold !important;
 }
+
+.topguy {
+  margin-bottom: -12px;
+}
