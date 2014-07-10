@@ -14,6 +14,16 @@
 }
 
 @font-face {
+    font-family: 'Daniel Black';
+    src: url('Daniel-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'DanielBD';
+    src: url('danielbd.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Desyrel';
     src: url('desyrel.ttf') format('truetype');
 }
