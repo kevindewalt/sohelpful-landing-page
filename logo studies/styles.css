@@ -58,7 +58,7 @@ h2.logo {
     text-align: center;
 }
 
-.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before, .logo25:before, .logo26:before, .logo27:before, .logo28:before, .logo29:before, .logo30:before {
+.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before, .logo25:before, .logo26:before, .logo27:before, .logo28:before, .logo29:before, .logo30:before, .logo31:before, .logo32:before, .logo33:before, .logo34:before, .logo35:before, .logo36:before {
     background: lightgray;
     display: block;
     font-size: 8px;
@@ -185,6 +185,30 @@ h2.logo {
     content: 'Logo 30';
 }
 
+.logo31:before {
+    content: 'Logo 31';
+}
+
+.logo32:before {
+    content: 'Logo 32';
+}
+
+.logo33:before {
+    content: 'Logo 33';
+}
+
+.logo34:before {
+    content: 'Logo 34';
+}
+
+.logo35:before {
+    content: 'Logo 35';
+}
+
+.logo36:before {
+    content: 'Logo 36';
+}
+
 .logo1 {
     font-weight: bold !important;
 }
@@ -201,7 +225,7 @@ h2.logo {
 
 .logo3 {
     font-style: italic;
-    font-weight: bold !important;
+    font-weight: 900 !important;
 }
 
 .logo3 span {
@@ -283,15 +307,17 @@ h2.logo {
 }
 
 .logo13 {
-    text-transform: uppercase;
 }
 
 .logo13 span {
     padding-left: 0.15em;
 }
 
+.logo13 .umlaut {
+    color: gray;
+}
+
 .logo14 {
-    text-transform: uppercase;
     font-weight: bold !important;
 }
 
@@ -299,14 +325,21 @@ h2.logo {
     padding-left: 0.15em;
 }
 
+.logo14 .umlaut {
+    color: gray;
+}
+
 .logo15 {
-    text-transform: uppercase;
     font-weight: bold !important;
     font-style: italic;
 }
 
 .logo15 span {
     padding-left: 0.15em;
+}
+
+.logo15 .umlaut {
+    color: gray;
 }
 
 .logo16 {
@@ -470,6 +503,93 @@ h2.logo {
 .logo30 span {
     color: black;
     font-weight: bold !important;
+}
+
+.logo31 {
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+.logo31 span {
+    color: black;
+}
+
+.logo31 .umlaut {
+    color: gray;
+}
+
+.logo32 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+.logo32 span {
+    color: black;
+    font-weight: bold !important;
+}
+
+.logo32 .umlaut {
+    color: gray;
+}
+
+.logo33 {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold !important;
+}
+
+.logo33 span {
+    color: black;
+    text-transform: capitalize;
+}
+
+.logo33 .umlaut {
+    color: gray;
+}
+
+.logo34 {
+    color: gray;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.logo34 span {
+    color: black;
+    font-weight: bold !important;
+}
+
+.logo34 .umlaut {
+    color: gray;
+}
+
+.logo35 {
+    text-transform: lowercase;
+    font-weight: bold !important;
+}
+
+.logo35 span {
+    color: black;
+}
+
+.logo35 .umlaut {
+    text-transform: capitalize;
+}
+
+.logo36 {
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: bold !important;
+    color: black;
+}
+
+.logo36 span {
+    text-transform: lowercase;
+}
+
+.logo36 .umlaut {
+    text-transform: capitalize;
 }
 
 .topguy {
