@@ -1,0 +1,30 @@
+.font-container-template {
+    display: none;
+}
+
+.font-container {
+    display: table;
+}
+
+.logo {
+    font-family: 'Swanky and Moo Moo';
+    font-weight: bold !important;
+}
+
+.orange {
+    background: #d35400;
+    padding: 5px;
+    float: left;
+}
+
+.black {
+    background: #29221f;
+    padding: 5px;
+    float: left;
+}
+
+.color {
+    height: 100%;
+    padding: 5px;
+    float: left;    
+}
