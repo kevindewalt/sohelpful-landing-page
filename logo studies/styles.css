@@ -68,7 +68,7 @@ h2.logo {
     text-align: center;
 }
 
-.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before, .logo25:before, .logo26:before, .logo27:before, .logo28:before, .logo29:before, .logo30:before, .logo31:before, .logo32:before, .logo33:before, .logo34:before, .logo35:before, .logo36:before {
+.logo1:before, .logo2:before, .logo3:before, .logo4:before, .logo5:before, .logo6:before, .logo7:before, .logo8:before, .logo9:before, .logo10:before, .logo11:before, .logo12:before, .logo13:before, .logo14:before, .logo15:before, .logo16:before, .logo17:before, .logo18:before, .logo19:before, .logo20:before, .logo21:before, .logo22:before, .logo23:before, .logo24:before, .logo25:before, .logo26:before, .logo27:before, .logo28:before, .logo29:before, .logo30:before, .logo31:before, .logo32:before, .logo33:before, .logo34:before, .logo35:before, .logo36:before, .logo37:before, .logo38:before, .logo39:before, .logo40:before {
     background: lightgray;
     display: block;
     font-size: 8px;
@@ -217,6 +217,19 @@ h2.logo {
 
 .logo36:before {
     content: 'Logo 36';
+}
+.logo37:before {
+    content: 'Logo 37';
+}
+.logo38:before {
+    content: 'Logo 38';
+}
+
+.logo39:before {
+    content: 'Logo 39';
+}
+.logo40:before {
+    content: 'Logo 40';
 }
 
 .logo1 {
@@ -600,6 +613,24 @@ h2.logo {
 
 .logo36 .umlaut {
     text-transform: capitalize;
+}
+
+.logo39 {
+    font-style: italic;
+}
+
+.logo40 {
+    font-style: italic;
+}
+
+
+
+.just_capital_umlaut {
+  text-transform: capitalize;
+}
+
+.just_lowercase_umlaut {
+  text-transform: lowercase;
 }
 
 .topguy {
