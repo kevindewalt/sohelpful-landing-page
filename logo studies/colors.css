@@ -15,16 +15,23 @@
     background: #d35400;
     padding: 5px;
     float: left;
+    height: 75px;
 }
 
 .black {
     background: #313131;
     padding: 5px;
     float: left;
+    height: 75px;
 }
 
 .color {
     height: 100%;
     padding: 5px;
     float: left;    
+    height: 75px;
+}
+
+.color h2 {
+    margin-top: 25px;
 }
