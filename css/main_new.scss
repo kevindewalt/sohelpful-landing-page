@@ -65,18 +65,19 @@ header{
   }
 
   #logo{
+    margin-top: -10px;
     color: #fff;
     font-size: 40px;
     font-family: 'Swanky and Moo Moo', cursive;
     float: left;
-    @include mq-personal {
-      max-width: 20%;
-    }
 
     .umlat {
       margin:0 4px 0px 3px ;
     }
 
+    @include mq-personal {
+      max-width: 10%;
+    }
   }
 
   #head-login{

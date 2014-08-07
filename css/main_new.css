@@ -537,15 +537,16 @@ header {
   header a:hover {
     color: #f1c40f; }
   header #logo {
+    margin-top: -10px;
     color: #fff;
     font-size: 40px;
     font-family: 'Swanky and Moo Moo', cursive;
     float: left; }
-    @media (max-width: 35em) {
-      header #logo {
-        max-width: 20%; } }
     header #logo .umlat {
       margin: 0 4px 0px 3px; }
+    @media (max-width: 35em) {
+      header #logo {
+        max-width: 10%; } }
   header #head-login {
     float: right; }
 
